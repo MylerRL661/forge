@@ -1,3 +1,4 @@
 res://Scenes/game.tscn
 res://Prefabs/barbarian.tscn
 res://Prefabs/barbarian_prefab.tscn
+res://Scripts/player_movement.gd

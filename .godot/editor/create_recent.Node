@@ -1,5 +1,5 @@
-CollisionShape3D
 CharacterBody3D
+CollisionShape3D
 CSGBox3D
 StaticBody3D
 Camera3D
