@@ -3,8 +3,9 @@ extends CharacterBody3D
 
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
-@export var rotation_speed = 10
+@export var rotation_speed = 5
 @onready var model = $Rig/Skeleton3D
+@onready var anim_player = $AnimationPlayer
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -27,8 +28,14 @@ func _physics_process(delta):
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
 		model.look_at(-direction * rotation_speed)
+		_walk_anim()
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
+		anim_player.play("Idle")
 
 	move_and_slide()
+
+func _walk_anim():
+	if is_on_floor():
+		anim_player.play("Walking_A")
