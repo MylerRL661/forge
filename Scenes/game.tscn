@@ -56,4 +56,4 @@ light_angular_distance = 34.49
 [node name="npcs" type="Node3D" parent="."]
 
 [node name="Rogue" parent="npcs" instance=ExtResource("2_kwqtb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.3245, 0.695534, -18.129)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.94, 0.476074, -17.3412)

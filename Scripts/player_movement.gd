@@ -5,6 +5,7 @@ extends CharacterBody3D
 @export var JUMP_VELOCITY = 10
 var rotation_direction
 @export var _isInteracting : bool = false
+@export var _hasInteracted : bool = false
 @export var rotation_speed = 5
 @onready var model = $Rig/Skeleton3D
 @onready var anim_player = $AnimationPlayer
@@ -51,9 +52,11 @@ func _walk_anim():
 func _interact():
 	if Input.is_action_just_pressed("interact"):
 		_isInteracting = true
-		#anim_player.pause()
+		_hasInteracted = true
 		anim_player.play("Interact", 0.5)
 		print("interacted")
+	else:
+		_hasInteracted = false
 
 	if anim_player.is_playing() == false:
 		_isInteracting = false
