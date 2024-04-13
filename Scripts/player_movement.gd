@@ -1,8 +1,9 @@
 extends CharacterBody3D
 
 
-const SPEED = 5.0
-const JUMP_VELOCITY = 4.5
+@export var SPEED = 5.0
+@export var JUMP_VELOCITY = 4.5
+var rotation_direction
 @export var rotation_speed = 5
 @onready var model = $Rig/Skeleton3D
 @onready var anim_player = $AnimationPlayer
@@ -29,7 +30,8 @@ func _physics_process(delta):
 	if direction:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
-		model.look_at(-direction * rotation_speed)
+		rotation_direction = Vector2(direction.z, direction.x).angle()
+		model.rotation.y = lerp_angle(model.rotation.y, rotation_direction, delta * 10)
 		_walk_anim()
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
@@ -42,6 +44,6 @@ func _physics_process(delta):
 
 func _walk_anim():
 	if is_on_floor() and not Input.is_action_just_pressed("jump"):
-		anim_player.play("Walking_A", 0.1)
+		anim_player.play("Running_B", 0.1)
 		if !is_on_floor:
 			anim_player.stop()
