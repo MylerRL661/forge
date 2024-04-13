@@ -1,6 +1,3 @@
-res://Scenes/game.tscn
-res://Scripts/Device Manager.gd
-res://Prefabs/barbarian.tscn
-res://Scripts/player_movement.gd
 res://Prefabs/rogue_npc.tscn
-res://Scripts/rogue_npc.gd
+res://Scenes/game.tscn
+res://Prefabs/barbarian.tscn
