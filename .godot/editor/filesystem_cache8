@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713011481
+::res://::1713026122
 icon.svg::CompressedTexture2D::433924905830732552::1712958876::1712958882::1::::<><>::
-::res://Assets/::1712959036
+::res://Assets/::1713026091
 ::res://Assets/KayKit_Adventurers_1.0_FREE/::1712959182
 License.txt::TextFile::-1::1712958675::0::1::::<><>::
 ::res://Assets/KayKit_Adventurers_1.0_FREE/Assets/::1712959164
@@ -135,10 +135,13 @@ barbarian_texture.png::CompressedTexture2D::6595491659024462721::1712958678::171
 knight_texture.png::CompressedTexture2D::4922023170579597555::1712958678::1712959115::1::::<><>::
 mage_texture.png::CompressedTexture2D::3148337758077269081::1712958678::1712959115::1::::<><>::
 rogue_texture.png::CompressedTexture2D::4757155030883375122::1712958678::1712959115::1::::<><>::
-::res://Prefabs/::1712964899
-barbarian.tscn::PackedScene::28834365288856532::1712964899::0::1::::<><>::uid://bbo54eon6xpkd::::res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barbarian_barbarian_texture.png<>res://Scripts/player_movement.gd
+::res://Assets/Textures/::1713026122
+blob.png::CompressedTexture2D::2063657174439271301::1713026184::1713026187::1::::<><>::
+::res://Prefabs/::1713026140
+barbarian.tscn::PackedScene::28834365288856532::1713026140::0::1::::<><>::uid://bbo54eon6xpkd::::res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barbarian_barbarian_texture.png<>res://Scripts/player_movement.gd<>uid://4nweq1my7bd2::::res://Assets/Textures/blob.png
 barbarian_prefab.tscn::PackedScene::4772871404673779137::1712963601::0::1::::<><>::uid://bbo54eon6xpkd::::res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barbarian_barbarian_texture.png<>res://Scripts/player_movement.gd
-::res://Scenes/::1712964862
-game.tscn::PackedScene::66685066014562733::1712964862::0::1::::<><>::uid://n75r3qqo181::::res://Prefabs/barbarian.tscn
-::res://Scripts/::1712964861
-player_movement.gd::GDScript::-1::1712964861::0::1::::<>CharacterBody3D<>::
+::res://Scenes/::1713026140
+game.tscn::PackedScene::66685066014562733::1713026140::0::1::::<><>::uid://n75r3qqo181::::res://Prefabs/barbarian.tscn
+::res://Scripts/::1713025527
+Device Manager.gd::GDScript::-1::1713014620::0::1::::<>Node3D<>::
+player_movement.gd::GDScript::-1::1713025527::0::1::::<>CharacterBody3D<>::

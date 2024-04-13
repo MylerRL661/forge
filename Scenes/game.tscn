@@ -6,17 +6,16 @@
 size = Vector3(39.0516, 1, 47.2202)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rgfic"]
-albedo_color = Color(0, 0.603922, 0.0823529, 1)
+albedo_color = Color(0.313726, 0.541176, 0.54902, 1)
 
 [sub_resource type="Sky" id="Sky_iksgk"]
 
 [sub_resource type="Environment" id="Environment_kqamq"]
-background_mode = 2
+background_mode = 1
 background_color = Color(0.45098, 0.72549, 0.92549, 1)
 sky = SubResource("Sky_iksgk")
 ambient_light_source = 2
-ambient_light_color = Color(1, 1, 1, 1)
-ambient_light_energy = 2.24
+ambient_light_color = Color(0.505882, 0.505882, 0.505882, 1)
 fog_light_color = Color(1, 1, 1, 1)
 fog_light_energy = 0.5
 fog_sun_scatter = 0.8
@@ -45,3 +44,10 @@ transform = Transform3D(1, 0, 0, 0, 0.80262, 0.596491, 0, -0.596491, 0.80262, 0,
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_kqamq")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.7173, 0.696765, 0, -0.696765, 0.7173, 0, 16.2944, 0)
+light_energy = 2.0
+light_indirect_energy = 6.832
+light_volumetric_fog_energy = 14.607
+light_angular_distance = 34.49
