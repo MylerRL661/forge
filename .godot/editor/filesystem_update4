@@ -1,4 +1,4 @@
 res://Scenes/game.tscn
+res://Scripts/Device Manager.gd
 res://Prefabs/barbarian.tscn
-res://Prefabs/barbarian_prefab.tscn
 res://Scripts/player_movement.gd

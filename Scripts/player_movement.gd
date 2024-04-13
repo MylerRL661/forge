@@ -10,7 +10,6 @@ const JUMP_VELOCITY = 4.5
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
-
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
@@ -19,6 +18,9 @@ func _physics_process(delta):
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		var currentanim = anim_player.assigned_animation
+		anim_player.play("Jump_Full_Short", 0.5)
+		print(currentanim)
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -32,10 +34,14 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
-		anim_player.play("Idle")
+		if is_on_floor() and not Input.is_action_just_pressed("jump"):
+			anim_player.play("Idle", 0.1)
+			pass
 
 	move_and_slide()
 
 func _walk_anim():
-	if is_on_floor():
-		anim_player.play("Walking_A")
+	if is_on_floor() and not Input.is_action_just_pressed("jump"):
+		anim_player.play("Walking_A", 0.1)
+		if !is_on_floor:
+			anim_player.stop()
