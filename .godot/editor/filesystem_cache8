@@ -51,7 +51,7 @@ mage_texture.png::CompressedTexture2D::4619113775280273651::1712958678::17129591
 Rogue.glb::PackedScene::881851229180414030::1712958678::1712959120::1::::<><>::
 Rogue_Hooded.glb::PackedScene::2288950204479038304::1712958678::1712959118::1::::<><>::
 Rogue_Hooded_rogue_texture.png::CompressedTexture2D::4225113107989516403::1712959118::1712959118::1::::<><>::
-Rogue_rogue_texture.png::CompressedTexture2D::1628470173188844255::1712959119::1712959119::1::::<><>::
+Rogue_rogue_texture.png::CompressedTexture2D::1628470173188844255::1712959119::1713028911::1::::<><>::
 rogue_texture.png::CompressedTexture2D::8196178965164702443::1712958678::1712959115::1::::<><>::
 ::res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barb_anims/::1712963941
 1H_Melee_Attack_Chop.res::Animation::7703738072574407845::1712963940::0::1::::<><>::
@@ -135,13 +135,13 @@ barbarian_texture.png::CompressedTexture2D::6595491659024462721::1712958678::171
 knight_texture.png::CompressedTexture2D::4922023170579597555::1712958678::1712959115::1::::<><>::
 mage_texture.png::CompressedTexture2D::3148337758077269081::1712958678::1712959115::1::::<><>::
 rogue_texture.png::CompressedTexture2D::4757155030883375122::1712958678::1712959115::1::::<><>::
-::res://Assets/Textures/::1713026122
+::res://Assets/Textures/::1713026187
 blob.png::CompressedTexture2D::2063657174439271301::1713026184::1713026187::1::::<><>::
-::res://Prefabs/::1713026140
-barbarian.tscn::PackedScene::28834365288856532::1713026140::0::1::::<><>::uid://bbo54eon6xpkd::::res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barbarian_barbarian_texture.png<>res://Scripts/player_movement.gd<>uid://4nweq1my7bd2::::res://Assets/Textures/blob.png
+::res://Prefabs/::1713028634
+barbarian.tscn::PackedScene::28834365288856532::1713028634::0::1::::<><>::uid://bbo54eon6xpkd::::res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barbarian_barbarian_texture.png<>res://Scripts/player_movement.gd<>uid://4nweq1my7bd2::::res://Assets/Textures/blob.png
 barbarian_prefab.tscn::PackedScene::4772871404673779137::1712963601::0::1::::<><>::uid://bbo54eon6xpkd::::res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barbarian_barbarian_texture.png<>res://Scripts/player_movement.gd
-::res://Scenes/::1713026140
-game.tscn::PackedScene::66685066014562733::1713026140::0::1::::<><>::uid://n75r3qqo181::::res://Prefabs/barbarian.tscn
-::res://Scripts/::1713025527
+::res://Scenes/::1713028633
+game.tscn::PackedScene::66685066014562733::1713028633::0::1::::<><>::uid://n75r3qqo181::::res://Prefabs/barbarian.tscn
+::res://Scripts/::1713028633
 Device Manager.gd::GDScript::-1::1713014620::0::1::::<>Node3D<>::
-player_movement.gd::GDScript::-1::1713025527::0::1::::<>CharacterBody3D<>::
+player_movement.gd::GDScript::-1::1713028633::0::1::::<>CharacterBody3D<>::

@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://7kj8bv6xgw8"]
+[gd_scene load_steps=7 format=3 uid="uid://7kj8bv6xgw8"]
 
 [ext_resource type="PackedScene" uid="uid://n75r3qqo181" path="res://Prefabs/barbarian.tscn" id="1_cbtb2"]
+[ext_resource type="PackedScene" uid="uid://c1py103j5v6c" path="res://Prefabs/rogue_npc.tscn" id="2_kwqtb"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cus1t"]
 size = Vector3(39.0516, 1, 47.2202)
@@ -51,3 +52,8 @@ light_energy = 2.0
 light_indirect_energy = 6.832
 light_volumetric_fog_energy = 14.607
 light_angular_distance = 34.49
+
+[node name="npcs" type="Node3D" parent="."]
+
+[node name="Rogue" parent="npcs" instance=ExtResource("2_kwqtb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.3245, 0.695534, -18.129)

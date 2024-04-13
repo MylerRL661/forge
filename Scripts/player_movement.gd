@@ -4,7 +4,7 @@ extends CharacterBody3D
 @export var SPEED = 5.0
 @export var JUMP_VELOCITY = 10
 var rotation_direction
-@export var is_interacting : bool = false
+@export var _isInteracting : bool = false
 @export var rotation_speed = 5
 @onready var model = $Rig/Skeleton3D
 @onready var anim_player = $AnimationPlayer
@@ -37,7 +37,7 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 		_interact()
-		if is_on_floor() and not Input.is_action_just_pressed("jump") and is_interacting == false:
+		if is_on_floor() and not Input.is_action_just_pressed("jump") and _isInteracting == false:
 			anim_player.play("Idle", 0.1)
 
 	move_and_slide()
@@ -50,10 +50,10 @@ func _walk_anim():
 
 func _interact():
 	if Input.is_action_just_pressed("interact"):
-		is_interacting = true
+		_isInteracting = true
 		#anim_player.pause()
 		anim_player.play("Interact", 0.5)
 		print("interacted")
 
 	if anim_player.is_playing() == false:
-		is_interacting = false
+		_isInteracting = false
