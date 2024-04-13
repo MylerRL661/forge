@@ -7,12 +7,20 @@ const JUMP_VELOCITY = 4.5
 @export var _isCheering : bool = false
 @onready var anim_player : AnimationPlayer = $AnimationPlayer
 @onready var player_character = $"../../Barbarian"
+@onready var game_camera = $"../../Barbarian/Camera3D"
+@onready var camera_target = $CameraTarget
+@onready var audio_player = $AudioStreamPlayer
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
+var original_cam_position
+var orginal_cam_rotation
+
 func _ready():
 	anim_player.play("Idle")
+	original_cam_position = game_camera.transform.origin
+	orginal_cam_rotation = game_camera.rotation_degrees
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -33,15 +41,24 @@ func _on_area_3d_body_entered(body):
 
 func _sayHello():
 	if _isPlayerInRange == true and player_character._hasInteracted == true:
+		_camMove()
 		_cheerAnimation()
+		audio_player.play()
 		print("hello")
 
 func _on_area_3d_body_exited(body):
 	if body == player_character:
 		_isPlayerInRange = false
+		_camReset()
 
 func _cheerAnimation():
 	_isCheering = true
 	anim_player.play("Cheer")
-	
-	
+
+func _camMove():
+	game_camera.transform.origin = lerp(game_camera.transform.origin, camera_target.transform.origin, 1)
+	game_camera.look_at($".".transform.origin)
+
+func _camReset():
+	game_camera.transform.origin = original_cam_position
+	game_camera.rotation_degrees = orginal_cam_rotation # broken

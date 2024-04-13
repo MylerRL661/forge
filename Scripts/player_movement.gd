@@ -21,7 +21,6 @@ func _physics_process(delta):
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
-		var currentanim = anim_player.assigned_animation
 		anim_player.play("Jump_Full_Short", 0.5)
 
 	# Get the input direction and handle the movement/deceleration.
