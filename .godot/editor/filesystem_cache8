@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713111621
+::res://::1713113896
 icon.svg::CompressedTexture2D::433924905830732552::1712958876::1712958882::1::::<><>::
 ::res://addons/::1713049011
 ::res://addons/dialogic/::1713049026
@@ -588,10 +588,10 @@ Scene_-_Root_baseColor.jpeg::CompressedTexture2D::8276354277585780958::171311220
 ::res://Assets/Audio/Rogue/::1713048540
 rogue_hello.mp3::AudioStreamMP3::7685598804525612176::1713048335::1713048540::1::::<><>::
 ::res://Assets/Godot-SplashScreens-main/::1713112961
-::res://Assets/Godot-SplashScreens-main/Godot-SplashScreens-main/::1713112961
+::res://Assets/Godot-SplashScreens-main/Godot-SplashScreens-main/::1713113489
 Preview.png::CompressedTexture2D::4089313494158119300::1695073277::1713113489::1::::<><>::
 README.md::TextFile::-1::1695073277::0::1::::<><>::
-::res://Assets/Godot-SplashScreens-main/Godot-SplashScreens-main/Logo/::1713112961
+::res://Assets/Godot-SplashScreens-main/Godot-SplashScreens-main/Logo/::1713113489
 original-horizontal-dark.svg::CompressedTexture2D::8190114479905708980::1695073277::1713113489::1::::<><>::
 original-horizontal-light.svg::CompressedTexture2D::4019088223457929043::1695073277::1713113489::1::::<><>::
 original-outline-horizontal-dark.svg::CompressedTexture2D::2790612676420467152::1695073277::1713113489::1::::<><>::
@@ -611,13 +611,13 @@ reimagined-vertical-light.svg::CompressedTexture2D::717928515816317789::16950732
 text-dark.svg::CompressedTexture2D::5751223758756537135::1695073278::1713113489::1::::<><>::
 text-light.svg::CompressedTexture2D::1119537003243972418::1695073278::1713113489::1::::<><>::
 ::res://Assets/Godot-SplashScreens-main/Godot-SplashScreens-main/Screen/::1713112961
-::res://Assets/Godot-SplashScreens-main/Godot-SplashScreens-main/Screen/Cog logo/::1713112961
+::res://Assets/Godot-SplashScreens-main/Godot-SplashScreens-main/Screen/Cog logo/::1713113490
 cog-blue.png::CompressedTexture2D::134618956029046881::1695073278::1713113490::1::::<><>::
 cog-dark.png::CompressedTexture2D::7063255499099287292::1695073278::1713113490::1::::<><>::
 cog-light.png::CompressedTexture2D::8533030174963123607::1695073278::1713113489::1::::<><>::
 pink-gradient.png::CompressedTexture2D::3692072808585022470::1695073278::1713113490::1::::<><>::
 ::res://Assets/Godot-SplashScreens-main/Godot-SplashScreens-main/Screen/Original logo/::1706373363
-::res://Assets/Godot-SplashScreens-main/Godot-SplashScreens-main/Screen/Reimagined logo/::1713112961
+::res://Assets/Godot-SplashScreens-main/Godot-SplashScreens-main/Screen/Reimagined logo/::1713113492
 blue-gradient.png::CompressedTexture2D::4436427085362590472::1695073278::1713113492::1::::<><>::
 blue-outline.png::CompressedTexture2D::4975638902583342217::1695073278::1713113489::1::::<><>::
 button-dark.png::CompressedTexture2D::5652075120402649763::1695073278::1713113490::1::::<><>::
@@ -636,7 +636,7 @@ traditional-dark.png::CompressedTexture2D::5887604042689119121::1695073278::1713
 traditional-light.png::CompressedTexture2D::6554453607924530889::1695073278::1713113489::1::::<><>::
 your-logo-here-dark.png::CompressedTexture2D::296385513918038764::1695073278::1713113489::1::::<><>::
 your-logo-here-light.png::CompressedTexture2D::3450622269305493244::1695073278::1713113489::1::::<><>::
-::res://Assets/Godot-SplashScreens-main/Godot-SplashScreens-main/Screen/Text logo/::1713112961
+::res://Assets/Godot-SplashScreens-main/Godot-SplashScreens-main/Screen/Text logo/::1713113489
 text-dark.png::CompressedTexture2D::800714976617587105::1695073278::1713113489::1::::<><>::
 text-light.png::CompressedTexture2D::5226868896754470671::1695073278::1713113489::1::::<><>::
 ::res://Assets/KayKit Medieval Builder Pack 1.0/::1713089981
@@ -1946,7 +1946,7 @@ contents.png::CompressedTexture2D::8668403735452300272::1713089923::1713089981::
 License.txt::TextFile::-1::1713089923::0::1::::<><>::
 ::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/::1713089974
 ::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/fbx/::1713089973
-::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/::1713090293
+::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/::1713114433
 banner_blue.gltf.glb::PackedScene::4857261305510324119::1713089927::1713090086::1::::<><>::uid://rdta7xnr6kb8::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/banner_blue_dungeon_texture.png
 banner_blue_dungeon_texture.png::CompressedTexture2D::1200558814863607123::1713090086::1713090291::1::::<><>::
 banner_brown.gltf.glb::PackedScene::217637971578355985::1713089927::1713090086::1::::<><>::uid://nkjrtff4v1k::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/banner_brown_dungeon_texture.png
@@ -2105,76 +2105,41 @@ coin_stack_medium.gltf.glb::PackedScene::7101995189440520775::1713089928::171309
 coin_stack_medium_dungeon_texture.png::CompressedTexture2D::3375221546517302916::1713090069::1713090292::1::::<><>::
 coin_stack_small.gltf.glb::PackedScene::4774874896665581526::1713089928::1713090069::1::::<><>::uid://x84g74v1dp7t::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/coin_stack_small_dungeon_texture.png
 coin_stack_small_dungeon_texture.png::CompressedTexture2D::1684241103647931943::1713090068::1713090292::1::::<><>::
-column.gltf.glb::PackedScene::5418067255111672445::1713089928::1713090068::1::::<><>::uid://dfnace7404jep::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/column_dungeon_texture.png
 column_dungeon_texture.png::CompressedTexture2D::7537047012539379923::1713090068::1713090292::1::::<><>::
 crates_stacked.gltf.glb::PackedScene::2595289175277129656::1713089928::1713090068::1::::<><>::uid://ddpeljpc1rhqa::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/crates_stacked_dungeon_texture.png
 crates_stacked_dungeon_texture.png::CompressedTexture2D::7401057256016826596::1713090068::1713090292::1::::<><>::
-floor_dirt_large.gltf.glb::PackedScene::708875670066730367::1713089928::1713090068::1::::<><>::uid://cepw07pwegsqw::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_dirt_large_dungeon_texture.png
 floor_dirt_large_dungeon_texture.png::CompressedTexture2D::5085944531862165614::1713090068::1713090292::1::::<><>::
-floor_dirt_large_rocky.gltf.glb::PackedScene::494285474867885327::1713089928::1713090067::1::::<><>::uid://c2gk3adwo74e1::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_dirt_large_rocky_dungeon_texture.png
 floor_dirt_large_rocky_dungeon_texture.png::CompressedTexture2D::6680983589948429558::1713090067::1713090292::1::::<><>::
-floor_dirt_small_A.gltf.glb::PackedScene::2554438881809856949::1713089928::1713090067::1::::<><>::uid://be4dw4dwiw8ab::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_dirt_small_A_dungeon_texture.png
 floor_dirt_small_A_dungeon_texture.png::CompressedTexture2D::2727265980379911477::1713090067::1713090292::1::::<><>::
-floor_dirt_small_B.gltf.glb::PackedScene::5182949952199592573::1713089928::1713090067::1::::<><>::uid://dbpl6hs3kdi15::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_dirt_small_B_dungeon_texture.png
 floor_dirt_small_B_dungeon_texture.png::CompressedTexture2D::7261140204315328874::1713090067::1713090292::1::::<><>::
-floor_dirt_small_C.gltf.glb::PackedScene::4836040531928616120::1713089928::1713090067::1::::<><>::uid://dw20qreuwixif::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_dirt_small_C_dungeon_texture.png
-floor_dirt_small_corner.gltf.glb::PackedScene::8960857317058226334::1713089928::1713090099::1::::<><>::uid://cldmn7mvnnfoa::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_dirt_small_corner_dungeon_texture.png
 floor_dirt_small_corner_dungeon_texture.png::CompressedTexture2D::5551865300157589960::1713090098::1713090291::1::::<><>::
 floor_dirt_small_C_dungeon_texture.png::CompressedTexture2D::8760702208011888785::1713090066::1713090292::1::::<><>::
-floor_dirt_small_D.gltf.glb::PackedScene::4040428877128059468::1713089928::1713090098::1::::<><>::uid://wwuqf122mp1s::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_dirt_small_D_dungeon_texture.png
 floor_dirt_small_D_dungeon_texture.png::CompressedTexture2D::1590814087228828082::1713090098::1713090291::1::::<><>::
-floor_dirt_small_weeds.gltf.glb::PackedScene::7728008401331757883::1713089928::1713090098::1::::<><>::uid://weilfqa885im::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_dirt_small_weeds_dungeon_texture.png
 floor_dirt_small_weeds_dungeon_texture.png::CompressedTexture2D::1552917738107089580::1713090098::1713090291::1::::<><>::
-floor_foundation_allsides.gltf.glb::PackedScene::510486655890352846::1713089928::1713090098::1::::<><>::uid://bcjicfgogd55t::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_foundation_allsides_dungeon_texture.png
 floor_foundation_allsides_dungeon_texture.png::CompressedTexture2D::2545867350815490111::1713090097::1713090291::1::::<><>::
-floor_foundation_corner.gltf.glb::PackedScene::6046531022057546977::1713089928::1713090097::1::::<><>::uid://daj83k8f2bpfg::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_foundation_corner_dungeon_texture.png
 floor_foundation_corner_dungeon_texture.png::CompressedTexture2D::7179895690331833732::1713090097::1713090291::1::::<><>::
-floor_foundation_diagonal_corner.gltf.glb::PackedScene::4950407578513460949::1713089928::1713090097::1::::<><>::uid://usgxn2km6srp::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_foundation_diagonal_corner_dungeon_texture.png
 floor_foundation_diagonal_corner_dungeon_texture.png::CompressedTexture2D::1441341772535036241::1713090097::1713090292::1::::<><>::
-floor_foundation_front.gltf.glb::PackedScene::762254573103592512::1713089928::1713090097::1::::<><>::uid://fpbl2f23ms7h::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_foundation_front_dungeon_texture.png
-floor_foundation_front_and_back.gltf.glb::PackedScene::2769654243396815096::1713089928::1713090096::1::::<><>::uid://clo0afcsh4onu::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_foundation_front_and_back_dungeon_texture.png
 floor_foundation_front_and_back_dungeon_texture.png::CompressedTexture2D::5575338127315264798::1713090096::1713090292::1::::<><>::
-floor_foundation_front_and_sides.gltf.glb::PackedScene::5627114986100132375::1713089928::1713090096::1::::<><>::uid://bdin1suhf8spw::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_foundation_front_and_sides_dungeon_texture.png
 floor_foundation_front_and_sides_dungeon_texture.png::CompressedTexture2D::2614338964829606676::1713090096::1713090292::1::::<><>::
 floor_foundation_front_dungeon_texture.png::CompressedTexture2D::381991672345922255::1713090096::1713090292::1::::<><>::
-floor_tile_big_grate.gltf.glb::PackedScene::6921453972719177688::1713089929::1713090096::1::::<><>::uid://dk8h76odvu8p2::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_tile_big_grate_dungeon_texture.png
 floor_tile_big_grate_dungeon_texture.png::CompressedTexture2D::7929758767714231917::1713090096::1713090292::1::::<><>::
-floor_tile_big_grate_open.gltf.glb::PackedScene::4557515131605143553::1713089929::1713090095::1::::<><>::uid://cudonxsb874ct::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_tile_big_grate_open_dungeon_texture.png
 floor_tile_big_grate_open_dungeon_texture.png::CompressedTexture2D::6183685862562881915::1713090095::1713090292::1::::<><>::
-floor_tile_big_spikes.glb::PackedScene::4337753314584127478::1713089929::1713090095::1::::<><>::uid://ckg6sgxsm4mdn::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_tile_big_spikes_dungeon_texture.png
 floor_tile_big_spikes_dungeon_texture.png::CompressedTexture2D::5489030792862563019::1713090095::1713090292::1::::<><>::
-floor_tile_extralarge_grates.gltf.glb::PackedScene::4899653788014355463::1713089929::1713090095::1::::<><>::uid://c5dhburxvioq0::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_tile_extralarge_grates_dungeon_texture.png
 floor_tile_extralarge_grates_dungeon_texture.png::CompressedTexture2D::6885127692334710049::1713090095::1713090292::1::::<><>::
-floor_tile_extralarge_grates_open.gltf.glb::PackedScene::5557181678305911298::1713089929::1713090095::1::::<><>::uid://nkx7j6jwpptt::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_tile_extralarge_grates_open_dungeon_texture.png
 floor_tile_extralarge_grates_open_dungeon_texture.png::CompressedTexture2D::934552902111618061::1713090094::1713090292::1::::<><>::
-floor_tile_grate.gltf.glb::PackedScene::1099325991264645296::1713089929::1713090094::1::::<><>::uid://dpv2tfeulvt8::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_tile_grate_dungeon_texture.png
 floor_tile_grate_dungeon_texture.png::CompressedTexture2D::242856476385122259::1713090094::1713090292::1::::<><>::
-floor_tile_grate_open.gltf.glb::PackedScene::6219913513816110368::1713089929::1713090094::1::::<><>::uid://pnjo5d7i76yw::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_tile_grate_open_dungeon_texture.png
 floor_tile_grate_open_dungeon_texture.png::CompressedTexture2D::1080242601223665794::1713090094::1713090292::1::::<><>::
-floor_tile_large.gltf.glb::PackedScene::1731291004323249459::1713089929::1713090094::1::::<><>::uid://bdiujbd2lkqoh::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_tile_large_dungeon_texture.png
 floor_tile_large_dungeon_texture.png::CompressedTexture2D::2614732707039781315::1713090093::1713090292::1::::<><>::
-floor_tile_large_rocks.gltf.glb::PackedScene::3439032859065695275::1713089929::1713090093::1::::<><>::uid://ccltocmp0p1e1::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_tile_large_rocks_dungeon_texture.png
 floor_tile_large_rocks_dungeon_texture.png::CompressedTexture2D::4937105958234068594::1713090093::1713090292::1::::<><>::
-floor_tile_small.gltf.glb::PackedScene::8037888750485906482::1713089929::1713090093::1::::<><>::uid://ba5n6kql1u0at::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_tile_small_dungeon_texture.png
-floor_tile_small_broken_A.gltf.glb::PackedScene::6200323683273750609::1713089929::1713090105::1::::<><>::uid://dw5glp4nq1hgi::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_tile_small_broken_A_dungeon_texture.png
 floor_tile_small_broken_A_dungeon_texture.png::CompressedTexture2D::8765732722690013856::1713090104::1713090291::1::::<><>::
-floor_tile_small_broken_B.gltf.glb::PackedScene::3431825965115708704::1713089929::1713090104::1::::<><>::uid://clgqgqa32gwpa::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_tile_small_broken_B_dungeon_texture.png
 floor_tile_small_broken_B_dungeon_texture.png::CompressedTexture2D::5558287942258746806::1713090104::1713090291::1::::<><>::
-floor_tile_small_corner.gltf.glb::PackedScene::2815256362252723553::1713089929::1713090104::1::::<><>::uid://drtudncmic1pp::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_tile_small_corner_dungeon_texture.png
 floor_tile_small_corner_dungeon_texture.png::CompressedTexture2D::8392915953939219077::1713090104::1713090291::1::::<><>::
-floor_tile_small_decorated.gltf.glb::PackedScene::7410343051671808216::1713089929::1713090104::1::::<><>::uid://dvqt7d4ni6btb::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_tile_small_decorated_dungeon_texture.png
 floor_tile_small_decorated_dungeon_texture.png::CompressedTexture2D::8667468782782409059::1713090103::1713090291::1::::<><>::
 floor_tile_small_dungeon_texture.png::CompressedTexture2D::2449197247317631639::1713090093::1713090292::1::::<><>::
-floor_tile_small_weeds_A.gltf.glb::PackedScene::1888363035642964717::1713089929::1713090103::1::::<><>::uid://dqsm2dp6crpiw::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_tile_small_weeds_A_dungeon_texture.png
 floor_tile_small_weeds_A_dungeon_texture.png::CompressedTexture2D::8320219351363500330::1713090103::1713090291::1::::<><>::
-floor_tile_small_weeds_B.gltf.glb::PackedScene::5197533142825817076::1713089929::1713090103::1::::<><>::uid://dcvrodj38odpk::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_tile_small_weeds_B_dungeon_texture.png
 floor_tile_small_weeds_B_dungeon_texture.png::CompressedTexture2D::7344049033972457044::1713090103::1713090291::1::::<><>::
-floor_wood_large.gltf.glb::PackedScene::6636078459073565015::1713089929::1713090103::1::::<><>::uid://dwpqvyby4bq0m::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_wood_large_dungeon_texture.png
-floor_wood_large_dark.gltf.glb::PackedScene::1899643701654864425::1713089929::1713090102::1::::<><>::uid://crqs3mwitdtvs::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_wood_large_dark_dungeon_texture.png
 floor_wood_large_dark_dungeon_texture.png::CompressedTexture2D::6000225326051755760::1713090102::1713090291::1::::<><>::
 floor_wood_large_dungeon_texture.png::CompressedTexture2D::8735392514217648950::1713090103::1713090291::1::::<><>::
-floor_wood_small.gltf.glb::PackedScene::819178060470869003::1713089929::1713090102::1::::<><>::uid://ckbwk4vanx5jh::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_wood_small_dungeon_texture.png
-floor_wood_small_dark.gltf.glb::PackedScene::6527541328230992676::1713089929::1713090102::1::::<><>::uid://fg78h8rwrsiy::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/floor_wood_small_dark_dungeon_texture.png
 floor_wood_small_dark_dungeon_texture.png::CompressedTexture2D::365332779126396600::1713090102::1713090291::1::::<><>::
 floor_wood_small_dungeon_texture.png::CompressedTexture2D::5478149368936855161::1713090102::1713090291::1::::<><>::
 keg.gltf.glb::PackedScene::3481873845166629361::1713089929::1713090102::1::::<><>::uid://b8451nl5t4gtk::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/keg_dungeon_texture.png
@@ -2187,8 +2152,6 @@ keyring_dungeon_texture.png::CompressedTexture2D::4372729762339704313::171309010
 keyring_hanging.gltf.glb::PackedScene::8404212163247882787::1713089929::1713090100::1::::<><>::uid://ckjpt7vdt5ks7::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/keyring_hanging_dungeon_texture.png
 keyring_hanging_dungeon_texture.png::CompressedTexture2D::5494255601879739244::1713090100::1713090291::1::::<><>::
 key_dungeon_texture.png::CompressedTexture2D::5264650506786322696::1713090101::1713090291::1::::<><>::
-pillar.gltf.glb::PackedScene::8518006171068890812::1713089929::1713090100::1::::<><>::uid://o4b2db81jwcg::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/pillar_dungeon_texture.png
-pillar_decorated.gltf.glb::PackedScene::1823509213348464063::1713089929::1713090084::1::::<><>::uid://o7oouxfdrk1c::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/pillar_decorated_dungeon_texture.png
 pillar_decorated_dungeon_texture.png::CompressedTexture2D::1049580024305136438::1713090084::1713090291::1::::<><>::
 pillar_dungeon_texture.png::CompressedTexture2D::1042619859877733354::1713090100::1713090291::1::::<><>::
 plate.gltf.glb::PackedScene::6321337446800164495::1713089929::1713090084::1::::<><>::uid://bxarr3a6v7qyd::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/plate_dungeon_texture.png
@@ -2213,20 +2176,12 @@ shelf_small_candles_dungeon_texture.png::CompressedTexture2D::398768563046944543
 shelf_small_dungeon_texture.png::CompressedTexture2D::3095535757841221095::1713090091::1713090291::1::::<><>::
 shelves.gltf.glb::PackedScene::2911172540071193832::1713089929::1713090091::1::::<><>::uid://bv2sm5580i77i::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/stairs_dungeon_texture.png
 shelves_dungeon_texture.png::CompressedTexture2D::8197603507010185669::1713090091::1713090291::1::::<><>::
-stairs.gltf.glb::PackedScene::132757316349709753::1713089929::1713090091::1::::<><>::uid://s8bhl8nv02jm::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/stairs_narrow_dungeon_texture.png
 stairs_dungeon_texture.png::CompressedTexture2D::3917240558425816888::1713090090::1713090291::1::::<><>::
-stairs_narrow.gltf.glb::PackedScene::6589853942159598735::1713089929::1713090090::1::::<><>::uid://dk5vff2lqhg64::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/stairs_walled_dungeon_texture.png
 stairs_narrow_dungeon_texture.png::CompressedTexture2D::1331597498273791266::1713090090::1713090291::1::::<><>::
-stairs_walled.gltf.glb::PackedScene::2031289288653082439::1713089929::1713090090::1::::<><>::uid://duymuwbtd7p4b::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/stairs_wall_left_dungeon_texture.png
 stairs_walled_dungeon_texture.png::CompressedTexture2D::7924366110746964651::1713090090::1713090291::1::::<><>::
-stairs_wall_left.gltf.glb::PackedScene::5867467493222621394::1713089929::1713090090::1::::<><>::uid://c3tg6w8twfksy::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/stairs_wall_right_dungeon_texture.png
 stairs_wall_left_dungeon_texture.png::CompressedTexture2D::8613349467655746663::1713090090::1713090291::1::::<><>::
-stairs_wall_right.gltf.glb::PackedScene::876409270697339364::1713089929::1713090089::1::::<><>::uid://c7ofm5xrkw62a::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/stairs_wide_dungeon_texture.png
 stairs_wall_right_dungeon_texture.png::CompressedTexture2D::6777773035531025228::1713090089::1713090291::1::::<><>::
-stairs_wide.gltf.glb::PackedScene::4241246443767101914::1713089929::1713090089::1::::<><>::uid://blyb6rmvi2pcp::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/stairs_wood_dungeon_texture.png
 stairs_wide_dungeon_texture.png::CompressedTexture2D::7048112278868439234::1713090089::1713090291::1::::<><>::
-stairs_wood.gltf.glb::PackedScene::2786423807356420506::1713089929::1713090089::1::::<><>::uid://cj1d8yd3ct2g5::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/stairs_wood_decorated_dungeon_texture.png
-stairs_wood_decorated.gltf.glb::PackedScene::3216840560355946597::1713089929::1713090089::1::::<><>::uid://ds20olxcwvea6::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/stool_dungeon_texture.png
 stairs_wood_decorated_dungeon_texture.png::CompressedTexture2D::5458457130381668174::1713090088::1713090291::1::::<><>::
 stairs_wood_dungeon_texture.png::CompressedTexture2D::3208160018813228807::1713090089::1713090291::1::::<><>::
 stool.gltf.glb::PackedScene::7723636920910546388::1713089929::1713090088::1::::<><>::uid://bs4jst3od2r0e::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/sword_shield_dungeon_texture.png
@@ -2289,70 +2244,193 @@ trunk_small_B.gltf.glb::PackedScene::5009126887034371344::1713089930::1713090032
 trunk_small_B_dungeon_texture.png::CompressedTexture2D::8095892301181394112::1713090031::1713090292::1::::<><>::
 trunk_small_C.gltf.glb::PackedScene::1080260282942613106::1713089930::1713090031::1::::<><>::uid://cvg1eu48djs51::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_dungeon_texture.png
 trunk_small_C_dungeon_texture.png::CompressedTexture2D::1421209720672437521::1713090031::1713090292::1::::<><>::
-wall.gltf.glb::PackedScene::5558663381265788288::1713089930::1713090045::1::::<><>::uid://cwnyjpq18fyv5::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_arched_dungeon_texture.png
-wall_arched.gltf.glb::PackedScene::2548246196571657628::1713089930::1713090044::1::::<><>::uid://c42k1i28aw62n::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_archedwindow_gated_dungeon_texture.png
-wall_archedwindow_gated.gltf.glb::PackedScene::2009841509333614979::1713089930::1713090044::1::::<><>::uid://pb7r3vnlr2y8::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_archedwindow_gated_scaffold_dungeon_texture.png
 wall_archedwindow_gated_dungeon_texture.png::CompressedTexture2D::6864710096214737967::1713090044::1713090292::1::::<><>::
-wall_archedwindow_gated_scaffold.gltf.glb::PackedScene::7744904207886608215::1713089930::1713090044::1::::<><>::uid://86higfn1cqc8::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_archedwindow_open_dungeon_texture.png
 wall_archedwindow_gated_scaffold_dungeon_texture.png::CompressedTexture2D::1056871838290212821::1713090044::1713090292::1::::<><>::
-wall_archedwindow_open.gltf.glb::PackedScene::2923205048365518700::1713089930::1713090043::1::::<><>::uid://dl781tuqsqf6q::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_broken_dungeon_texture.png
 wall_archedwindow_open_dungeon_texture.png::CompressedTexture2D::2380667179221151541::1713090043::1713090292::1::::<><>::
 wall_arched_dungeon_texture.png::CompressedTexture2D::6345306931989998784::1713090044::1713090292::1::::<><>::
-wall_broken.gltf.glb::PackedScene::7081170371528432078::1713089930::1713090043::1::::<><>::uid://cv5oewwmnavwa::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_corner_dungeon_texture.png
 wall_broken_dungeon_texture.png::CompressedTexture2D::7999450540221790434::1713090043::1713090292::1::::<><>::
-wall_corner.gltf.glb::PackedScene::5802570189624452269::1713089930::1713090043::1::::<><>::uid://cb3ub7xu7d5p8::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_corner_gated_dungeon_texture.png
 wall_corner_dungeon_texture.png::CompressedTexture2D::6309596787543048336::1713090043::1713090292::1::::<><>::
-wall_corner_gated.gltf.glb::PackedScene::7075312221528471525::1713089930::1713090043::1::::<><>::uid://c8k6yhg4kia50::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_corner_scaffold_dungeon_texture.png
 wall_corner_gated_dungeon_texture.png::CompressedTexture2D::4902050631016472943::1713090042::1713090292::1::::<><>::
-wall_corner_scaffold.gltf.glb::PackedScene::5335497850751770348::1713089930::1713090042::1::::<><>::uid://dmf28lxe4x13x::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_corner_small_dungeon_texture.png
 wall_corner_scaffold_dungeon_texture.png::CompressedTexture2D::7111642449074930069::1713090042::1713090292::1::::<><>::
-wall_corner_small.gltf.glb::PackedScene::2668356994140784378::1713089930::1713090042::1::::<><>::uid://bw4mply3xh78p::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_cracked_dungeon_texture.png
 wall_corner_small_dungeon_texture.png::CompressedTexture2D::8013548967018330367::1713090042::1713090292::1::::<><>::
-wall_cracked.gltf.glb::PackedScene::5534713903307403579::1713089930::1713090042::1::::<><>::uid://cvnht1y3msrso::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_crossing_dungeon_texture.png
 wall_cracked_dungeon_texture.png::CompressedTexture2D::3991198205554716441::1713090042::1713090292::1::::<><>::
-wall_crossing.gltf.glb::PackedScene::969162959243476824::1713089930::1713090041::1::::<><>::uid://bjvasmbf24gk3::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_doorway_dungeon_texture.png
 wall_crossing_dungeon_texture.png::CompressedTexture2D::6274104347592582918::1713090041::1713090292::1::::<><>::
-wall_doorway.glb::PackedScene::3624824622350900825::1713089930::1713090041::1::::<><>::uid://b8b14s3wpg1cr::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_doorway_scaffold_dungeon_texture.png
 wall_doorway_dungeon_texture.png::CompressedTexture2D::3061504985650347392::1713090041::1713090292::1::::<><>::
-wall_doorway_scaffold.glb::PackedScene::4343428604624548691::1713089930::1713090041::1::::<><>::uid://61ro11huoeqy::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_doorway_sides_dungeon_texture.png
 wall_doorway_scaffold_dungeon_texture.png::CompressedTexture2D::4706348321032116125::1713090041::1713090292::1::::<><>::
-wall_doorway_sides.gltf.glb::PackedScene::6145439494015933278::1713089930::1713090041::1::::<><>::uid://67itg62rdlgm::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_doorway_Tsplit_dungeon_texture.png
 wall_doorway_sides_dungeon_texture.png::CompressedTexture2D::2230586570493605208::1713090040::1713090292::1::::<><>::
-wall_doorway_Tsplit.gltf.glb::PackedScene::5171747367787269995::1713089930::1713090040::1::::<><>::uid://475wby5wsygs::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_endcap_dungeon_texture.png
 wall_doorway_Tsplit_dungeon_texture.png::CompressedTexture2D::2242434271213884236::1713090040::1713090292::1::::<><>::
 wall_dungeon_texture.png::CompressedTexture2D::6260780232066873014::1713090044::1713090292::1::::<><>::
-wall_endcap.gltf.glb::PackedScene::1185108683964940074::1713089930::1713090040::1::::<><>::uid://dq3wfewufebgr::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_gated_dungeon_texture.png
 wall_endcap_dungeon_texture.png::CompressedTexture2D::2103397441873607278::1713090040::1713090292::1::::<><>::
-wall_gated.gltf.glb::PackedScene::3346422117606360789::1713089930::1713090040::1::::<><>::uid://cei5xiytxfqq8::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_half_dungeon_texture.png
 wall_gated_dungeon_texture.png::CompressedTexture2D::8341431074206528209::1713090040::1713090292::1::::<><>::
-wall_half.gltf.glb::PackedScene::390110450354568675::1713089931::1713090039::1::::<><>::uid://onv4ye5onwad::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_half_endcap_dungeon_texture.png
 wall_half_dungeon_texture.png::CompressedTexture2D::5071974805169947897::1713090039::1713090292::1::::<><>::
-wall_half_endcap.gltf.glb::PackedScene::4745488984323680192::1713089931::1713090039::1::::<><>::uid://lig7yd7damye::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_half_endcap_sloped_dungeon_texture.png
 wall_half_endcap_dungeon_texture.png::CompressedTexture2D::1010808834728497123::1713090039::1713090292::1::::<><>::
-wall_half_endcap_sloped.gltf.glb::PackedScene::5237381698772336600::1713089931::1713090039::1::::<><>::uid://d4cnoqcfx6vev::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_open_scaffold_dungeon_texture.png
 wall_half_endcap_sloped_dungeon_texture.png::CompressedTexture2D::789015016065163860::1713090039::1713090292::1::::<><>::
-wall_open_scaffold.gltf.glb::PackedScene::6389113387857019739::1713089931::1713090039::1::::<><>::uid://dob2jj373lvh7::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_pillar_dungeon_texture.png
 wall_open_scaffold_dungeon_texture.png::CompressedTexture2D::9199682437833361273::1713090038::1713090292::1::::<><>::
-wall_pillar.gltf.glb::PackedScene::8603841091163644360::1713089931::1713090038::1::::<><>::uid://b5pwkv04u1miv::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_scaffold_dungeon_texture.png
 wall_pillar_dungeon_texture.png::CompressedTexture2D::8145626188172137722::1713090038::1713090292::1::::<><>::
-wall_scaffold.gltf.glb::PackedScene::8963552037118149392::1713089931::1713090038::1::::<><>::uid://ye6magb5nexc::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_shelves_dungeon_texture.png
 wall_scaffold_dungeon_texture.png::CompressedTexture2D::4524406433880733893::1713090038::1713090292::1::::<><>::
-wall_shelves.gltf.glb::PackedScene::686176036705924592::1713089931::1713090038::1::::<><>::uid://cu6sj8yi5w1b1::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_sloped_dungeon_texture.png
 wall_shelves_dungeon_texture.png::CompressedTexture2D::1694693423986503816::1713090038::1713090292::1::::<><>::
-wall_sloped.gltf.glb::PackedScene::2363461079353759748::1713089931::1713090038::1::::<><>::uid://dio1snr0cser5::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_Tsplit_dungeon_texture.png
 wall_sloped_dungeon_texture.png::CompressedTexture2D::6241724699287972276::1713090037::1713090292::1::::<><>::
-wall_Tsplit.gltf.glb::PackedScene::8367526379166482627::1713089931::1713090037::1::::<><>::uid://dedcs55ljygn7::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_Tsplit_sloped_dungeon_texture.png
 wall_Tsplit_dungeon_texture.png::CompressedTexture2D::7751285585047113216::1713090037::1713090292::1::::<><>::
-wall_Tsplit_sloped.gltf.glb::PackedScene::1134312117482685759::1713089931::1713090037::1::::<><>::uid://cwm3jcthdf7kh::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_window_closed_dungeon_texture.png
 wall_Tsplit_sloped_dungeon_texture.png::CompressedTexture2D::7446365759726837282::1713090037::1713090292::1::::<><>::
-wall_window_closed.gltf.glb::PackedScene::6742347437222571226::1713089931::1713090037::1::::<><>::uid://jqjssxl1frfl::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_window_closed_scaffold_dungeon_texture.png
 wall_window_closed_dungeon_texture.png::CompressedTexture2D::6343484743134511955::1713090037::1713090292::1::::<><>::
-wall_window_closed_scaffold.gltf.glb::PackedScene::412480334295465160::1713089931::1713090036::1::::<><>::uid://csb8j2uhtbr4f::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_window_open_dungeon_texture.png
 wall_window_closed_scaffold_dungeon_texture.png::CompressedTexture2D::665309215517989089::1713090036::1713090292::1::::<><>::
-wall_window_open.gltf.glb::PackedScene::2308721147230889932::1713089931::1713090036::1::::<><>::uid://cotn7h2yv0yui::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/wall_window_open_scaffold_dungeon_texture.png
 wall_window_open_dungeon_texture.png::CompressedTexture2D::6040326112901322683::1713090036::1713090292::1::::<><>::
-wall_window_open_scaffold.gltf.glb::PackedScene::2308721147230889932::1713089931::1713090036::0::::<><>::
 wall_window_open_scaffold_dungeon_texture.png::CompressedTexture2D::5795555232449406440::1713090036::1713090292::1::::<><>::
+::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/::1713114433
+column.gltf.glb::PackedScene::7873728596909540901::1713089928::1713114462::1::::<><>::uid://klqf0xybitvy::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/column_dungeon_texture.png
+floor_dirt_large.gltf.glb::PackedScene::7783533628711947209::1713089928::1713114462::1::::<><>::uid://8774bdpisttw::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_dirt_large_dungeon_texture.png
+floor_dirt_large_rocky.gltf.glb::PackedScene::6924382877836989078::1713089928::1713114462::1::::<><>::uid://bk3cintgheuca::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_dirt_large_rocky_dungeon_texture.png
+floor_dirt_small_A.gltf.glb::PackedScene::4225594183518559074::1713089928::1713114461::1::::<><>::uid://ty6aq81yuthm::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_dirt_small_A_dungeon_texture.png
+floor_dirt_small_B.gltf.glb::PackedScene::1001972206261948623::1713089928::1713114461::1::::<><>::uid://q1pjanhtna7q::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_dirt_small_B_dungeon_texture.png
+floor_dirt_small_C.gltf.glb::PackedScene::1247294422635488429::1713089928::1713114461::1::::<><>::uid://cs8yvwais5ygm::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_dirt_small_C_dungeon_texture.png
+floor_dirt_small_corner.gltf.glb::PackedScene::7038301937448221188::1713089928::1713114460::1::::<><>::uid://yv8o8god122j::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_dirt_small_corner_dungeon_texture.png
+floor_dirt_small_D.gltf.glb::PackedScene::6161364595309324026::1713089928::1713114460::1::::<><>::uid://btallwefwampe::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_dirt_small_D_dungeon_texture.png
+floor_dirt_small_weeds.gltf.glb::PackedScene::95829794194021243::1713089928::1713114460::1::::<><>::uid://guok0mp1sjyg::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_dirt_small_weeds_dungeon_texture.png
+floor_foundation_allsides.gltf.glb::PackedScene::7960811069896352611::1713089928::1713114459::1::::<><>::uid://c5qp1vjgrn2x7::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_foundation_allsides_dungeon_texture.png
+floor_foundation_corner.gltf.glb::PackedScene::557207605600528966::1713089928::1713114459::1::::<><>::uid://7h6pg4paj12s::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_foundation_corner_dungeon_texture.png
+floor_foundation_diagonal_corner.gltf.glb::PackedScene::3152211698203299564::1713089928::1713114459::1::::<><>::uid://dw6pdw2drlsp::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_foundation_diagonal_corner_dungeon_texture.png
+floor_foundation_front.gltf.glb::PackedScene::659978373110459484::1713089928::1713114459::1::::<><>::uid://blvv2rqpkqf6q::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_foundation_front_dungeon_texture.png
+floor_foundation_front_and_back.gltf.glb::PackedScene::6498268278058324995::1713089928::1713114458::1::::<><>::uid://rouer6cb7t60::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_foundation_front_and_back_dungeon_texture.png
+floor_foundation_front_and_sides.gltf.glb::PackedScene::2655422640637584062::1713089928::1713114458::1::::<><>::uid://l44c5wn5ps3d::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_foundation_front_and_sides_dungeon_texture.png
+floor_tile_big_grate.gltf.glb::PackedScene::3113026024595731701::1713089929::1713114458::1::::<><>::uid://db2r1pqng15lq::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_tile_big_grate_dungeon_texture.png
+floor_tile_big_grate_open.gltf.glb::PackedScene::121112975745621515::1713089929::1713114457::1::::<><>::uid://1u2xf5qajyqb::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_tile_big_grate_open_dungeon_texture.png
+floor_tile_big_spikes.glb::PackedScene::5296966834636748114::1713089929::1713114457::1::::<><>::uid://bftnn2nmhx41::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_tile_big_spikes_dungeon_texture.png
+floor_tile_extralarge_grates.gltf.glb::PackedScene::8961594859098330880::1713089929::1713114457::1::::<><>::uid://ce8737ho0g2i0::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_tile_extralarge_grates_dungeon_texture.png
+floor_tile_extralarge_grates_open.gltf.glb::PackedScene::1414735302857029740::1713089929::1713114469::1::::<><>::uid://dfrxhbfvkk6np::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_tile_extralarge_grates_open_dungeon_texture.png
+floor_tile_grate.gltf.glb::PackedScene::3844483056630019892::1713089929::1713114468::1::::<><>::uid://dmiony5a2bkjs::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_tile_grate_dungeon_texture.png
+floor_tile_grate_open.gltf.glb::PackedScene::576319929843467438::1713089929::1713114468::1::::<><>::uid://7cuakre16c0g::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_tile_grate_open_dungeon_texture.png
+floor_tile_large.gltf.glb::PackedScene::3466579835994142509::1713089929::1713114468::1::::<><>::uid://dqj1cqkkk45a4::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_tile_large_dungeon_texture.png
+floor_tile_large_rocks.gltf.glb::PackedScene::1982258708135492203::1713089929::1713114468::1::::<><>::uid://kkgcaipjlc64::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_tile_large_rocks_dungeon_texture.png
+floor_tile_small.gltf.glb::PackedScene::6975470235662533987::1713089929::1713114467::1::::<><>::uid://gv2nf7n76817::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_tile_small_dungeon_texture.png
+floor_tile_small_broken_A.gltf.glb::PackedScene::4921278790150745556::1713089929::1713114467::1::::<><>::uid://ddwvc4ox25uoa::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_tile_small_broken_A_dungeon_texture.png
+floor_tile_small_broken_B.gltf.glb::PackedScene::539041252929486218::1713089929::1713114467::1::::<><>::uid://c6epv5mq10sl1::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_tile_small_broken_B_dungeon_texture.png
+floor_tile_small_corner.gltf.glb::PackedScene::5590465310723867112::1713089929::1713114466::1::::<><>::uid://bnr06rqu25ryd::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_tile_small_corner_dungeon_texture.png
+floor_tile_small_decorated.gltf.glb::PackedScene::3017452433726866794::1713089929::1713114466::1::::<><>::uid://duboevrsk3yhy::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_tile_small_decorated_dungeon_texture.png
+floor_tile_small_weeds_A.gltf.glb::PackedScene::2439811309267652740::1713089929::1713114466::1::::<><>::uid://bccg16x0vry3c::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_tile_small_weeds_A_dungeon_texture.png
+floor_tile_small_weeds_B.gltf.glb::PackedScene::1852332551097819304::1713089929::1713114465::1::::<><>::uid://bvrc1qgucpefp::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_tile_small_weeds_B_dungeon_texture.png
+floor_wood_large.gltf.glb::PackedScene::7263763560078263405::1713089929::1713114465::1::::<><>::uid://bequapey65n56::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_wood_large_dungeon_texture.png
+floor_wood_large_dark.gltf.glb::PackedScene::4729795267855625986::1713089929::1713114465::1::::<><>::uid://b1uykjddu7cof::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_wood_large_dark_dungeon_texture.png
+floor_wood_small.gltf.glb::PackedScene::3969070362507782971::1713089929::1713114464::1::::<><>::uid://csuqa15dsa8n2::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_wood_small_dungeon_texture.png
+floor_wood_small_dark.gltf.glb::PackedScene::2636726487770822380::1713089929::1713114464::1::::<><>::uid://c0nrcukhkf0on::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/floor_wood_small_dark_dungeon_texture.png
+pillar.gltf.glb::PackedScene::9146731057856213086::1713089929::1713114464::1::::<><>::uid://bk5r322uw1n6u::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/pillar_dungeon_texture.png
+pillar_decorated.gltf.glb::PackedScene::4115851063269507058::1713089929::1713114463::1::::<><>::uid://bcbg6djj7t1w0::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/pillar_decorated_dungeon_texture.png
+floor_tile_extralarge_grates_dungeon_texture.png::CompressedTexture2D::5123715846050775381::1713114456::1713114470::1::::<><>::
+floor_tile_big_spikes_dungeon_texture.png::CompressedTexture2D::81688295711928104::1713114457::1713114470::1::::<><>::
+floor_tile_big_grate_open_dungeon_texture.png::CompressedTexture2D::1867878231422776649::1713114457::1713114470::1::::<><>::
+floor_tile_big_grate_dungeon_texture.png::CompressedTexture2D::7286268526762365006::1713114457::1713114470::1::::<><>::
+floor_foundation_front_and_sides_dungeon_texture.png::CompressedTexture2D::833710209581690363::1713114458::1713114470::1::::<><>::
+floor_foundation_front_and_back_dungeon_texture.png::CompressedTexture2D::1223334054313713555::1713114458::1713114470::1::::<><>::
+floor_foundation_front_dungeon_texture.png::CompressedTexture2D::3203174088139594050::1713114458::1713114470::1::::<><>::
+floor_foundation_diagonal_corner_dungeon_texture.png::CompressedTexture2D::257892047974940599::1713114459::1713114470::1::::<><>::
+floor_foundation_corner_dungeon_texture.png::CompressedTexture2D::2262403015001133560::1713114459::1713114470::1::::<><>::
+floor_foundation_allsides_dungeon_texture.png::CompressedTexture2D::6912495023314620306::1713114459::1713114470::1::::<><>::
+floor_dirt_small_weeds_dungeon_texture.png::CompressedTexture2D::463289845085570666::1713114460::1713114470::1::::<><>::
+floor_dirt_small_D_dungeon_texture.png::CompressedTexture2D::3720697405418613042::1713114460::1713114470::1::::<><>::
+floor_dirt_small_corner_dungeon_texture.png::CompressedTexture2D::1729914585204534603::1713114460::1713114470::1::::<><>::
+floor_dirt_small_C_dungeon_texture.png::CompressedTexture2D::6105860884155603272::1713114461::1713114470::1::::<><>::
+floor_dirt_small_B_dungeon_texture.png::CompressedTexture2D::1177622167277121160::1713114461::1713114470::1::::<><>::
+floor_dirt_small_A_dungeon_texture.png::CompressedTexture2D::1385016214562159718::1713114461::1713114470::1::::<><>::
+floor_dirt_large_rocky_dungeon_texture.png::CompressedTexture2D::3146248129960853796::1713114461::1713114470::1::::<><>::
+floor_dirt_large_dungeon_texture.png::CompressedTexture2D::2384286717827465880::1713114462::1713114470::1::::<><>::
+column_dungeon_texture.png::CompressedTexture2D::725578342235148094::1713114462::1713114470::1::::<><>::
+pillar_decorated_dungeon_texture.png::CompressedTexture2D::2529282582216625509::1713114463::1713114470::1::::<><>::
+pillar_dungeon_texture.png::CompressedTexture2D::3151324104580904150::1713114463::1713114470::1::::<><>::
+floor_wood_small_dark_dungeon_texture.png::CompressedTexture2D::6555436195851312757::1713114464::1713114470::1::::<><>::
+floor_wood_small_dungeon_texture.png::CompressedTexture2D::6078500991947879129::1713114464::1713114470::1::::<><>::
+floor_wood_large_dark_dungeon_texture.png::CompressedTexture2D::4254093716637440713::1713114464::1713114470::1::::<><>::
+floor_wood_large_dungeon_texture.png::CompressedTexture2D::2701421237328057903::1713114465::1713114470::1::::<><>::
+floor_tile_small_weeds_B_dungeon_texture.png::CompressedTexture2D::3895649537092261857::1713114465::1713114470::1::::<><>::
+floor_tile_small_weeds_A_dungeon_texture.png::CompressedTexture2D::2531339523994413010::1713114465::1713114470::1::::<><>::
+floor_tile_small_decorated_dungeon_texture.png::CompressedTexture2D::8565961612752718310::1713114466::1713114470::1::::<><>::
+floor_tile_small_corner_dungeon_texture.png::CompressedTexture2D::3335544275796563863::1713114466::1713114470::1::::<><>::
+floor_tile_small_broken_B_dungeon_texture.png::CompressedTexture2D::6957902882745817536::1713114466::1713114470::1::::<><>::
+floor_tile_small_broken_A_dungeon_texture.png::CompressedTexture2D::7416525066905335468::1713114467::1713114470::1::::<><>::
+floor_tile_small_dungeon_texture.png::CompressedTexture2D::466147881474080560::1713114467::1713114470::1::::<><>::
+floor_tile_large_rocks_dungeon_texture.png::CompressedTexture2D::722900100517759627::1713114467::1713114470::1::::<><>::
+floor_tile_large_dungeon_texture.png::CompressedTexture2D::8302446018764635741::1713114468::1713114470::1::::<><>::
+floor_tile_grate_open_dungeon_texture.png::CompressedTexture2D::2251386643493369656::1713114468::1713114470::1::::<><>::
+floor_tile_grate_dungeon_texture.png::CompressedTexture2D::8018917756928332324::1713114468::1713114470::1::::<><>::
+floor_tile_extralarge_grates_open_dungeon_texture.png::CompressedTexture2D::7546709743694753045::1713114469::1713114470::1::::<><>::
+stairs_dungeon_texture.png::CompressedTexture2D::2357132339588895214::1713114463::1713114470::1::::<><>::
+stairs_narrow_dungeon_texture.png::CompressedTexture2D::3047933601383734034::1713114462::1713114470::1::::<><>::
+wall_doorway_scaffold_dungeon_texture.png::CompressedTexture2D::3681181864312573952::1713114456::1713114470::1::::<><>::
+wall_doorway_sides_dungeon_texture.png::CompressedTexture2D::8583689299641409491::1713114456::1713114470::1::::<><>::
+wall_doorway_Tsplit_dungeon_texture.png::CompressedTexture2D::2096465333075030805::1713114455::1713114470::1::::<><>::
+wall_endcap_dungeon_texture.png::CompressedTexture2D::5432745533194533311::1713114455::1713114470::1::::<><>::
+wall_gated_dungeon_texture.png::CompressedTexture2D::3271869439395326060::1713114455::1713114470::1::::<><>::
+wall_half_dungeon_texture.png::CompressedTexture2D::7492904082085108150::1713114454::1713114470::1::::<><>::
+wall_half_endcap_dungeon_texture.png::CompressedTexture2D::5757620486620121167::1713114454::1713114470::1::::<><>::
+wall_half_endcap_sloped_dungeon_texture.png::CompressedTexture2D::5321918675955876936::1713114454::1713114470::1::::<><>::
+wall_open_scaffold_dungeon_texture.png::CompressedTexture2D::7845237104805130750::1713114453::1713114470::1::::<><>::
+wall_pillar_dungeon_texture.png::CompressedTexture2D::1007711032624570791::1713114453::1713114470::1::::<><>::
+wall_scaffold_dungeon_texture.png::CompressedTexture2D::7389894198966282399::1713114453::1713114470::1::::<><>::
+wall_shelves_dungeon_texture.png::CompressedTexture2D::8859923100359449128::1713114452::1713114470::1::::<><>::
+wall_sloped_dungeon_texture.png::CompressedTexture2D::1118659167870861856::1713114452::1713114470::1::::<><>::
+wall_Tsplit_dungeon_texture.png::CompressedTexture2D::9154215202026455537::1713114452::1713114470::1::::<><>::
+wall_Tsplit_sloped_dungeon_texture.png::CompressedTexture2D::5052661272679475681::1713114452::1713114470::1::::<><>::
+wall_window_closed_dungeon_texture.png::CompressedTexture2D::192161787389004799::1713114451::1713114470::1::::<><>::
+wall_window_closed_scaffold_dungeon_texture.png::CompressedTexture2D::2299408070222935907::1713114451::1713114470::1::::<><>::
+wall_window_open_dungeon_texture.png::CompressedTexture2D::7445359520639554326::1713114451::1713114470::1::::<><>::
+wall_window_open_scaffold_dungeon_texture.png::CompressedTexture2D::713165603392929010::1713114450::1713114470::1::::<><>::
+stairs_walled_dungeon_texture.png::CompressedTexture2D::3502019972615701679::1713114450::1713114470::1::::<><>::
+stairs_wall_left_dungeon_texture.png::CompressedTexture2D::4839795691201160250::1713114450::1713114470::1::::<><>::
+stairs_wall_right_dungeon_texture.png::CompressedTexture2D::5535692453249898922::1713114449::1713114470::1::::<><>::
+stairs_wide_dungeon_texture.png::CompressedTexture2D::4042312370319532193::1713114449::1713114470::1::::<><>::
+stairs_wood_dungeon_texture.png::CompressedTexture2D::7279224160622742336::1713114449::1713114470::1::::<><>::
+stairs_wood_decorated_dungeon_texture.png::CompressedTexture2D::8534262196014704180::1713114448::1713114470::1::::<><>::
+wall_dungeon_texture.png::CompressedTexture2D::2352719553739508523::1713114448::1713114470::1::::<><>::
+wall_arched_dungeon_texture.png::CompressedTexture2D::4267015324982597779::1713114448::1713114470::1::::<><>::
+wall_archedwindow_gated_dungeon_texture.png::CompressedTexture2D::7102614803412487180::1713114447::1713114470::1::::<><>::
+wall_archedwindow_gated_scaffold_dungeon_texture.png::CompressedTexture2D::3011723000229535967::1713114447::1713114470::1::::<><>::
+wall_archedwindow_open_dungeon_texture.png::CompressedTexture2D::1547983480914178374::1713114447::1713114470::1::::<><>::
+wall_broken_dungeon_texture.png::CompressedTexture2D::4238853676366875348::1713114446::1713114470::1::::<><>::
+wall_corner_dungeon_texture.png::CompressedTexture2D::6202412376002071195::1713114446::1713114470::1::::<><>::
+wall_corner_gated_dungeon_texture.png::CompressedTexture2D::5571645581250742612::1713114446::1713114470::1::::<><>::
+wall_corner_scaffold_dungeon_texture.png::CompressedTexture2D::5530986007606566673::1713114445::1713114470::1::::<><>::
+wall_corner_small_dungeon_texture.png::CompressedTexture2D::4739494493483168626::1713114445::1713114470::1::::<><>::
+wall_cracked_dungeon_texture.png::CompressedTexture2D::7378709979575149820::1713114445::1713114470::1::::<><>::
+wall_crossing_dungeon_texture.png::CompressedTexture2D::4793126407801694691::1713114444::1713114470::1::::<><>::
+wall_doorway_dungeon_texture.png::CompressedTexture2D::7373994326295351818::1713114444::1713114470::1::::<><>::
+stairs.gltf.glb::PackedScene::2862964551423714044::1713089929::1713114463::1::::<><>::uid://bjopayns4oera::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/stairs_narrow_dungeon_texture.png
+stairs_narrow.gltf.glb::PackedScene::4257125107846828862::1713089929::1713114450::1::::<><>::uid://bp5n00o24fli2::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/stairs_walled_dungeon_texture.png
+stairs_walled.gltf.glb::PackedScene::8714153287912524696::1713089929::1713114450::1::::<><>::uid://ca7oy0qurn6cc::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/stairs_wall_left_dungeon_texture.png
+stairs_wall_left.gltf.glb::PackedScene::7772414392532997319::1713089929::1713114449::1::::<><>::uid://ck4sbtdih1k5g::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/stairs_wall_right_dungeon_texture.png
+stairs_wall_right.gltf.glb::PackedScene::322118709723316781::1713089929::1713114449::1::::<><>::uid://bxuekabje8i70::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/stairs_wide_dungeon_texture.png
+stairs_wide.gltf.glb::PackedScene::5903577075070039985::1713089929::1713114449::1::::<><>::uid://dbyd01y3usmuy::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/stairs_wood_dungeon_texture.png
+stairs_wood.gltf.glb::PackedScene::4735580986178530448::1713089929::1713114449::1::::<><>::uid://dtucb0sbmlnno::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/stairs_wood_decorated_dungeon_texture.png
+stairs_wood_decorated.gltf.glb::PackedScene::7656913423752490266::1713089930::1713114448::1::::<><>::uid://8rw7hdhc07it::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_dungeon_texture.png
+wall.gltf.glb::PackedScene::656668315990794922::1713089930::1713114448::1::::<><>::uid://b118ebssh4wxv::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_arched_dungeon_texture.png
+wall_arched.gltf.glb::PackedScene::8642116561444022840::1713089930::1713114448::1::::<><>::uid://c8gta7qywjofc::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_archedwindow_gated_dungeon_texture.png
+wall_archedwindow_gated.gltf.glb::PackedScene::8786658088551986195::1713089930::1713114447::1::::<><>::uid://bi55vxj6e61xr::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_archedwindow_gated_scaffold_dungeon_texture.png
+wall_archedwindow_gated_scaffold.gltf.glb::PackedScene::6534558429510662220::1713089930::1713114447::1::::<><>::uid://wb4cdnyb2lso::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_archedwindow_open_dungeon_texture.png
+wall_archedwindow_open.gltf.glb::PackedScene::8142827463320016793::1713089930::1713114447::1::::<><>::uid://b1nlkhwra3vaa::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_broken_dungeon_texture.png
+wall_broken.gltf.glb::PackedScene::1739665068490377851::1713089930::1713114446::1::::<><>::uid://cumq3cpko2lfn::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_corner_dungeon_texture.png
+wall_corner.gltf.glb::PackedScene::2815072944231326766::1713089930::1713114446::1::::<><>::uid://clm7goeqyi7xg::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_corner_gated_dungeon_texture.png
+wall_corner_gated.gltf.glb::PackedScene::1134975878495587622::1713089930::1713114446::1::::<><>::uid://ck2iscmouve38::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_corner_scaffold_dungeon_texture.png
+wall_corner_scaffold.gltf.glb::PackedScene::915728255267004924::1713089930::1713114445::1::::<><>::uid://b8r31t3gev5co::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_corner_small_dungeon_texture.png
+wall_corner_small.gltf.glb::PackedScene::2845463127174785080::1713089930::1713114445::1::::<><>::uid://ddekjmjg2ooe3::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_cracked_dungeon_texture.png
+wall_cracked.gltf.glb::PackedScene::1596740103774398679::1713089930::1713114445::1::::<><>::uid://caj3dd7j20eb0::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_crossing_dungeon_texture.png
+wall_crossing.gltf.glb::PackedScene::309632507729942241::1713089930::1713114444::1::::<><>::uid://ddcauyh86xahu::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_doorway_dungeon_texture.png
+wall_doorway.glb::PackedScene::1879711867108047195::1713089930::1713114456::1::::<><>::uid://bspgr608uygpk::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_doorway_scaffold_dungeon_texture.png
+wall_doorway_scaffold.glb::PackedScene::2136547315696481606::1713089930::1713114456::1::::<><>::uid://dukadxvi3hu7l::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_doorway_sides_dungeon_texture.png
+wall_doorway_sides.gltf.glb::PackedScene::1921280713681648192::1713089930::1713114456::1::::<><>::uid://44sqija6pxar::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_doorway_Tsplit_dungeon_texture.png
+wall_doorway_Tsplit.gltf.glb::PackedScene::3920953205097258888::1713089930::1713114455::1::::<><>::uid://cjnwr4emsjk20::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_endcap_dungeon_texture.png
+wall_endcap.gltf.glb::PackedScene::854303160773067627::1713089930::1713114455::1::::<><>::uid://bmu6hgwlepupg::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_gated_dungeon_texture.png
+wall_gated.gltf.glb::PackedScene::3287086501154416698::1713089931::1713114455::1::::<><>::uid://de0vbhbqsxaew::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_half_dungeon_texture.png
+wall_half.gltf.glb::PackedScene::8608640806006814969::1713089931::1713114454::1::::<><>::uid://cobbfyps1bun4::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_half_endcap_dungeon_texture.png
+wall_half_endcap.gltf.glb::PackedScene::3861121290651527665::1713089931::1713114454::1::::<><>::uid://ch28ht32ag73a::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_half_endcap_sloped_dungeon_texture.png
+wall_half_endcap_sloped.gltf.glb::PackedScene::2904034947177899813::1713089931::1713114454::1::::<><>::uid://dj1j55x5x32ys::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_open_scaffold_dungeon_texture.png
+wall_open_scaffold.gltf.glb::PackedScene::2603428275315419064::1713089931::1713114453::1::::<><>::uid://ome4avet2fnr::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_pillar_dungeon_texture.png
+wall_pillar.gltf.glb::PackedScene::2939966074123420212::1713089931::1713114453::1::::<><>::uid://ddjyqikwril8b::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_scaffold_dungeon_texture.png
+wall_scaffold.gltf.glb::PackedScene::3603750396480144759::1713089931::1713114453::1::::<><>::uid://dyh2vyxyxeef5::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_shelves_dungeon_texture.png
+wall_shelves.gltf.glb::PackedScene::2375701834637980999::1713089931::1713114452::1::::<><>::uid://p65fg60fkfw7::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_sloped_dungeon_texture.png
+wall_sloped.gltf.glb::PackedScene::3945478529170031993::1713089931::1713114452::1::::<><>::uid://d3omt7qxoft3f::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_Tsplit_dungeon_texture.png
+wall_Tsplit.gltf.glb::PackedScene::844939833400361370::1713089931::1713114452::1::::<><>::uid://cd8sufpvdiv3f::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_Tsplit_sloped_dungeon_texture.png
+wall_Tsplit_sloped.gltf.glb::PackedScene::2233783680839269784::1713089931::1713114451::1::::<><>::uid://c0c42ko3q1l8::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_window_closed_dungeon_texture.png
+wall_window_closed.gltf.glb::PackedScene::6854703047568222172::1713089931::1713114451::1::::<><>::uid://7036dx62tmrj::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_window_closed_scaffold_dungeon_texture.png
+wall_window_closed_scaffold.gltf.glb::PackedScene::8180190712576694319::1713089931::1713114451::1::::<><>::uid://dect8o7o6kqn3::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_window_open_dungeon_texture.png
+wall_window_open.gltf.glb::PackedScene::9160531445997171022::1713089931::1713114450::1::::<><>::uid://kfpy6xl7ewvq::::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/tiles/wall_window_open_scaffold_dungeon_texture.png
+wall_window_open_scaffold.gltf.glb::::-1::0::0::0::::<><>::
 ::res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/obj/::1713090031
 banner_blue.obj::Mesh::5315435851438128297::1713089931::1713090028::1::::<><>::
 banner_brown.obj::Mesh::4746460052198503994::1713089931::1713090028::1::::<><>::
@@ -2582,7 +2660,7 @@ extra_content2.png::CompressedTexture2D::8236946288111293123::1713089938::171308
 source_content.png::CompressedTexture2D::3854361510718451041::1713089938::1713089981::1::::<><>::
 ::res://Assets/kenney_fontpackage/::1713112942
 License.txt::TextFile::-1::1659559985::0::1::::<><>::
-::res://Assets/kenney_fontpackage/Fonts/::1713112942
+::res://Assets/kenney_fontpackage/Fonts/::1713113480
 Kenney Blocks.ttf::FontFile::4447834576760299467::1659559985::1713113480::1::::<><>::
 Kenney Future Narrow.ttf::FontFile::1195891590008435722::1659559985::1713113480::1::::<><>::
 Kenney Future.ttf::FontFile::7051896978852931997::1659559985::1713113480::1::::<><>::
@@ -2595,7 +2673,7 @@ Kenney Pixel Square.ttf::FontFile::1999537116474067160::1659559985::1713113480::
 Kenney Pixel.ttf::FontFile::7498711576484462966::1659559985::1713113480::1::::<><>::
 Kenney Rocket Square.ttf::FontFile::4417906592406960162::1659559985::1713113480::1::::<><>::
 Kenney Rocket.ttf::FontFile::530227166043786927::1659559985::1713113480::1::::<><>::
-::res://Assets/kenney_input-prompts/::1713113344
+::res://Assets/kenney_input-prompts/::1713113484
 License.txt::TextFile::-1::1713113148::0::1::::<><>::
 Preview Flairs & Overlays.png::CompressedTexture2D::8014714526099844753::1713113148::1713113484::1::::<><>::
 Preview Generic.png::CompressedTexture2D::208323288022923044::1713113148::1713113484::1::::<><>::
@@ -2609,7 +2687,7 @@ Preview Steam Controller.png::CompressedTexture2D::6595987507155141843::17131131
 Preview Steam Deck.png::CompressedTexture2D::786688699165080509::1713113148::1713113484::1::::<><>::
 Preview Xbox Series.png::CompressedTexture2D::2837595786520603740::1713113148::1713113484::1::::<><>::
 ::res://Assets/kenney_input-prompts/Flairs/::1713113338
-::res://Assets/kenney_input-prompts/Flairs/Default/::1713113338
+::res://Assets/kenney_input-prompts/Flairs/Default/::1713113490
 controller_battery_empty.png::CompressedTexture2D::7873023888583099683::1713113148::1713113489::1::::<><>::
 controller_battery_full.png::CompressedTexture2D::1275620924559753583::1713113148::1713113489::1::::<><>::
 controller_battery_half.png::CompressedTexture2D::82707322779728260::1713113148::1713113489::1::::<><>::
@@ -2703,7 +2781,7 @@ flair_small_info.png::CompressedTexture2D::2279431920984024739::1713113150::1713
 flair_small_info_outline.png::CompressedTexture2D::94577974677413940::1713113150::1713113487::1::::<><>::
 flair_small_rotate.png::CompressedTexture2D::918666988367333087::1713113150::1713113487::1::::<><>::
 flair_small_rotate_outline.png::CompressedTexture2D::4939678724318187604::1713113150::1713113487::1::::<><>::
-::res://Assets/kenney_input-prompts/Flairs/Double/::1713113338
+::res://Assets/kenney_input-prompts/Flairs/Double/::1713113490
 controller_battery_empty.png::CompressedTexture2D::6627660339654487981::1713113150::1713113488::1::::<><>::
 controller_battery_full.png::CompressedTexture2D::5595557466864419150::1713113150::1713113487::1::::<><>::
 controller_battery_half.png::CompressedTexture2D::8057862047385582247::1713113150::1713113488::1::::<><>::
@@ -2797,7 +2875,7 @@ flair_small_info.png::CompressedTexture2D::2083026063927511609::1713113151::1713
 flair_small_info_outline.png::CompressedTexture2D::4117002987256846651::1713113151::1713113490::1::::<><>::
 flair_small_rotate.png::CompressedTexture2D::6588045045616513942::1713113151::1713113490::1::::<><>::
 flair_small_rotate_outline.png::CompressedTexture2D::2000430204923813731::1713113151::1713113490::1::::<><>::
-::res://Assets/kenney_input-prompts/Flairs/Vector/::1713113339
+::res://Assets/kenney_input-prompts/Flairs/Vector/::1713113491
 controller_battery_empty.svg::CompressedTexture2D::8231841994239005293::1713113151::1713113490::1::::<><>::
 controller_battery_full.svg::CompressedTexture2D::3321696784620877185::1713113151::1713113490::1::::<><>::
 controller_battery_half.svg::CompressedTexture2D::2117083845454535408::1713113151::1713113490::1::::<><>::
@@ -2892,7 +2970,7 @@ flair_small_info_outline.svg::CompressedTexture2D::7666085163038703186::17131131
 flair_small_rotate.svg::CompressedTexture2D::3218938643536752339::1713113153::1713113490::1::::<><>::
 flair_small_rotate_outline.svg::CompressedTexture2D::7731492085536343963::1713113153::1713113490::1::::<><>::
 ::res://Assets/kenney_input-prompts/Generic/::1713113339
-::res://Assets/kenney_input-prompts/Generic/Default/::1713113339
+::res://Assets/kenney_input-prompts/Generic/Default/::1713113490
 generic_button.png::CompressedTexture2D::544193351856311926::1713113153::1713113490::1::::<><>::
 generic_button_circle.png::CompressedTexture2D::5009960565005186756::1713113153::1713113490::1::::<><>::
 generic_button_circle_fill.png::CompressedTexture2D::2222961801512322936::1713113153::1713113490::1::::<><>::
@@ -2929,7 +3007,7 @@ generic_stick_right.png::CompressedTexture2D::3296999367117052503::1713113154::1
 generic_stick_side.png::CompressedTexture2D::7160985133432659934::1713113154::1713113490::1::::<><>::
 generic_stick_up.png::CompressedTexture2D::8728497715512886747::1713113154::1713113490::1::::<><>::
 generic_stick_vertical.png::CompressedTexture2D::3747303452110437441::1713113154::1713113490::1::::<><>::
-::res://Assets/kenney_input-prompts/Generic/Double/::1713113339
+::res://Assets/kenney_input-prompts/Generic/Double/::1713113490
 generic_button.png::CompressedTexture2D::2681592980424930200::1713113154::1713113490::1::::<><>::
 generic_button_circle.png::CompressedTexture2D::6355346021047225194::1713113154::1713113490::1::::<><>::
 generic_button_circle_fill.png::CompressedTexture2D::3391967366322829782::1713113154::1713113490::1::::<><>::
@@ -2966,7 +3044,7 @@ generic_stick_right.png::CompressedTexture2D::8450940321323161585::1713113155::1
 generic_stick_side.png::CompressedTexture2D::9208725332101990989::1713113155::1713113490::1::::<><>::
 generic_stick_up.png::CompressedTexture2D::6336313987381575997::1713113155::1713113490::1::::<><>::
 generic_stick_vertical.png::CompressedTexture2D::1628046767282521960::1713113155::1713113490::1::::<><>::
-::res://Assets/kenney_input-prompts/Generic/Vector/::1713113339
+::res://Assets/kenney_input-prompts/Generic/Vector/::1713113490
 generic_button.svg::CompressedTexture2D::1218967933793215210::1713113155::1713113490::1::::<><>::
 generic_button_circle.svg::CompressedTexture2D::7486475855922989160::1713113155::1713113490::1::::<><>::
 generic_button_circle_fill.svg::CompressedTexture2D::3864657621763656419::1713113155::1713113490::1::::<><>::
@@ -3004,7 +3082,7 @@ generic_stick_side.svg::CompressedTexture2D::87185449566496425::1713113155::1713
 generic_stick_up.svg::CompressedTexture2D::7224000526481671011::1713113155::1713113486::1::::<><>::
 generic_stick_vertical.svg::CompressedTexture2D::3392589944910910166::1713113155::1713113486::1::::<><>::
 ::res://Assets/kenney_input-prompts/Keyboard & Mouse/::1713113340
-::res://Assets/kenney_input-prompts/Keyboard & Mouse/Default/::1713113339
+::res://Assets/kenney_input-prompts/Keyboard & Mouse/Default/::1713113487
 keyboard_0.png::CompressedTexture2D::6814732685540663981::1713113155::1713113486::1::::<><>::
 keyboard_0_outline.png::CompressedTexture2D::635942549559705948::1713113155::1713113486::1::::<><>::
 keyboard_1.png::CompressedTexture2D::4268481621040827836::1713113155::1713113486::1::::<><>::
@@ -3246,7 +3324,7 @@ mouse_scroll_vertical.png::CompressedTexture2D::9048008254107068116::1713113159:
 mouse_scroll_vertical_outline.png::CompressedTexture2D::1453281352852466869::1713113159::1713113487::1::::<><>::
 mouse_small.png::CompressedTexture2D::6865413297882347289::1713113159::1713113487::1::::<><>::
 mouse_vertical.png::CompressedTexture2D::2602681346749087589::1713113159::1713113487::1::::<><>::
-::res://Assets/kenney_input-prompts/Keyboard & Mouse/Double/::1713113340
+::res://Assets/kenney_input-prompts/Keyboard & Mouse/Double/::1713113493
 keyboard_0.png::CompressedTexture2D::2756126335270480334::1713113159::1713113487::1::::<><>::
 keyboard_0_outline.png::CompressedTexture2D::7540696224010899741::1713113159::1713113487::1::::<><>::
 keyboard_1.png::CompressedTexture2D::6749616740804203445::1713113160::1713113487::1::::<><>::
@@ -3488,7 +3566,7 @@ mouse_scroll_vertical.png::CompressedTexture2D::4676271156423567628::1713113163:
 mouse_scroll_vertical_outline.png::CompressedTexture2D::1559469799729778406::1713113163::1713113492::1::::<><>::
 mouse_small.png::CompressedTexture2D::5006694555469951863::1713113163::1713113492::1::::<><>::
 mouse_vertical.png::CompressedTexture2D::3529953459711670948::1713113164::1713113492::1::::<><>::
-::res://Assets/kenney_input-prompts/Keyboard & Mouse/Vector/::1713113340
+::res://Assets/kenney_input-prompts/Keyboard & Mouse/Vector/::1713113494
 keyboard_0.svg::CompressedTexture2D::4223655943938690563::1713113164::1713113492::1::::<><>::
 keyboard_0_outline.svg::CompressedTexture2D::5912072418332357485::1713113164::1713113492::1::::<><>::
 keyboard_1.svg::CompressedTexture2D::320391351366202872::1713113164::1713113492::1::::<><>::
@@ -3731,7 +3809,7 @@ mouse_scroll_vertical_outline.svg::CompressedTexture2D::2909898184625338964::171
 mouse_small.svg::CompressedTexture2D::7626245738628709672::1713113169::1713113493::1::::<><>::
 mouse_vertical.svg::CompressedTexture2D::1987398660167451390::1713113169::1713113493::1::::<><>::
 ::res://Assets/kenney_input-prompts/Nintendo Switch/::1713113341
-::res://Assets/kenney_input-prompts/Nintendo Switch/Default/::1713113340
+::res://Assets/kenney_input-prompts/Nintendo Switch/Default/::1713113493
 controller_switch.png::CompressedTexture2D::4520757166758104634::1713113169::1713113493::1::::<><>::
 controller_switch_joycon_down.png::CompressedTexture2D::5360369194814518944::1713113169::1713113493::1::::<><>::
 controller_switch_joycon_up.png::CompressedTexture2D::4924457993980843167::1713113169::1713113493::1::::<><>::
@@ -3844,7 +3922,7 @@ switch_stick_top_l.png::CompressedTexture2D::9163771366135345768::1713113171::17
 switch_stick_top_r.png::CompressedTexture2D::78492400032414797::1713113171::1713113491::1::::<><>::
 switch_up.png::CompressedTexture2D::5987397420716175869::1713113171::1713113491::1::::<><>::
 switch_up_outline.png::CompressedTexture2D::2149827325518459718::1713113171::1713113491::1::::<><>::
-::res://Assets/kenney_input-prompts/Nintendo Switch/Double/::1713113341
+::res://Assets/kenney_input-prompts/Nintendo Switch/Double/::1713113491
 controller_switch.png::CompressedTexture2D::1073777719128798105::1713113171::1713113491::1::::<><>::
 controller_switch_joycon_down.png::CompressedTexture2D::9013046301017089609::1713113171::1713113491::1::::<><>::
 controller_switch_joycon_up.png::CompressedTexture2D::8040474860479163730::1713113171::1713113491::1::::<><>::
@@ -3957,7 +4035,7 @@ switch_stick_top_l.png::CompressedTexture2D::619980046213183735::1713113173::171
 switch_stick_top_r.png::CompressedTexture2D::1637072247494501376::1713113173::1713113491::1::::<><>::
 switch_up.png::CompressedTexture2D::2416513168570171464::1713113173::1713113491::1::::<><>::
 switch_up_outline.png::CompressedTexture2D::9184523817994620493::1713113173::1713113491::1::::<><>::
-::res://Assets/kenney_input-prompts/Nintendo Switch/Vector/::1713113341
+::res://Assets/kenney_input-prompts/Nintendo Switch/Vector/::1713113492
 controller_switch.svg::CompressedTexture2D::3387248619693906743::1713113173::1713113491::1::::<><>::
 controller_switch_joycon_down.svg::CompressedTexture2D::7247841861911706439::1713113173::1713113491::1::::<><>::
 controller_switch_joycon_up.svg::CompressedTexture2D::7689510794633139920::1713113173::1713113491::1::::<><>::
@@ -4071,7 +4149,7 @@ switch_stick_top_r.svg::CompressedTexture2D::6291912391611940127::1713113176::17
 switch_up.svg::CompressedTexture2D::2821559798532330595::1713113176::1713113492::1::::<><>::
 switch_up_outline.svg::CompressedTexture2D::9016568875756201390::1713113176::1713113492::1::::<><>::
 ::res://Assets/kenney_input-prompts/Nintendo Wii/::1713113341
-::res://Assets/kenney_input-prompts/Nintendo Wii/Default/::1713113341
+::res://Assets/kenney_input-prompts/Nintendo Wii/Default/::1713113492
 controller_wii_classic.png::CompressedTexture2D::3067853824437524807::1713113115::1713113492::1::::<><>::
 controller_wii_classic_pro.png::CompressedTexture2D::2082257318763635230::1713113115::1713113492::1::::<><>::
 wii_button_1.png::CompressedTexture2D::5636423716450876099::1713113115::1713113492::1::::<><>::
@@ -4156,7 +4234,7 @@ wii_stick_top_l.png::CompressedTexture2D::2527626994717457481::1713113116::17131
 wii_stick_top_r.png::CompressedTexture2D::2301437107151914456::1713113116::1713113492::1::::<><>::
 wii_stick_up.png::CompressedTexture2D::4983688681459379219::1713113116::1713113492::1::::<><>::
 wii_stick_vertical.png::CompressedTexture2D::4944147242439607643::1713113116::1713113492::1::::<><>::
-::res://Assets/kenney_input-prompts/Nintendo Wii/Double/::1713113341
+::res://Assets/kenney_input-prompts/Nintendo Wii/Double/::1713113492
 controller_wii_classic.png::CompressedTexture2D::5246276446449714506::1713113116::1713113492::1::::<><>::
 controller_wii_classic_pro.png::CompressedTexture2D::4974672286417379253::1713113116::1713113492::1::::<><>::
 wii_button_1.png::CompressedTexture2D::5280247009844938392::1713113116::1713113492::1::::<><>::
@@ -4241,7 +4319,7 @@ wii_stick_top_l.png::CompressedTexture2D::1435329868786787324::1713113118::17131
 wii_stick_top_r.png::CompressedTexture2D::4026613586652348237::1713113118::1713113482::1::::<><>::
 wii_stick_up.png::CompressedTexture2D::540217481634610984::1713113118::1713113482::1::::<><>::
 wii_stick_vertical.png::CompressedTexture2D::7645664742930476574::1713113118::1713113482::1::::<><>::
-::res://Assets/kenney_input-prompts/Nintendo Wii/Vector/::1713113341
+::res://Assets/kenney_input-prompts/Nintendo Wii/Vector/::1713113482
 controller_wii_classic.svg::CompressedTexture2D::2422876313981808673::1713113118::1713113482::1::::<><>::
 controller_wii_classic_pro.svg::CompressedTexture2D::7781868225765611240::1713113118::1713113482::1::::<><>::
 wii_button_1.svg::CompressedTexture2D::3847930690492324917::1713113118::1713113482::1::::<><>::
@@ -4327,7 +4405,7 @@ wii_stick_top_r.svg::CompressedTexture2D::3269516782856116685::1713113120::17131
 wii_stick_up.svg::CompressedTexture2D::9022619500282541626::1713113120::1713113481::1::::<><>::
 wii_stick_vertical.svg::CompressedTexture2D::8966534814951345341::1713113120::1713113481::1::::<><>::
 ::res://Assets/kenney_input-prompts/Nintendo WiiU/::1713113342
-::res://Assets/kenney_input-prompts/Nintendo WiiU/Default/::1713113341
+::res://Assets/kenney_input-prompts/Nintendo WiiU/Default/::1713113482
 controller_wiiu_pro.png::CompressedTexture2D::8017906758096664902::1713113120::1713113481::1::::<><>::
 wiiu_button_1.png::CompressedTexture2D::3265019393251436972::1713113120::1713113481::1::::<><>::
 wiiu_button_1_outline.png::CompressedTexture2D::1289800094887679671::1713113120::1713113481::1::::<><>::
@@ -4396,7 +4474,7 @@ wiiu_stick_r_up.png::CompressedTexture2D::9141412386936240089::1713113121::17131
 wiiu_stick_r_vertical.png::CompressedTexture2D::3968349817771647161::1713113121::1713113482::1::::<><>::
 wiiu_stick_top_l.png::CompressedTexture2D::5011665135916544737::1713113121::1713113482::1::::<><>::
 wiiu_stick_top_r.png::CompressedTexture2D::5332785388357783573::1713113121::1713113482::1::::<><>::
-::res://Assets/kenney_input-prompts/Nintendo WiiU/Double/::1713113342
+::res://Assets/kenney_input-prompts/Nintendo WiiU/Double/::1713113483
 controller_wiiu_pro.png::CompressedTexture2D::3276761819937356081::1713113121::1713113482::1::::<><>::
 wiiu_button_1.png::CompressedTexture2D::3427799824541595115::1713113121::1713113482::1::::<><>::
 wiiu_button_1_outline.png::CompressedTexture2D::4145726952985351836::1713113121::1713113482::1::::<><>::
@@ -4465,7 +4543,7 @@ wiiu_stick_r_up.png::CompressedTexture2D::1206864818907729135::1713113122::17131
 wiiu_stick_r_vertical.png::CompressedTexture2D::3517008007256445097::1713113122::1713113483::1::::<><>::
 wiiu_stick_top_l.png::CompressedTexture2D::4388628555801583128::1713113122::1713113483::1::::<><>::
 wiiu_stick_top_r.png::CompressedTexture2D::2186652789937844143::1713113122::1713113483::1::::<><>::
-::res://Assets/kenney_input-prompts/Nintendo WiiU/Vector/::1713113342
+::res://Assets/kenney_input-prompts/Nintendo WiiU/Vector/::1713113483
 controller_wiiu_pro.svg::CompressedTexture2D::8120676803881037694::1713113122::1713113483::1::::<><>::
 wiiu_button_1.svg::CompressedTexture2D::8652990288629038509::1713113122::1713113483::1::::<><>::
 wiiu_button_1_outline.svg::CompressedTexture2D::3095418158796100413::1713113122::1713113483::1::::<><>::
@@ -4535,7 +4613,7 @@ wiiu_stick_r_vertical.svg::CompressedTexture2D::5124048526583183115::1713113123:
 wiiu_stick_top_l.svg::CompressedTexture2D::3587411333804916422::1713113123::1713113482::1::::<><>::
 wiiu_stick_top_r.svg::CompressedTexture2D::6691672994498487122::1713113123::1713113482::1::::<><>::
 ::res://Assets/kenney_input-prompts/Playdate/::1713113342
-::res://Assets/kenney_input-prompts/Playdate/Default/::1713113342
+::res://Assets/kenney_input-prompts/Playdate/Default/::1713113482
 playdate_button_a.png::CompressedTexture2D::642986132600408158::1713113124::1713113482::1::::<><>::
 playdate_button_a_outline.png::CompressedTexture2D::6691395401085269632::1713113124::1713113482::1::::<><>::
 playdate_button_b.png::CompressedTexture2D::6112991559456501881::1713113124::1713113482::1::::<><>::
@@ -4564,7 +4642,7 @@ playdate_icon.png::CompressedTexture2D::3908985963568084768::1713113124::1713113
 playdate_icon_crank.png::CompressedTexture2D::2232203079783410100::1713113124::1713113482::1::::<><>::
 playdate_icon_crank_outline.png::CompressedTexture2D::555765660916480112::1713113124::1713113482::1::::<><>::
 playdate_icon_outline.png::CompressedTexture2D::4183708903684412276::1713113124::1713113482::1::::<><>::
-::res://Assets/kenney_input-prompts/Playdate/Double/::1713113342
+::res://Assets/kenney_input-prompts/Playdate/Double/::1713113482
 playdate_button_a.png::CompressedTexture2D::5037602059985563239::1713113124::1713113482::1::::<><>::
 playdate_button_a_outline.png::CompressedTexture2D::4914242159520029847::1713113124::1713113482::1::::<><>::
 playdate_button_b.png::CompressedTexture2D::1649520127292551231::1713113124::1713113482::1::::<><>::
@@ -4593,7 +4671,7 @@ playdate_icon.png::CompressedTexture2D::5871601239848925402::1713113124::1713113
 playdate_icon_crank.png::CompressedTexture2D::7753740900586991204::1713113124::1713113482::1::::<><>::
 playdate_icon_crank_outline.png::CompressedTexture2D::5016250816026370168::1713113124::1713113482::1::::<><>::
 playdate_icon_outline.png::CompressedTexture2D::6340871583736091487::1713113124::1713113482::1::::<><>::
-::res://Assets/kenney_input-prompts/Playdate/Vector/::1713113342
+::res://Assets/kenney_input-prompts/Playdate/Vector/::1713113482
 playdate_button_a.svg::CompressedTexture2D::3974120737833939041::1713113124::1713113482::1::::<><>::
 playdate_button_a_outline.svg::CompressedTexture2D::1225978263013361757::1713113125::1713113482::1::::<><>::
 playdate_button_b.svg::CompressedTexture2D::9128565158898695493::1713113125::1713113480::1::::<><>::
@@ -4623,7 +4701,7 @@ playdate_icon_crank.svg::CompressedTexture2D::815092258272663997::1713113125::17
 playdate_icon_crank_outline.svg::CompressedTexture2D::8197868838851494738::1713113125::1713113480::1::::<><>::
 playdate_icon_outline.svg::CompressedTexture2D::5657660649896763179::1713113125::1713113480::1::::<><>::
 ::res://Assets/kenney_input-prompts/PlayStation Series/::1713113342
-::res://Assets/kenney_input-prompts/PlayStation Series/Default/::1713113342
+::res://Assets/kenney_input-prompts/PlayStation Series/Default/::1713113481
 controller_playstation1.png::CompressedTexture2D::8204376279273055001::1713113125::1713113480::1::::<><>::
 controller_playstation2.png::CompressedTexture2D::2395081869350378652::1713113125::1713113480::1::::<><>::
 controller_playstation3.png::CompressedTexture2D::6947630870728207439::1713113125::1713113480::1::::<><>::
@@ -4728,7 +4806,7 @@ playstation_trigger_r2.png::CompressedTexture2D::4451514160284469479::1713113127
 playstation_trigger_r2_alternative.png::CompressedTexture2D::7896348165573108438::1713113127::1713113480::1::::<><>::
 playstation_trigger_r2_alternative_outline.png::CompressedTexture2D::8630864371380329510::1713113127::1713113480::1::::<><>::
 playstation_trigger_r2_outline.png::CompressedTexture2D::6032176922031132317::1713113127::1713113480::1::::<><>::
-::res://Assets/kenney_input-prompts/PlayStation Series/Double/::1713113342
+::res://Assets/kenney_input-prompts/PlayStation Series/Double/::1713113481
 controller_playstation1.png::CompressedTexture2D::8969112512604975235::1713113127::1713113480::1::::<><>::
 controller_playstation2.png::CompressedTexture2D::6155595075105655578::1713113127::1713113480::1::::<><>::
 controller_playstation3.png::CompressedTexture2D::6749899193748079008::1713113127::1713113480::1::::<><>::
@@ -4833,7 +4911,7 @@ playstation_trigger_r2.png::CompressedTexture2D::8379891583749440234::1713113129
 playstation_trigger_r2_alternative.png::CompressedTexture2D::7791783006550467061::1713113129::1713113481::1::::<><>::
 playstation_trigger_r2_alternative_outline.png::CompressedTexture2D::6881757409907344206::1713113129::1713113481::1::::<><>::
 playstation_trigger_r2_outline.png::CompressedTexture2D::3128460692380167545::1713113129::1713113481::1::::<><>::
-::res://Assets/kenney_input-prompts/PlayStation Series/Vector/::1713113343
+::res://Assets/kenney_input-prompts/PlayStation Series/Vector/::1713113481
 controller_playstation1.svg::CompressedTexture2D::1725694730609003888::1713113129::1713113481::1::::<><>::
 controller_playstation2.svg::CompressedTexture2D::8904679053049189006::1713113129::1713113481::1::::<><>::
 controller_playstation3.svg::CompressedTexture2D::4885364012095472479::1713113129::1713113481::1::::<><>::
@@ -4939,7 +5017,7 @@ playstation_trigger_r2_alternative.svg::CompressedTexture2D::4708725357812285052
 playstation_trigger_r2_alternative_outline.svg::CompressedTexture2D::3168216317146680318::1713113131::1713113481::1::::<><>::
 playstation_trigger_r2_outline.svg::CompressedTexture2D::8120183614749983076::1713113131::1713113481::1::::<><>::
 ::res://Assets/kenney_input-prompts/Steam Controller/::1713113343
-::res://Assets/kenney_input-prompts/Steam Controller/Default/::1713113343
+::res://Assets/kenney_input-prompts/Steam Controller/Default/::1713113485
 controller_steam.png::CompressedTexture2D::3304913725735198229::1713113131::1713113481::1::::<><>::
 steam_button_a.png::CompressedTexture2D::4582719555975474015::1713113131::1713113481::1::::<><>::
 steam_button_a_outline.png::CompressedTexture2D::947049592660970288::1713113131::1713113481::1::::<><>::
@@ -5007,7 +5085,7 @@ steam_stick_right.png::CompressedTexture2D::6668952422541189592::1713113132::171
 steam_stick_side_l.png::CompressedTexture2D::4912564465408290595::1713113132::1713113485::1::::<><>::
 steam_stick_up.png::CompressedTexture2D::225183008753748905::1713113132::1713113485::1::::<><>::
 steam_stick_vertical.png::CompressedTexture2D::7083242186193719398::1713113132::1713113485::1::::<><>::
-::res://Assets/kenney_input-prompts/Steam Controller/Double/::1713113343
+::res://Assets/kenney_input-prompts/Steam Controller/Double/::1713113485
 controller_steam.png::CompressedTexture2D::8085332509655844504::1713113132::1713113485::1::::<><>::
 steam_button_a.png::CompressedTexture2D::8047884742754243226::1713113132::1713113485::1::::<><>::
 steam_button_a_outline.png::CompressedTexture2D::4837557131415831082::1713113132::1713113485::1::::<><>::
@@ -5075,7 +5153,7 @@ steam_stick_right.png::CompressedTexture2D::197207925258466293::1713113133::1713
 steam_stick_side_l.png::CompressedTexture2D::3176938693842484125::1713113133::1713113485::1::::<><>::
 steam_stick_up.png::CompressedTexture2D::3046156037579330562::1713113133::1713113485::1::::<><>::
 steam_stick_vertical.png::CompressedTexture2D::1454570035814393481::1713113133::1713113485::1::::<><>::
-::res://Assets/kenney_input-prompts/Steam Controller/Vector/::1713113343
+::res://Assets/kenney_input-prompts/Steam Controller/Vector/::1713113485
 controller_steam.svg::CompressedTexture2D::1308964353507610337::1713113134::1713113485::1::::<><>::
 steam_button_a.svg::CompressedTexture2D::1087668584106761899::1713113134::1713113485::1::::<><>::
 steam_button_a_outline.svg::CompressedTexture2D::4214142717325954277::1713113134::1713113485::1::::<><>::
@@ -5144,7 +5222,7 @@ steam_stick_side_l.svg::CompressedTexture2D::6932247463347693004::1713113135::17
 steam_stick_up.svg::CompressedTexture2D::1079168379900222700::1713113135::1713113484::1::::<><>::
 steam_stick_vertical.svg::CompressedTexture2D::3524649654269603974::1713113135::1713113484::1::::<><>::
 ::res://Assets/kenney_input-prompts/Steam Deck/::1713113344
-::res://Assets/kenney_input-prompts/Steam Deck/Default/::1713113343
+::res://Assets/kenney_input-prompts/Steam Deck/Default/::1713113486
 controller_steamdeck.png::CompressedTexture2D::370644458094174944::1713113135::1713113484::1::::<><>::
 steamdeck_button_a.png::CompressedTexture2D::993315836954010043::1713113135::1713113484::1::::<><>::
 steamdeck_button_a_outline.png::CompressedTexture2D::2794404809593483389::1713113135::1713113484::1::::<><>::
@@ -5261,7 +5339,7 @@ steamdeck_trackpad_up.png::CompressedTexture2D::8455210701336336035::1713113137:
 steamdeck_trackpad_up_outline.png::CompressedTexture2D::2171118086856728362::1713113137::1713113486::1::::<><>::
 steamdeck_trackpad_vertical.png::CompressedTexture2D::3938432478821072402::1713113137::1713113486::1::::<><>::
 steamdeck_trackpad_vertical_outline.png::CompressedTexture2D::6331109227356359164::1713113137::1713113486::1::::<><>::
-::res://Assets/kenney_input-prompts/Steam Deck/Double/::1713113344
+::res://Assets/kenney_input-prompts/Steam Deck/Double/::1713113486
 controller_steamdeck.png::CompressedTexture2D::8434595832669456499::1713113137::1713113486::1::::<><>::
 steamdeck_button_a.png::CompressedTexture2D::261377053519088558::1713113137::1713113486::1::::<><>::
 steamdeck_button_a_outline.png::CompressedTexture2D::4664131534201363360::1713113137::1713113486::1::::<><>::
@@ -5378,7 +5456,7 @@ steamdeck_trackpad_up.png::CompressedTexture2D::5993747149029354736::1713113139:
 steamdeck_trackpad_up_outline.png::CompressedTexture2D::7303357665495844521::1713113139::1713113485::1::::<><>::
 steamdeck_trackpad_vertical.png::CompressedTexture2D::7894920870827909091::1713113139::1713113485::1::::<><>::
 steamdeck_trackpad_vertical_outline.png::CompressedTexture2D::8809415912132304735::1713113139::1713113485::1::::<><>::
-::res://Assets/kenney_input-prompts/Steam Deck/Vector/::1713113344
+::res://Assets/kenney_input-prompts/Steam Deck/Vector/::1713113485
 controller_steamdeck.svg::CompressedTexture2D::164761894340775810::1713113139::1713113485::1::::<><>::
 steamdeck_button_a.svg::CompressedTexture2D::2174432916085441507::1713113139::1713113485::1::::<><>::
 steamdeck_button_a_outline.svg::CompressedTexture2D::4667409373960706695::1713113139::1713113485::1::::<><>::
@@ -5496,7 +5574,7 @@ steamdeck_trackpad_up_outline.svg::CompressedTexture2D::8944700283028922318::171
 steamdeck_trackpad_vertical.svg::CompressedTexture2D::6980236482794085008::1713113142::1713113483::1::::<><>::
 steamdeck_trackpad_vertical_outline.svg::CompressedTexture2D::8723440774269629944::1713113142::1713113483::1::::<><>::
 ::res://Assets/kenney_input-prompts/Xbox Series/::1713113344
-::res://Assets/kenney_input-prompts/Xbox Series/Default/::1713113344
+::res://Assets/kenney_input-prompts/Xbox Series/Default/::1713113484
 controller_xbox360.png::CompressedTexture2D::574720187542558955::1713113142::1713113483::1::::<><>::
 controller_xboxone.png::CompressedTexture2D::7866857954693637713::1713113142::1713113483::1::::<><>::
 controller_xboxseries.png::CompressedTexture2D::7669475836277186871::1713113142::1713113483::1::::<><>::
@@ -5588,7 +5666,7 @@ xbox_stick_side_l.png::CompressedTexture2D::7264919789497720708::1713113144::171
 xbox_stick_side_r.png::CompressedTexture2D::8399231841606766730::1713113144::1713113483::1::::<><>::
 xbox_stick_top_l.png::CompressedTexture2D::539197023874407928::1713113144::1713113484::1::::<><>::
 xbox_stick_top_r.png::CompressedTexture2D::8833541466408869710::1713113144::1713113484::1::::<><>::
-::res://Assets/kenney_input-prompts/Xbox Series/Double/::1713113344
+::res://Assets/kenney_input-prompts/Xbox Series/Double/::1713113484
 controller_xbox360.png::CompressedTexture2D::7453135887096896677::1713113144::1713113484::1::::<><>::
 controller_xboxone.png::CompressedTexture2D::4402494293246974039::1713113144::1713113484::1::::<><>::
 controller_xboxseries.png::CompressedTexture2D::5746890413807549458::1713113144::1713113484::1::::<><>::
@@ -5680,7 +5758,7 @@ xbox_stick_side_l.png::CompressedTexture2D::202659295720828792::1713113146::1713
 xbox_stick_side_r.png::CompressedTexture2D::5275941479466485401::1713113146::1713113484::1::::<><>::
 xbox_stick_top_l.png::CompressedTexture2D::4881131294335241382::1713113146::1713113484::1::::<><>::
 xbox_stick_top_r.png::CompressedTexture2D::7338505355327583940::1713113146::1713113484::1::::<><>::
-::res://Assets/kenney_input-prompts/Xbox Series/Vector/::1713113345
+::res://Assets/kenney_input-prompts/Xbox Series/Vector/::1713113484
 controller_xbox360.svg::CompressedTexture2D::6284811142056445800::1713113146::1713113484::1::::<><>::
 controller_xboxone.svg::CompressedTexture2D::327737848513850270::1713113146::1713113484::1::::<><>::
 controller_xboxseries.svg::CompressedTexture2D::4392549016453176760::1713113146::1713113484::1::::<><>::
@@ -5772,10 +5850,10 @@ xbox_stick_side_l.svg::CompressedTexture2D::5711117660451836862::1713113148::171
 xbox_stick_side_r.svg::CompressedTexture2D::8478763184393223351::1713113148::1713113484::1::::<><>::
 xbox_stick_top_l.svg::CompressedTexture2D::1304248699315850871::1713113148::1713113484::1::::<><>::
 xbox_stick_top_r.svg::CompressedTexture2D::5639261290618373689::1713113148::1713113484::1::::<><>::
-::res://Assets/kenney_rpg-audio/::1713113473
+::res://Assets/kenney_rpg-audio/::1713113480
 License.txt::TextFile::-1::1713113463::0::1::::<><>::
 Preview.ogg::AudioStreamOggVorbis::2113011532894946473::1713113463::1713113480::1::::<><>::
-::res://Assets/kenney_rpg-audio/Audio/::1713113473
+::res://Assets/kenney_rpg-audio/Audio/::1713113480
 beltHandle1.ogg::AudioStreamOggVorbis::6440708485562954277::1713113463::1713113480::1::::<><>::
 beltHandle2.ogg::AudioStreamOggVorbis::2158806301211586903::1713113463::1713113480::1::::<><>::
 bookClose.ogg::AudioStreamOggVorbis::7789019735971185502::1713113463::1713113480::1::::<><>::
@@ -5829,10 +5907,13 @@ metalPot2.ogg::AudioStreamOggVorbis::6881965256384428355::1713113464::1713113480
 metalPot3.ogg::AudioStreamOggVorbis::6268594128295937262::1713113464::1713113480::1::::<><>::
 ::res://Assets/Textures/::1713048617
 blob.png::CompressedTexture2D::2063657174439271301::1713026184::1713026187::1::::<><>::
-::res://Prefabs/::1713112646
+::res://Gridmap/::1713113925
+kaykit_meshlibrary.tres::MeshLibrary::5810949411639997530::1713113925::0::1::::<><>::
+::res://Prefabs/::1713113873
 archeryrange_prefab.tscn::PackedScene::2359399406896167497::1713092860::0::1::::<><>::uid://baa2jfr4f2ynf::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/archeryrange.gltf.glb
 barbarian.tscn::PackedScene::28834365288856532::1713092860::0::1::::<><>::uid://bbo54eon6xpkd::::res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barbarian_barbarian_texture.png<>res://Scripts/player_movement.gd<>uid://4nweq1my7bd2::::res://Assets/Textures/blob.png
 anvil_prefab.tscn::PackedScene::6181864669874664622::1713112646::0::1::::<><>::uid://dp6el0x2lkm5s::::res://Assets/anvil/anvil_low_poly/textures/Scene_-_Root_baseColor.jpeg
+tiles.tscn::PackedScene::3118644580777736188::1713113873::0::1::::<><>::uid://dm723yq7xmdgt::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest.gltf.glb<>uid://jtb2onkrhorb::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_detail.gltf.glb<>uid://f1766ljdogu::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_roadA.gltf.glb<>uid://behps3f12n0s6::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_roadA_detail.gltf.glb<>uid://ct4uyjnulkcb8::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_roadB.gltf.glb<>uid://cklq7q2ykec5g::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_roadB_detail.gltf.glb<>uid://hvafdvjpqvwg::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_roadC.gltf.glb<>uid://cc3v2cautr4sl::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_roadC_detail.gltf.glb<>uid://c0pasnxg6ycv0::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_roadD.gltf.glb<>uid://dpadkrfnu8tch::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_roadD_detail.gltf.glb<>uid://bm3dg2w3qpfff::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_roadE.gltf.glb<>uid://dmdkwdj071of5::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_roadE_detail.gltf.glb<>uid://bpw2ctoukb1ob::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_waterInnerCorner.gltf.glb<>uid://chhm8ixfwhyvv::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_waterInnerCorner_empty.gltf.glb<>uid://beios1gg5wu3m::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_waterInnerCorner_noSides.gltf.glb<>uid://ck6evyp1vwe3i::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_waterOuterCorner.gltf.glb<>uid://sj2oaggwiyg7::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_waterOuterCorner_empty.gltf.glb<>uid://1nfl4lj80scq::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_waterOuterCorner_noSides.gltf.glb<>uid://blbhqrumwyuna::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_waterStraight.gltf.glb<>uid://jnhjxsm4w8sj::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_waterStraight_empty.gltf.glb<>uid://mkh7rige8tho::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_forest_waterStraight_noSides.gltf.glb<>uid://5qbxervtxdel::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock.gltf.glb<>uid://c2a2i7b7higvh::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_detail.gltf.glb<>uid://drfl8elhpqoaa::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_roadA.gltf.glb<>uid://bnb2g2gdrd1kh::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_roadA_detail.gltf.glb<>uid://cen3mc8k8ov1s::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_roadB.gltf.glb<>uid://powqacr254x0::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_roadB_detail.gltf.glb<>uid://dkmhjs38u8bvc::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_roadC.gltf.glb<>uid://dorm64a4ka2dy::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_roadC_detail.gltf.glb<>uid://3ahd65o12k8u::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_roadD.gltf.glb<>uid://b67tvvyipf4s::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_roadD_detail.gltf.glb<>uid://xwuatm8bnvy6::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_roadE.gltf.glb<>uid://ritwjf3go2pw::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_roadE_detail.gltf.glb<>uid://cxsfs02dxyltx::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_waterInnerCorner.gltf.glb<>uid://e3oynbtqth1u::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_waterInnerCorner_empty.gltf.glb<>uid://dn3ahcc1r8gh0::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_waterInnerCorner_noSides.gltf.glb<>uid://b1h0clmwg1p38::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_waterOuterCorner.gltf.glb<>uid://c413b1cqgvete::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_waterOuterCorner_empty.gltf.glb<>uid://2qe5wjbhqxcn::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_waterOuterCorner_noSides.gltf.glb<>uid://b277ql8ux1sq8::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_waterStraight.gltf.glb<>uid://ml0h2nwohf7f::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_waterStraight_empty.gltf.glb<>uid://bi3cs0fwwl01a::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_rock_waterStraight_noSides.gltf.glb<>uid://3343uvoxbqvu::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand.gltf.glb<>uid://u7lcdfydm71g::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_detail.gltf.glb<>uid://b5tm2o5seidxg::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_roadA.gltf.glb<>uid://ck3051jev8csi::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_roadA_detail.gltf.glb<>uid://cik7m3si76a5h::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_roadB.gltf.glb<>uid://bi86tkbwn70hl::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_roadB_detail.gltf.glb<>uid://bqu4rgpf2dkwt::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_roadC.gltf.glb<>uid://ces002n3h7cyq::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_roadC_detail.gltf.glb<>uid://bg2hsm1jc16pf::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_roadD.gltf.glb<>uid://jaods6lu88qo::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_roadD_detail.gltf.glb<>uid://cvrgg0xoum15e::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_roadE.gltf.glb<>uid://dw83kh40rvbsn::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_roadE_detail.gltf.glb<>uid://cwcmjxfennq27::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_waterInnerCorner.gltf.glb<>uid://fuhbqesinmok::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_waterInnerCorner_empty.gltf.glb<>uid://c0gpf64kirx3t::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_waterInnerCorner_noSides.gltf.glb<>uid://c5y8rtds0pauw::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_waterOuterCorner.gltf.glb<>uid://bv3b5di2xdrb1::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_waterOuterCorner_empty.gltf.glb<>uid://bshcmq1ty37pl::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_waterOuterCorner_noSides.gltf.glb<>uid://bbs048lxv0wk5::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_waterStraight.gltf.glb<>uid://cin1obbhefjdb::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_waterStraight_empty.gltf.glb<>uid://bb4wnqbl5c4n7::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_sand_waterStraight_noSides.gltf.glb<>uid://b2x3bn30dlxkb::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_water.gltf.glb<>uid://cuojkwjih5ypp::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_water_detail.gltf.glb<>uid://ca01q6bsaxj5m::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_water_detail_empty.gltf.glb<>uid://cuwviimxr70i8::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_water_detail_noSides.gltf.glb<>uid://rykgdv8vpr8u::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/gltf/square_water_empty.gltf.glb
 rogue_npc.tscn::PackedScene::195006528339470900::1713092860::0::1::::<><>::res://Scripts/rogue_npc.gd<>uid://xg3wvx1sdvgh::::res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Rogue_rogue_texture.png<>uid://4nweq1my7bd2::::res://Assets/Textures/blob.png<>uid://dhq7xo8m2a3fg::::res://Assets/Audio/Rogue/rogue_hello.mp3
 well_prefab.tscn::PackedScene::6411541579103003560::1713092860::0::1::::<><>::uid://i2poi6ww5mm4::::res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/well.gltf.glb
 ::res://Scenes/::1713092859

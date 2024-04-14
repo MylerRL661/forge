@@ -1,1 +1,9 @@
 res://Prefabs/anvil_prefab.tscn
+res://Prefabs/tiles.tscn
+res://Gridmap/kaykit_meshlibrary.tres
+res://Scenes/game.tscn
+res://Gridmap/kaykit_meshlibrary_dungeon.tres
+res://Prefabs/barbarian.tscn
+res://Prefabs/rogue_npc.tscn
+res://Prefabs/archeryrange_prefab.tscn
+res://Prefabs/well_prefab.tscn
