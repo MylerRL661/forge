@@ -1,6 +1,1 @@
-res://Prefabs/rogue_npc.tscn
-res://Scenes/game.tscn
-res://Prefabs/barbarian.tscn
-res://Scripts/player_movement.gd
-res://Prefabs/archeryrange_prefab.tscn
-res://Prefabs/well_prefab.tscn
+res://Prefabs/anvil_prefab.tscn

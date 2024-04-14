@@ -1,0 +1,11 @@
+Model Information:
+* title:	Anvil (Low Poly)
+* source:	https://sketchfab.com/3d-models/anvil-low-poly-e3775823cf684b888d3ade41322140f9
+* author:	Punin8r (https://sketchfab.com/Punin8r)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Anvil (Low Poly)" (https://sketchfab.com/3d-models/anvil-low-poly-e3775823cf684b888d3ade41322140f9) by Punin8r (https://sketchfab.com/Punin8r) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
