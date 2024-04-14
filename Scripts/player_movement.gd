@@ -63,4 +63,5 @@ func _interact():
 
 
 func _on_killbox_body_entered(body):
-	transform.origin = player_spawn_position.transform.origin
+	if body.name == "Barbarian":
+		transform.origin = player_spawn_position.transform.origin

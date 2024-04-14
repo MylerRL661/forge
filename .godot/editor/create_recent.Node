@@ -1,6 +1,6 @@
+StaticBody3D
 GridMap
 CollisionShape3D
-StaticBody3D
 Node3D
 Marker3D
 Area3D
