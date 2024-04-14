@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bl6420mv27qon"
+path="res://.godot/imported/square_rock_roadC_detail.obj-34393b5764685612563a045ba9b4afa5.mesh"
+
+[deps]
+
+files=["res://.godot/imported/square_rock_roadC_detail.obj-34393b5764685612563a045ba9b4afa5.mesh"]
+
+source_file="res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/obj/square_rock_roadC_detail.obj"
+dest_files=["res://.godot/imported/square_rock_roadC_detail.obj-34393b5764685612563a045ba9b4afa5.mesh", "res://.godot/imported/square_rock_roadC_detail.obj-34393b5764685612563a045ba9b4afa5.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bbr18s46ejx3x"
+path="res://.godot/imported/wall_hexCornerA.obj-5e6ad3ed860c112ee8f3d04358642b5b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall_hexCornerA.obj-5e6ad3ed860c112ee8f3d04358642b5b.mesh"]
+
+source_file="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/obj/wall_hexCornerA.obj"
+dest_files=["res://.godot/imported/wall_hexCornerA.obj-5e6ad3ed860c112ee8f3d04358642b5b.mesh", "res://.godot/imported/wall_hexCornerA.obj-5e6ad3ed860c112ee8f3d04358642b5b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

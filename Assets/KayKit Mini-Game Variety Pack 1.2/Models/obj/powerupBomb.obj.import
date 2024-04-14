@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://divy3wiefwu84"
+path="res://.godot/imported/powerupBomb.obj-c462f57d7cdadb6e16e32035e37640cb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/powerupBomb.obj-c462f57d7cdadb6e16e32035e37640cb.mesh"]
+
+source_file="res://Assets/KayKit Mini-Game Variety Pack 1.2/Models/obj/powerupBomb.obj"
+dest_files=["res://.godot/imported/powerupBomb.obj-c462f57d7cdadb6e16e32035e37640cb.mesh", "res://.godot/imported/powerupBomb.obj-c462f57d7cdadb6e16e32035e37640cb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

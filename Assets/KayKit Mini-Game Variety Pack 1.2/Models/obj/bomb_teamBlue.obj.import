@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bkp4l4dp476xw"
+path="res://.godot/imported/bomb_teamBlue.obj-22e8a2f9947ab8a8bb94ed6e4b0887c7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bomb_teamBlue.obj-22e8a2f9947ab8a8bb94ed6e4b0887c7.mesh"]
+
+source_file="res://Assets/KayKit Mini-Game Variety Pack 1.2/Models/obj/bomb_teamBlue.obj"
+dest_files=["res://.godot/imported/bomb_teamBlue.obj-22e8a2f9947ab8a8bb94ed6e4b0887c7.mesh", "res://.godot/imported/bomb_teamBlue.obj-22e8a2f9947ab8a8bb94ed6e4b0887c7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

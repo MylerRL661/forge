@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b28mi1s5vk7ko"
+path="res://.godot/imported/plantA_forest.obj-f52722bda517bf6e48203d660f810c04.mesh"
+
+[deps]
+
+files=["res://.godot/imported/plantA_forest.obj-f52722bda517bf6e48203d660f810c04.mesh"]
+
+source_file="res://Assets/KayKit Mini-Game Variety Pack 1.2/Models/obj/plantA_forest.obj"
+dest_files=["res://.godot/imported/plantA_forest.obj-f52722bda517bf6e48203d660f810c04.mesh", "res://.godot/imported/plantA_forest.obj-f52722bda517bf6e48203d660f810c04.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

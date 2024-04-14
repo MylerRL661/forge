@@ -9,6 +9,7 @@ var rotation_direction
 @export var rotation_speed = 5
 @onready var model = $Rig/Skeleton3D
 @onready var anim_player = $AnimationPlayer
+@onready var player_spawn_position = $"../PlayerSpawnPosition"
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -59,3 +60,7 @@ func _interact():
 
 	if anim_player.is_playing() == false:
 		_isInteracting = false
+
+
+func _on_killbox_body_entered(body):
+	transform.origin = player_spawn_position.transform.origin

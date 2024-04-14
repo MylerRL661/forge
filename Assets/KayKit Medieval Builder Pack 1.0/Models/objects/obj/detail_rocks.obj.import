@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b4q5v70sgnc4b"
+path="res://.godot/imported/detail_rocks.obj-0e2646bedb797662f776ec8aafe1c4bd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/detail_rocks.obj-0e2646bedb797662f776ec8aafe1c4bd.mesh"]
+
+source_file="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/obj/detail_rocks.obj"
+dest_files=["res://.godot/imported/detail_rocks.obj-0e2646bedb797662f776ec8aafe1c4bd.mesh", "res://.godot/imported/detail_rocks.obj-0e2646bedb797662f776ec8aafe1c4bd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

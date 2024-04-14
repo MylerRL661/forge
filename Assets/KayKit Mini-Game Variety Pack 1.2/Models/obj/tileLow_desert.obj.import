@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cm5eel1ooirbb"
+path="res://.godot/imported/tileLow_desert.obj-9dc3f70b2366e76a3121b778b0bba53f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tileLow_desert.obj-9dc3f70b2366e76a3121b778b0bba53f.mesh"]
+
+source_file="res://Assets/KayKit Mini-Game Variety Pack 1.2/Models/obj/tileLow_desert.obj"
+dest_files=["res://.godot/imported/tileLow_desert.obj-9dc3f70b2366e76a3121b778b0bba53f.mesh", "res://.godot/imported/tileLow_desert.obj-9dc3f70b2366e76a3121b778b0bba53f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

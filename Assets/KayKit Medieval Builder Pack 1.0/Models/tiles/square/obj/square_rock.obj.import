@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bhhhexwuq1vbj"
+path="res://.godot/imported/square_rock.obj-3527ca80dd2064e08300813ac522c89d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/square_rock.obj-3527ca80dd2064e08300813ac522c89d.mesh"]
+
+source_file="res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/obj/square_rock.obj"
+dest_files=["res://.godot/imported/square_rock.obj-3527ca80dd2064e08300813ac522c89d.mesh", "res://.godot/imported/square_rock.obj-3527ca80dd2064e08300813ac522c89d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

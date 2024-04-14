@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dmjbmcw7cbgq7"
+path="res://.godot/imported/ring_teamBlue.obj-3f295967adfa3354fb55c6cd638c6075.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ring_teamBlue.obj-3f295967adfa3354fb55c6cd638c6075.mesh"]
+
+source_file="res://Assets/KayKit Mini-Game Variety Pack 1.2/Models/obj/ring_teamBlue.obj"
+dest_files=["res://.godot/imported/ring_teamBlue.obj-3f295967adfa3354fb55c6cd638c6075.mesh", "res://.godot/imported/ring_teamBlue.obj-3f295967adfa3354fb55c6cd638c6075.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

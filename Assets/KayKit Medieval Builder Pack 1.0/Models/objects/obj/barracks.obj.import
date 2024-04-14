@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://yrjce315pdgg"
+path="res://.godot/imported/barracks.obj-a69d4367b1916918159bac7667fc7fe8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/barracks.obj-a69d4367b1916918159bac7667fc7fe8.mesh"]
+
+source_file="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/obj/barracks.obj"
+dest_files=["res://.godot/imported/barracks.obj-a69d4367b1916918159bac7667fc7fe8.mesh", "res://.godot/imported/barracks.obj-a69d4367b1916918159bac7667fc7fe8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

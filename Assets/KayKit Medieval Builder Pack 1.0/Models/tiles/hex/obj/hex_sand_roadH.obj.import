@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://3hfsu0npv5ct"
+path="res://.godot/imported/hex_sand_roadH.obj-b8c8ed5f7ff533c273ccce2c220bf89c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hex_sand_roadH.obj-b8c8ed5f7ff533c273ccce2c220bf89c.mesh"]
+
+source_file="res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/obj/hex_sand_roadH.obj"
+dest_files=["res://.godot/imported/hex_sand_roadH.obj-b8c8ed5f7ff533c273ccce2c220bf89c.mesh", "res://.godot/imported/hex_sand_roadH.obj-b8c8ed5f7ff533c273ccce2c220bf89c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

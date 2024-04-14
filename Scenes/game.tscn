@@ -1,10 +1,21 @@
-[gd_scene load_steps=7 format=3 uid="uid://7kj8bv6xgw8"]
+[gd_scene load_steps=19 format=3 uid="uid://7kj8bv6xgw8"]
 
 [ext_resource type="PackedScene" uid="uid://n75r3qqo181" path="res://Prefabs/barbarian.tscn" id="1_cbtb2"]
 [ext_resource type="PackedScene" uid="uid://c1py103j5v6c" path="res://Prefabs/rogue_npc.tscn" id="2_kwqtb"]
+[ext_resource type="PackedScene" uid="uid://bour1qs4dtp3r" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/mountain.gltf.glb" id="3_42vd6"]
+[ext_resource type="PackedScene" uid="uid://cxl2fg7i13iai" path="res://Prefabs/well_prefab.tscn" id="4_0rygr"]
+[ext_resource type="PackedScene" uid="uid://8u5703fe4ln2" path="res://Prefabs/archeryrange_prefab.tscn" id="5_jktq2"]
+[ext_resource type="PackedScene" uid="uid://fr2keodfuven" path="res://Assets/KayKit Mini-Game Variety Pack 1.2/Models/gltf/bow_teamBlue.gltf.glb" id="6_i1j3o"]
+[ext_resource type="PackedScene" uid="uid://b3ysv2sguitqb" path="res://Assets/KayKit Mini-Game Variety Pack 1.2/Models/gltf/bow_teamRed.gltf.glb" id="7_0n5rb"]
+[ext_resource type="PackedScene" uid="uid://clrxlipdmsi1m" path="res://Assets/KayKit Mini-Game Variety Pack 1.2/Models/gltf/bow_teamYellow.gltf.glb" id="8_ra73q"]
+[ext_resource type="PackedScene" uid="uid://e28aryw7fsel" path="res://Assets/KayKit Mini-Game Variety Pack 1.2/Models/gltf/arrow_teamBlue.gltf.glb" id="9_menow"]
+[ext_resource type="PackedScene" uid="uid://dlna4u3ppyvn1" path="res://Assets/KayKit Mini-Game Variety Pack 1.2/Models/gltf/arrow_teamRed.gltf.glb" id="10_3xsyf"]
+[ext_resource type="PackedScene" uid="uid://bg5l548mns713" path="res://Assets/KayKit Mini-Game Variety Pack 1.2/Models/gltf/arrow_teamYellow.gltf.glb" id="11_e4sb4"]
+[ext_resource type="PackedScene" uid="uid://4orp4ppyoedg" path="res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/barrel_large.gltf.glb" id="12_kqyi7"]
+[ext_resource type="PackedScene" uid="uid://drbqyxflhm0kn" path="res://Assets/KayKit_Adventurers_1.0_FREE/Assets/gltf/arrow_bundle.gltf" id="13_qrch3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cus1t"]
-size = Vector3(39.0516, 1, 47.2202)
+size = Vector3(75.4716, 1, 76.8699)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rgfic"]
 albedo_color = Color(0.313726, 0.541176, 0.54902, 1)
@@ -23,17 +34,20 @@ fog_sun_scatter = 0.8
 fog_density = 0.02
 fog_sky_affect = 0.0
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_f4prn"]
+size = Vector3(147.987, 24.7324, 169.228)
+
 [node name="game" type="Node3D"]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.75873, 0, -12.571)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.99992, 0, -13.3636)
 shape = SubResource("BoxShape3D_cus1t")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.55823, 0, -12.6228)
-size = Vector3(39.4939, 1, 47.6147)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.32465, 0, -13.6319)
+size = Vector3(75.4622, 1, 77.3462)
 material = SubResource("StandardMaterial3D_rgfic")
 
 [node name="Barbarian" parent="." instance=ExtResource("1_cbtb2")]
@@ -57,3 +71,74 @@ light_angular_distance = 34.49
 
 [node name="Rogue" parent="npcs" instance=ExtResource("2_kwqtb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.94, 0.476074, -17.3412)
+
+[node name="killbox" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -17.0178, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="killbox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5986, -0.961014, -46.53)
+shape = SubResource("BoxShape3D_f4prn")
+
+[node name="PlayerSpawnPosition" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.29481, 0)
+
+[node name="WorldObjects" type="Node3D" parent="."]
+
+[node name="mountain_gltf" parent="WorldObjects" instance=ExtResource("3_42vd6")]
+transform = Transform3D(9.185, 0, 0, 0, 11.945, 0, 0, 0, 8.144, -13.3151, 0, -35.2471)
+
+[node name="mountain_gltf2" parent="WorldObjects" instance=ExtResource("3_42vd6")]
+transform = Transform3D(9.185, 0, 0, 0, 11.945, 0, 0, 0, 8.144, -2.31506, 0, -47.2471)
+
+[node name="mountain_gltf3" parent="WorldObjects" instance=ExtResource("3_42vd6")]
+transform = Transform3D(9.185, 0, 0, 0, 11.945, 0, 0, 0, 8.144, 23.6849, 0, -36.2471)
+
+[node name="well_gltf" parent="WorldObjects" instance=ExtResource("4_0rygr")]
+transform = Transform3D(5.12, 0, 0, 0, 5.12, 0, 0, 0, 5.12, 2.58123, 0.416859, -6.50421)
+
+[node name="archeryrange_gltf" parent="WorldObjects" instance=ExtResource("5_jktq2")]
+transform = Transform3D(6.73, 0, 0, 0, 6.73, 0, 0, 0, 6.73, 15, 0.431372, -19)
+
+[node name="bow_teamBlue_gltf" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("6_i1j3o")]
+transform = Transform3D(-6.55671e-09, -0.15, 0, 0.15, -6.55671e-09, 0, 0, 0, 0.15, 0.128587, 0.363, -0.566879)
+
+[node name="bow_teamRed_gltf" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("7_0n5rb")]
+transform = Transform3D(-6.55671e-09, -0.15, 0, 0.15, -6.55671e-09, 0, 0, 0, 0.15, -0.097518, 0.361676, -0.571164)
+
+[node name="bow_teamYellow_gltf" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("8_ra73q")]
+transform = Transform3D(-0.00117546, -0.149995, 0, 0.149995, -0.00117546, 0, 0, 0, 0.15, -0.318774, 0.363276, -0.566359)
+
+[node name="arrow_teamBlue_gltf" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("9_menow")]
+transform = Transform3D(0.15, 0, 0, 0, 0.0453879, -0.142968, 0, 0.142968, 0.0453879, 0, 0.235076, -0.276263)
+
+[node name="arrow_teamBlue_gltf2" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("9_menow")]
+transform = Transform3D(0.15, 0, 0, 0, 0.0453879, -0.142968, 0, 0.142968, 0.0453879, -0.103538, 0.235076, -0.284335)
+
+[node name="arrow_teamBlue_gltf3" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("9_menow")]
+transform = Transform3D(0.15, 0, 0, 0, 0.0453879, -0.142968, 0, 0.142968, 0.0453879, 0.0592341, 0.134047, -0.26531)
+
+[node name="arrow_teamRed_gltf" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("10_3xsyf")]
+transform = Transform3D(0.15, 0, 0, 0, 0.0957325, -0.115478, 0, 0.115478, 0.0957325, -0.301258, 0.240415, -0.302289)
+
+[node name="arrow_teamRed_gltf2" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("10_3xsyf")]
+transform = Transform3D(0.15, 0, 0, 0, 0.0957325, -0.115478, 0, 0.115478, 0.0957325, -0.288357, 0.225595, -0.284841)
+
+[node name="arrow_teamRed_gltf3" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("10_3xsyf")]
+transform = Transform3D(0.15, 0, 0, 0, 0.0957325, -0.115478, 0, 0.115478, 0.0957325, -0.316867, 0.224223, -0.290773)
+
+[node name="arrow_teamYellow_gltf" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("11_e4sb4")]
+transform = Transform3D(0.0826245, 0.0947116, 0.0818712, 0.0525876, 0.0627638, -0.125679, -0.113612, 0.0979306, 0.00136784, -0.756298, 0.179233, -0.408653)
+
+[node name="arrow_teamYellow_gltf2" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("11_e4sb4")]
+transform = Transform3D(0.130171, 0.0734876, 0.012456, 0.0648128, -0.0992192, -0.0919502, -0.0368089, 0.0851769, -0.117856, -0.532296, 0.483527, -0.507236)
+
+[node name="arrow_teamYellow_gltf3" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("11_e4sb4")]
+transform = Transform3D(0.0622969, -0.108914, -0.0822003, 0.0299337, 0.0990689, -0.108579, 0.133128, 0.0286903, 0.0628792, 0.304143, 0.67199, 0.208868)
+
+[node name="barrel_large_gltf" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("12_kqyi7")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.20393, 0, -0.374853)
+
+[node name="arrow_bundle2" parent="WorldObjects/archeryrange_gltf/barrel_large_gltf" instance=ExtResource("13_qrch3")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 1.97106, 0)
+
+[connection signal="body_entered" from="killbox" to="Barbarian" method="_on_killbox_body_entered"]

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://him621hfxwt8"
+path="res://.godot/imported/barrierLarge.obj-8f012265ba29cebb7aa86cb5c14e20fc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/barrierLarge.obj-8f012265ba29cebb7aa86cb5c14e20fc.mesh"]
+
+source_file="res://Assets/KayKit Mini-Game Variety Pack 1.2/Models/obj/barrierLarge.obj"
+dest_files=["res://.godot/imported/barrierLarge.obj-8f012265ba29cebb7aa86cb5c14e20fc.mesh", "res://.godot/imported/barrierLarge.obj-8f012265ba29cebb7aa86cb5c14e20fc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

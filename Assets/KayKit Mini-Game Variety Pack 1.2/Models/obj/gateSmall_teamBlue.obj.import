@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://byny3bikjdqa"
+path="res://.godot/imported/gateSmall_teamBlue.obj-80e33bf540abe551f2e744b5474b8707.mesh"
+
+[deps]
+
+files=["res://.godot/imported/gateSmall_teamBlue.obj-80e33bf540abe551f2e744b5474b8707.mesh"]
+
+source_file="res://Assets/KayKit Mini-Game Variety Pack 1.2/Models/obj/gateSmall_teamBlue.obj"
+dest_files=["res://.godot/imported/gateSmall_teamBlue.obj-80e33bf540abe551f2e744b5474b8707.mesh", "res://.godot/imported/gateSmall_teamBlue.obj-80e33bf540abe551f2e744b5474b8707.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

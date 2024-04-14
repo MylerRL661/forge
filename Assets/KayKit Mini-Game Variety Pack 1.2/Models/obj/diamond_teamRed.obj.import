@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b6cxctv4hevnu"
+path="res://.godot/imported/diamond_teamRed.obj-d17b48d7dde85dea1c7caba17a07f800.mesh"
+
+[deps]
+
+files=["res://.godot/imported/diamond_teamRed.obj-d17b48d7dde85dea1c7caba17a07f800.mesh"]
+
+source_file="res://Assets/KayKit Mini-Game Variety Pack 1.2/Models/obj/diamond_teamRed.obj"
+dest_files=["res://.godot/imported/diamond_teamRed.obj-d17b48d7dde85dea1c7caba17a07f800.mesh", "res://.godot/imported/diamond_teamRed.obj-d17b48d7dde85dea1c7caba17a07f800.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

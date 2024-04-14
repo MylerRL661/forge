@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxl2fg7i13iai"]
+
+[ext_resource type="PackedScene" uid="uid://i2poi6ww5mm4" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/well.gltf.glb" id="1_1ww3g"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_acpcx"]
+radius = 0.425483
+height = 1.25413
+
+[node name="well_gltf" instance=ExtResource("1_1ww3g")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.239096, 0)
+shape = SubResource("CapsuleShape3D_acpcx")

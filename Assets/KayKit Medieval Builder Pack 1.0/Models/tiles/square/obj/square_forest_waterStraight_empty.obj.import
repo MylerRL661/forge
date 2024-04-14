@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bc7o1k5icmnpb"
+path="res://.godot/imported/square_forest_waterStraight_empty.obj-871653b335a8d07529c0accb09f862dd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/square_forest_waterStraight_empty.obj-871653b335a8d07529c0accb09f862dd.mesh"]
+
+source_file="res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/square/obj/square_forest_waterStraight_empty.obj"
+dest_files=["res://.godot/imported/square_forest_waterStraight_empty.obj-871653b335a8d07529c0accb09f862dd.mesh", "res://.godot/imported/square_forest_waterStraight_empty.obj-871653b335a8d07529c0accb09f862dd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b4jh2pc1v1ryu"
+path="res://.godot/imported/hex_sand_waterC_empty.obj-01b9f28ee5e13ceba0e5fc420a4b4f0b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hex_sand_waterC_empty.obj-01b9f28ee5e13ceba0e5fc420a4b4f0b.mesh"]
+
+source_file="res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/obj/hex_sand_waterC_empty.obj"
+dest_files=["res://.godot/imported/hex_sand_waterC_empty.obj-01b9f28ee5e13ceba0e5fc420a4b4f0b.mesh", "res://.godot/imported/hex_sand_waterC_empty.obj-01b9f28ee5e13ceba0e5fc420a4b4f0b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

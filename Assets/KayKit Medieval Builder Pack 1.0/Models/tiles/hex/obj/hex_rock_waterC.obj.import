@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dj3ywn6huemx"
+path="res://.godot/imported/hex_rock_waterC.obj-f5b6e3bf3c6b1c8a9f9b7f0f003bbb3f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hex_rock_waterC.obj-f5b6e3bf3c6b1c8a9f9b7f0f003bbb3f.mesh"]
+
+source_file="res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/obj/hex_rock_waterC.obj"
+dest_files=["res://.godot/imported/hex_rock_waterC.obj-f5b6e3bf3c6b1c8a9f9b7f0f003bbb3f.mesh", "res://.godot/imported/hex_rock_waterC.obj-f5b6e3bf3c6b1c8a9f9b7f0f003bbb3f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

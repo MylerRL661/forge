@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dttpamy3pmcag"
+path="res://.godot/imported/archeryrange.obj-c47245c52e53c04bab7f9bcb14369c18.mesh"
+
+[deps]
+
+files=["res://.godot/imported/archeryrange.obj-c47245c52e53c04bab7f9bcb14369c18.mesh"]
+
+source_file="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/obj/archeryrange.obj"
+dest_files=["res://.godot/imported/archeryrange.obj-c47245c52e53c04bab7f9bcb14369c18.mesh", "res://.godot/imported/archeryrange.obj-c47245c52e53c04bab7f9bcb14369c18.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

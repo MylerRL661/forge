@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://8u5703fe4ln2"]
+
+[ext_resource type="PackedScene" uid="uid://baa2jfr4f2ynf" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/archeryrange.gltf.glb" id="1_qwmfe"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jejon"]
+size = Vector3(0.196441, 1.35156, 1.30212)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jbbgb"]
+size = Vector3(0.769165, 2.03418, 1.4043)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jamkl"]
+size = Vector3(1.93509, 1.06689, 0.633392)
+
+[node name="archeryrange_gltf" instance=ExtResource("1_qwmfe")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.770767, 0.576052, -0.106873)
+shape = SubResource("BoxShape3D_jejon")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.582825, 0.51709, -0.0473633)
+shape = SubResource("BoxShape3D_jbbgb")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00465393, 0.0334473, -0.552871)
+shape = SubResource("BoxShape3D_jamkl")

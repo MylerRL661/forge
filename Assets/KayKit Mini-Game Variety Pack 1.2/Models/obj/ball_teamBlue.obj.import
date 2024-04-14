@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://db7htpsbp0csw"
+path="res://.godot/imported/ball_teamBlue.obj-85896cd8002f05317c7aa9f42da73f5c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ball_teamBlue.obj-85896cd8002f05317c7aa9f42da73f5c.mesh"]
+
+source_file="res://Assets/KayKit Mini-Game Variety Pack 1.2/Models/obj/ball_teamBlue.obj"
+dest_files=["res://.godot/imported/ball_teamBlue.obj-85896cd8002f05317c7aa9f42da73f5c.mesh", "res://.godot/imported/ball_teamBlue.obj-85896cd8002f05317c7aa9f42da73f5c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

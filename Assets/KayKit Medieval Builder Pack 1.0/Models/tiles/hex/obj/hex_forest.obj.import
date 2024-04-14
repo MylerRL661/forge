@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dod2bj6vg2ye7"
+path="res://.godot/imported/hex_forest.obj-e8b811e52fc107b40b63377d8204bed4.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hex_forest.obj-e8b811e52fc107b40b63377d8204bed4.mesh"]
+
+source_file="res://Assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/obj/hex_forest.obj"
+dest_files=["res://.godot/imported/hex_forest.obj-e8b811e52fc107b40b63377d8204bed4.mesh", "res://.godot/imported/hex_forest.obj-e8b811e52fc107b40b63377d8204bed4.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dfhm3m5w32soe"
+path="res://.godot/imported/detail_treeB.obj-d311fdcf6866112c41c5bb80aeeb4cc9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/detail_treeB.obj-d311fdcf6866112c41c5bb80aeeb4cc9.mesh"]
+
+source_file="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/obj/detail_treeB.obj"
+dest_files=["res://.godot/imported/detail_treeB.obj-d311fdcf6866112c41c5bb80aeeb4cc9.mesh", "res://.godot/imported/detail_treeB.obj-d311fdcf6866112c41c5bb80aeeb4cc9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

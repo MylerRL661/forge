@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dp3c7w80145ky"
+path="res://.godot/imported/hoop_teamYellow.obj-3b2810e64ff19b1049b3752c26cc8170.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hoop_teamYellow.obj-3b2810e64ff19b1049b3752c26cc8170.mesh"]
+
+source_file="res://Assets/KayKit Mini-Game Variety Pack 1.2/Models/obj/hoop_teamYellow.obj"
+dest_files=["res://.godot/imported/hoop_teamYellow.obj-3b2810e64ff19b1049b3752c26cc8170.mesh", "res://.godot/imported/hoop_teamYellow.obj-3b2810e64ff19b1049b3752c26cc8170.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
