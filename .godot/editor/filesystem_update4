@@ -1,4 +1,3 @@
-res://Gridmap/kaykit_meshlibrary_dungeon.tres
 res://Scenes/game.tscn
 res://Prefabs/barbarian.tscn
 res://Prefabs/rogue_npc.tscn
@@ -6,5 +5,3 @@ res://Prefabs/archeryrange_prefab.tscn
 res://Prefabs/well_prefab.tscn
 res://Prefabs/anvil_prefab.tscn
 res://Prefabs/tiles.tscn
-res://kaykit_meshlibrary_dungeon.tres
-res://Scripts/player_movement.gd
