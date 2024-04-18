@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cucsn4tlaxdcg"]
+[gd_scene load_steps=7 format=3 uid="uid://cucsn4tlaxdcg"]
 
 [ext_resource type="Texture2D" uid="uid://dp6el0x2lkm5s" path="res://Assets/anvil/anvil_low_poly/textures/Scene_-_Root_baseColor.jpeg" id="1_hupmr"]
 
@@ -45,6 +45,9 @@ shadow_mesh = SubResource("ArrayMesh_oaif6")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x3r7n"]
 albedo_color = Color(0.364706, 0.364706, 0.364706, 1)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_sbbdg"]
+size = Vector3(5.44461, 2.73547, 2.3685)
+
 [node name="Sketchfab_Scene" type="Node3D"]
 
 [node name="Sketchfab_model" type="Node3D" parent="."]
@@ -56,3 +59,9 @@ transform = Transform3D(1, 0, 0, 0, 2.22045e-16, 1, 0, -1, 2.22045e-16, 0, 0, 0)
 mesh = SubResource("ArrayMesh_s1wuv")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_x3r7n")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.386063, 0.867737, 0.193375)
+shape = SubResource("BoxShape3D_sbbdg")

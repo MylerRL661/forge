@@ -5,3 +5,5 @@ res://Prefabs/archeryrange_prefab.tscn
 res://Prefabs/well_prefab.tscn
 res://Prefabs/anvil_prefab.tscn
 res://Prefabs/tiles.tscn
+res://Prefabs/knight_npc.tscn
+res://Prefabs/mage_npc.tscn

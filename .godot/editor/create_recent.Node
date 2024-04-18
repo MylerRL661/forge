@@ -1,11 +1,11 @@
-StaticBody3D
-GridMap
 CollisionShape3D
+StaticBody3D
 Node3D
+CharacterBody3D
+GridMap
 Marker3D
 Area3D
 AudioStreamPlayer
-CharacterBody3D
 Decal
 DirectionalLight3D
 WorldEnvironment

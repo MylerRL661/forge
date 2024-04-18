@@ -6,8 +6,8 @@ const JUMP_VELOCITY = 4.5
 @export var _isPlayerInRange : bool = false
 @export var _isCheering : bool = false
 @onready var anim_player : AnimationPlayer = $AnimationPlayer
-@onready var player_character = $"../../Barbarian"
-@onready var game_camera = $"../../Barbarian/Camera3D"
+@onready var player_character = $"../Barbarian"
+@onready var game_camera = $"../Barbarian/Camera3D"
 @onready var camera_target = $CameraTarget
 @onready var audio_player = $AudioStreamPlayer
 
