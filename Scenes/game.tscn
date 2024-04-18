@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://7kj8bv6xgw8"]
+[gd_scene load_steps=45 format=3 uid="uid://7kj8bv6xgw8"]
 
 [ext_resource type="PackedScene" uid="uid://n75r3qqo181" path="res://Prefabs/barbarian.tscn" id="1_cbtb2"]
 [ext_resource type="Shader" path="res://shader/sky_sokpop.gdshader" id="2_2r6cy"]
@@ -28,6 +28,7 @@
 [ext_resource type="PackedScene" uid="uid://ct7vadih431tl" path="res://Prefabs/mage_npc.tscn" id="23_kj8w4"]
 [ext_resource type="PackedScene" uid="uid://do1fk16xk2qhx" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/detail_rocks.gltf.glb" id="23_unoxo"]
 [ext_resource type="PackedScene" uid="uid://dwhwconx7c0ga" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/detail_treeC.gltf.glb" id="24_nykis"]
+[ext_resource type="Texture2D" uid="uid://gggxd36vqdrk" path="res://icon.svg" id="29_81v0p"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cus1t"]
 size = Vector3(75.4716, 1, 76.8699)
@@ -335,6 +336,10 @@ transform = Transform3D(0.61904, 0, 0.653291, 0, 0.9, 0, -0.653291, 0, 0.61904, 
 
 [node name="Mage" parent="." instance=ExtResource("23_kj8w4")]
 transform = Transform3D(0.523004, 0, -0.85233, 0, 1, 0, 0.85233, 0, 0.523004, 19.828, 2.54913, -2.35812)
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.14545, 3.26271, 0)
+texture = ExtResource("29_81v0p")
 
 [connection signal="body_entered" from="killbox" to="Barbarian" method="_on_killbox_body_entered"]
 [connection signal="body_entered" from="Rogue/Area3D2" to="Barbarian" method="_on_area_3d_2_body_entered"]
