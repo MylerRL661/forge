@@ -1,3 +1,6 @@
+Sprite3D
+Sprite2D
+Node2D
 CollisionShape3D
 StaticBody3D
 MeshInstance3D
@@ -10,5 +13,3 @@ Area3D
 AudioStreamPlayer
 Decal
 DirectionalLight3D
-WorldEnvironment
-AnimationTree

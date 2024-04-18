@@ -1,10 +1,11 @@
-[gd_scene load_steps=40 format=3 uid="uid://7kj8bv6xgw8"]
+[gd_scene load_steps=44 format=3 uid="uid://7kj8bv6xgw8"]
 
 [ext_resource type="PackedScene" uid="uid://n75r3qqo181" path="res://Prefabs/barbarian.tscn" id="1_cbtb2"]
 [ext_resource type="Shader" path="res://shader/sky_sokpop.gdshader" id="2_2r6cy"]
 [ext_resource type="PackedScene" uid="uid://c1py103j5v6c" path="res://Prefabs/rogue_npc.tscn" id="2_kwqtb"]
 [ext_resource type="PackedScene" uid="uid://bour1qs4dtp3r" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/mountain.gltf.glb" id="3_42vd6"]
 [ext_resource type="PackedScene" uid="uid://cxl2fg7i13iai" path="res://Prefabs/well_prefab.tscn" id="4_0rygr"]
+[ext_resource type="PackedScene" uid="uid://d3seortoscjdt" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/detail_forestB.gltf.glb" id="5_aoo7v"]
 [ext_resource type="PackedScene" uid="uid://8u5703fe4ln2" path="res://Prefabs/archeryrange_prefab.tscn" id="5_jktq2"]
 [ext_resource type="PackedScene" uid="uid://fr2keodfuven" path="res://Assets/KayKit Mini-Game Variety Pack 1.2/Models/gltf/bow_teamBlue.gltf.glb" id="6_i1j3o"]
 [ext_resource type="PackedScene" uid="uid://b3ysv2sguitqb" path="res://Assets/KayKit Mini-Game Variety Pack 1.2/Models/gltf/bow_teamRed.gltf.glb" id="7_0n5rb"]
@@ -23,7 +24,10 @@
 [ext_resource type="PackedScene" uid="uid://b0pcge7l6lo4g" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/detail_hill.gltf.glb" id="18_d2w1f"]
 [ext_resource type="PackedScene" uid="uid://cqwpd2gcokubb" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/mine.gltf.glb" id="19_by1oi"]
 [ext_resource type="Shader" path="res://shader/water.gdshader" id="20_xp3kk"]
+[ext_resource type="PackedScene" uid="uid://diqvdxk2iol78" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/watermill.gltf.glb" id="22_2dfmn"]
 [ext_resource type="PackedScene" uid="uid://ct7vadih431tl" path="res://Prefabs/mage_npc.tscn" id="23_kj8w4"]
+[ext_resource type="PackedScene" uid="uid://do1fk16xk2qhx" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/detail_rocks.gltf.glb" id="23_unoxo"]
+[ext_resource type="PackedScene" uid="uid://dwhwconx7c0ga" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/detail_treeC.gltf.glb" id="24_nykis"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cus1t"]
 size = Vector3(75.4716, 1, 76.8699)
@@ -151,7 +155,10 @@ transform = Transform3D(9.185, 0, 0, 0, 11.945, 0, 0, 0, 8.144, -14.5824, -1.907
 transform = Transform3D(9.185, 0, 0, 0, 11.945, 0, 0, 0, 8.144, -2.68151, 1.90735e-06, -41.8932)
 
 [node name="well_gltf" parent="WorldObjects" instance=ExtResource("4_0rygr")]
-transform = Transform3D(5.12, 0, 0, 0, 5.12, 0, 0, 0, 5.12, 2.58123, 0.910088, -6.50421)
+transform = Transform3D(5.12, 0, 0, 0, 5.12, 0, 0, 0, 5.12, -2.52972, 0.910086, 10.1316)
+
+[node name="detail_forestB_gltf" parent="WorldObjects/well_gltf" instance=ExtResource("5_aoo7v")]
+transform = Transform3D(-0.277689, 0, -1.98063, 0, 2, 0, 1.98063, 0, -0.277689, 2.38334, 0.00579199, -2.23212)
 
 [node name="archeryrange_gltf" parent="WorldObjects" instance=ExtResource("5_jktq2")]
 transform = Transform3D(6.73, 0, 0, 0, 6.73, 0, 0, 0, 6.73, 11.5749, 0.901395, -26.3813)
@@ -281,6 +288,30 @@ shape = SubResource("BoxShape3D_36s24")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="WorldObjects/water/StaticBody3D"]
 mesh = SubResource("PlaneMesh_70pq1")
+
+[node name="watermill_gltf" parent="WorldObjects" instance=ExtResource("22_2dfmn")]
+transform = Transform3D(7.97131, 0, -0.676936, 0, 8, 0, 0.676936, 0, 7.97131, -55.3491, -0.482704, 19.2217)
+
+[node name="detail_rocks_gltf" parent="WorldObjects" instance=ExtResource("23_unoxo")]
+transform = Transform3D(2.77981, 0, 4.15604, 0, 5, 0, -4.15604, 0, 2.77981, -43.5799, 0, 3.48104)
+
+[node name="detail_rocks_gltf2" parent="WorldObjects" instance=ExtResource("23_unoxo")]
+transform = Transform3D(2.77981, 0, 4.15604, 0, 5, 0, -4.15604, 0, 2.77981, -31.4428, -0.451925, 28.5682)
+
+[node name="detail_rocks_gltf3" parent="WorldObjects" instance=ExtResource("23_unoxo")]
+transform = Transform3D(0.514396, 0, -4.97347, 0, 5, 0, 4.97347, 0, 0.514396, 22.8492, -0.451925, 25.8032)
+
+[node name="detail_treeC_gltf" parent="WorldObjects" instance=ExtResource("24_nykis")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -45.636, -9.53674e-07, 0.895622)
+
+[node name="detail_treeC_gltf2" parent="WorldObjects" instance=ExtResource("24_nykis")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -43.7362, -9.53674e-07, 28.6635)
+
+[node name="detail_treeC_gltf3" parent="WorldObjects" instance=ExtResource("24_nykis")]
+transform = Transform3D(-7.5663, 0, -6.53843, 0, 10, 0, 6.53843, 0, -7.5663, -13.0767, 9.53674e-07, 21.3363)
+
+[node name="detail_treeC_gltf4" parent="WorldObjects" instance=ExtResource("24_nykis")]
+transform = Transform3D(-7.5663, 0, -6.53843, 0, 10, 0, 6.53843, 0, -7.5663, 30.752, 2.86102e-06, 21.3199)
 
 [node name="GridMap" type="GridMap" parent="."]
 mesh_library = ExtResource("14_piqrh")
