@@ -43,7 +43,8 @@ func _sayHello():
 	if _isPlayerInRange == true and player_character._hasInteracted == true:
 		_camMove()
 		_cheerAnimation()
-		audio_player.play()
+		#audio_player.play()
+		Dialogic.start('timeline1')
 		print("hello")
 
 func _on_area_3d_body_exited(body):

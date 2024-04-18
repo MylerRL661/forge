@@ -7,3 +7,11 @@ res://Prefabs/anvil_prefab.tscn
 res://Prefabs/tiles.tscn
 res://Prefabs/knight_npc.tscn
 res://Prefabs/mage_npc.tscn
+res://dialogue timeline/timeline1.dtl
+res://Scripts/rogue_npc.gd
+res://dialogue timeline/dialogic_style.tres
+res://Scripts/player_movement.gd
+res://forge credits.txt
+res://shader/water.gdshader
+res://sky_sokpop.gdshader
+res://shader/sky_sokpop.gdshader

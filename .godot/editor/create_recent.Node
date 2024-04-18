@@ -1,5 +1,7 @@
 CollisionShape3D
 StaticBody3D
+MeshInstance3D
+TextureRect
 Node3D
 CharacterBody3D
 GridMap
@@ -10,5 +12,3 @@ Decal
 DirectionalLight3D
 WorldEnvironment
 AnimationTree
-CSGBox3D
-Camera3D

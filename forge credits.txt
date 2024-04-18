@@ -8,4 +8,5 @@ fonts - kenney.nl
 audio - kenney.nl ----------------TODO
 input icons - kenney.nl
 dialogic
-water shader - godot shaders (need to find author)
+water shader - NekotoArts// Adapted from https://www.shadertoy.com/view/3tKBDz
+sokpop sky shader - https://godotshaders.com/shader/sokpop-skybox/ 

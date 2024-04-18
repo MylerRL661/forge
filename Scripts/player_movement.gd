@@ -6,6 +6,7 @@ extends CharacterBody3D
 var rotation_direction
 @export var _isInteracting : bool = false
 @export var _hasInteracted : bool = false
+@export var _isPlayerInRange : bool = false
 @export var rotation_speed = 5
 @onready var model = $Rig/Skeleton3D
 @onready var anim_player = $AnimationPlayer
@@ -20,7 +21,7 @@ func _physics_process(delta):
 		velocity.y -= gravity * delta
 
 	# Handle jump.
-	if Input.is_action_just_pressed("jump") and is_on_floor():
+	if Input.is_action_just_pressed("jump") and is_on_floor() and _isPlayerInRange == false:
 		velocity.y = JUMP_VELOCITY
 		anim_player.play("Jump_Full_Short", 0.5)
 
@@ -65,3 +66,11 @@ func _interact():
 func _on_killbox_body_entered(body):
 	if body.name == "Barbarian":
 		transform.origin = player_spawn_position.transform.origin
+
+func _on_area_3d_2_body_entered(body):
+	if body.name == 'Barbarian':
+		_isPlayerInRange = true
+
+func _on_area_3d_2_body_exited(body):
+	if body.name == 'Barbarian':
+		_isPlayerInRange = false
