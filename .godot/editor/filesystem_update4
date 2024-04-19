@@ -3,3 +3,15 @@ res://dialogue timeline/dialogic_style.tres
 res://shader/sky_sokpop.gdshader
 res://shader/water.gdshader
 res://Scenes/forge_indoor.tscn
+res://Prefabs/indoor_player_barb.tscn
+res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barb_anims/1H_Melee_Attack_Chop.res
+res://Prefabs/indoor_player_barb.gd
+res://Prefabs/barbarian.tscn
+res://Prefabs/rogue_npc.tscn
+res://Prefabs/archeryrange_prefab.tscn
+res://Prefabs/knight_npc.tscn
+res://Prefabs/mage_npc.tscn
+res://Prefabs/mini_game.tscn
+res://Scripts/down_arrow.gd
+res://Scripts/arrow_areas.gd
+res://Scripts/mini_game_manager.gd

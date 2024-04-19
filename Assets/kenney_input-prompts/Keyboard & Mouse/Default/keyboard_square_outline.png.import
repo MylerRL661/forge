@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnae31mqk5w1n"
-path.s3tc="res://.godot/imported/keyboard_arrow_right_outline.png-0a6b7f4f6cf081b661a4692a15165eac.s3tc.ctex"
+uid="uid://bcdb616nofukj"
+path.s3tc="res://.godot/imported/keyboard_square_outline.png-911e767e964072c08087e73cd9cbd369.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_right_outline.png"
-dest_files=["res://.godot/imported/keyboard_arrow_right_outline.png-0a6b7f4f6cf081b661a4692a15165eac.s3tc.ctex"]
+source_file="res://Assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_square_outline.png"
+dest_files=["res://.godot/imported/keyboard_square_outline.png-911e767e964072c08087e73cd9cbd369.s3tc.ctex"]
 
 [params]
 

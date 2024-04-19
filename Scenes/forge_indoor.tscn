@@ -1,10 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://cbnoas5c12c05"]
+[gd_scene load_steps=12 format=3 uid="uid://cbnoas5c12c05"]
 
 [ext_resource type="MeshLibrary" uid="uid://bk1tslridl0kv" path="res://meshlib1.meshlib" id="1_fh5b7"]
 [ext_resource type="PackedScene" uid="uid://cucsn4tlaxdcg" path="res://Prefabs/anvil_prefab.tscn" id="2_ptsbv"]
 [ext_resource type="PackedScene" uid="uid://dicurvrkm3cut" path="res://Assets/KayKit_DungeonRemastered_1.0_FREE/KayKit_DungeonRemastered_1.0_FREE/Assets/gltf/torch_lit.gltf.glb" id="3_aus1y"]
 [ext_resource type="PackedScene" uid="uid://dg332kiohl6t6" path="res://Assets/KayKit_Adventurers_1.0_FREE/Assets/gltf/shield_round_barbarian.gltf" id="4_bveb1"]
 [ext_resource type="PackedScene" uid="uid://bybsolm1mynml" path="res://Assets/KayKit_Adventurers_1.0_FREE/Assets/gltf/axe_2handed.gltf" id="5_3ogq1"]
+[ext_resource type="PackedScene" uid="uid://byrl0atpm13km" path="res://Prefabs/indoor_player_barb.tscn" id="6_0t5q4"]
+[ext_resource type="Script" path="res://Prefabs/indoor_player_barb.gd" id="7_ohjvw"]
+[ext_resource type="PackedScene" uid="uid://gsd4wh8yas5y" path="res://Prefabs/mini_game.tscn" id="8_pn4br"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_254u5"]
 albedo_color = Color(0.231373, 0.223529, 0.231373, 1)
@@ -54,10 +57,14 @@ light_volumetric_fog_energy = 0.0
 sky_mode = 1
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.989137, 0.146998, 0, -0.146998, 0.989137, 4.2786, 3.97819, 6.83381)
+transform = Transform3D(1, 0, 0, 0, 0.989137, 0.146998, 0, -0.146998, 0.989137, 4.2786, 3.93904, 6.83381)
 
-[node name="Sketchfab_Scene" parent="." instance=ExtResource("2_ptsbv")]
-transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 4.03755, 1, 2.62438)
+[node name="SpotLight3D" type="SpotLight3D" parent="Camera3D"]
+light_color = Color(1, 0.694118, 0.564706, 1)
+spot_range = 9.44343
+
+[node name="Anvil" parent="." instance=ExtResource("2_ptsbv")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 4.03755, 1, 2.62438)
 
 [node name="decor" type="Node3D" parent="."]
 
@@ -151,3 +158,12 @@ transform = Transform3D(1.63444, -1.89172, 0, 1.89172, 1.63444, 0, 0, 0, 2.5, 3.
 
 [node name="axe_2handed3" parent="decor" instance=ExtResource("5_3ogq1")]
 transform = Transform3D(1.6206, 1.90359, 0, -1.90359, 1.6206, 0, 0, 0, 2.5, 3.45209, 6.34723, -2.43147)
+
+[node name="Barbarian" parent="." instance=ExtResource("6_0t5q4")]
+transform = Transform3D(1.25, 0, 0, 0, 1.25, 0, 0, 0, 1.25, 3.98328, 1.04741, 1.84345)
+script = ExtResource("7_ohjvw")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Barbarian"]
+
+[node name="mini-game" parent="." instance=ExtResource("8_pn4br")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 4.2553, 2.70749, 4.36424)
