@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://dy8twochpj20k"]
+
+[ext_resource type="Script" path="res://Scripts/arrow_areas.gd" id="1_o25ko"]
+[ext_resource type="Texture2D" uid="uid://dmom5ohnv4wmv" path="res://Assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_up_outline.png" id="1_rqkj1"]
+[ext_resource type="Texture2D" uid="uid://xvcx0ehwipqb" path="res://Assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_up.png" id="2_e4tin"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eetn5"]
+size = Vector3(0.877441, 0.892456, 0.249634)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4180k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_rqkj1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_e4tin")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Area3D_up" type="Area3D" groups=["arrows"]]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+script = ExtResource("1_o25ko")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00170898, 0.00726318, 0.0206909)
+shape = SubResource("BoxShape3D_eetn5")
+
+[node name="up_arrow" type="AnimatedSprite3D" parent="." groups=["arrows"]]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+sprite_frames = SubResource("SpriteFrames_4180k")

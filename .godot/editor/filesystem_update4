@@ -15,3 +15,7 @@ res://Prefabs/mini_game.tscn
 res://Scripts/down_arrow.gd
 res://Scripts/arrow_areas.gd
 res://Scripts/mini_game_manager.gd
+res://Prefabs/arrows/area_3d_down.tscn
+res://Prefabs/arrows/area_3d_left.tscn
+res://Prefabs/arrows/area_3d_right.tscn
+res://Prefabs/arrows/area_3d_up.tscn

@@ -60,7 +60,7 @@ fog_density = 0.02
 fog_sky_affect = 0.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_f4prn"]
-size = Vector3(147.987, 24.7324, 169.228)
+size = Vector3(255.609, 24.7324, 257.895)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vaoms"]
 size = Vector3(1.48654, 1, 1.33582)
@@ -136,7 +136,7 @@ light_angular_distance = 34.49
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -17.0178, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="killbox"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5986, -0.961014, -46.53)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.4862, -0.961014, -67.3488)
 shape = SubResource("BoxShape3D_f4prn")
 
 [node name="PlayerSpawnPosition" type="Marker3D" parent="."]

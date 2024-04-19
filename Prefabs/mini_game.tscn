@@ -1,84 +1,13 @@
-[gd_scene load_steps=19 format=3 uid="uid://gsd4wh8yas5y"]
+[gd_scene load_steps=5 format=3 uid="uid://gsd4wh8yas5y"]
 
-[ext_resource type="Texture2D" uid="uid://deq17bvus38ot" path="res://Assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_down_outline.png" id="1_6qfef"]
 [ext_resource type="Script" path="res://Scripts/mini_game_manager.gd" id="1_hrbqn"]
-[ext_resource type="Texture2D" uid="uid://b1kiwt276gxm0" path="res://Assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_down.png" id="2_xa174"]
-[ext_resource type="Texture2D" uid="uid://dnae31mqk5w1n" path="res://Assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_right_outline.png" id="3_bfji2"]
-[ext_resource type="Script" path="res://Scripts/down_arrow.gd" id="3_brivd"]
-[ext_resource type="Texture2D" uid="uid://duvxxnndoalye" path="res://Assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_right.png" id="4_ggg14"]
-[ext_resource type="Texture2D" uid="uid://dmom5ohnv4wmv" path="res://Assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_up_outline.png" id="5_8l150"]
-[ext_resource type="Texture2D" uid="uid://xvcx0ehwipqb" path="res://Assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_up.png" id="6_8ha8i"]
-[ext_resource type="Texture2D" uid="uid://dvpobo4ju2e2d" path="res://Assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_left_outline.png" id="7_80d16"]
-[ext_resource type="Script" path="res://Scripts/arrow_areas.gd" id="8_hqo7w"]
-[ext_resource type="Texture2D" uid="uid://f3vcbry1cu6m" path="res://Assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_arrow_left.png" id="8_ox86y"]
 [ext_resource type="Texture2D" uid="uid://bcdb616nofukj" path="res://Assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_square_outline.png" id="9_43dv2"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_sugjw"]
 size = Vector3(1.71533, 3.60742, 4.4021)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_yttu6"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_6qfef")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_xa174")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"new_animation",
-"speed": 5.0
-}]
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_eetn5"]
 size = Vector3(0.877441, 0.892456, 0.249634)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_45d2y"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_bfji2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_ggg14")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_4180k"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_8l150")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_8ha8i")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_xlrft"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("7_80d16")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_ox86y")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
 
 [node name="mini-game" type="Node3D"]
 script = ExtResource("1_hrbqn")
@@ -95,52 +24,6 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8.60514, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.523926, -0.0292969, -0.00939941)
 shape = SubResource("BoxShape3D_sugjw")
 
-[node name="down_arrow" type="AnimatedSprite3D" parent="." groups=["arrows"]]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 13, 0, 0)
-sprite_frames = SubResource("SpriteFrames_yttu6")
-script = ExtResource("3_brivd")
-
-[node name="Area3D_down" type="Area3D" parent="down_arrow" groups=["arrows"]]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-script = ExtResource("8_hqo7w")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="down_arrow/Area3D_down"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00170898, 0.00726318, 0.0206909)
-shape = SubResource("BoxShape3D_eetn5")
-
-[node name="right_arrow" type="AnimatedSprite3D" parent="." groups=["arrows"]]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 13, 0, 0)
-sprite_frames = SubResource("SpriteFrames_45d2y")
-
-[node name="Area3D_right" type="Area3D" parent="right_arrow" groups=["arrows"]]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="right_arrow/Area3D_right"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00170898, 0.00726318, 0.0206909)
-shape = SubResource("BoxShape3D_eetn5")
-
-[node name="up_arrow" type="AnimatedSprite3D" parent="." groups=["arrows"]]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 13, 0, 0)
-sprite_frames = SubResource("SpriteFrames_4180k")
-
-[node name="Area3D_up" type="Area3D" parent="up_arrow" groups=["arrows"]]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="up_arrow/Area3D_up"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00170898, 0.00726318, 0.0206909)
-shape = SubResource("BoxShape3D_eetn5")
-
-[node name="left_arrow" type="AnimatedSprite3D" parent="." groups=["arrows"]]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 13, 0, 0)
-sprite_frames = SubResource("SpriteFrames_xlrft")
-
-[node name="Area3D_left" type="Area3D" parent="left_arrow" groups=["arrows"]]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="left_arrow/Area3D_left"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00170898, 0.00726318, 0.0206909)
-shape = SubResource("BoxShape3D_eetn5")
-
 [node name="hitBox" type="Sprite3D" parent="."]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -3, 0, 0)
 texture = ExtResource("9_43dv2")
@@ -152,4 +35,8 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00170898, 0.00726318, 0.0206909)
 shape = SubResource("BoxShape3D_eetn5")
 
+[node name="arrow_timer" type="Timer" parent="."]
+wait_time = 4.0
+
 [connection signal="area_entered" from="arrow_target/killbox" to="." method="_on_killbox_area_entered"]
+[connection signal="timeout" from="arrow_timer" to="." method="_on_arrow_timer_timeout"]
