@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckyf25u21txw2"]
+
+[ext_resource type="PackedScene" uid="uid://cqwpd2gcokubb" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/mine.gltf.glb" id="1_h5num"]
+
+[node name="mine_gltf" instance=ExtResource("1_h5num")]

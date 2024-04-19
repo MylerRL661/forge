@@ -2,8 +2,4 @@ res://Scenes/game.tscn
 res://dialogue timeline/dialogic_style.tres
 res://shader/sky_sokpop.gdshader
 res://shader/water.gdshader
-res://Prefabs/barbarian.tscn
-res://Prefabs/rogue_npc.tscn
-res://Prefabs/archeryrange_prefab.tscn
-res://Prefabs/knight_npc.tscn
-res://Prefabs/mage_npc.tscn
+res://Scenes/forge_indoor.tscn
