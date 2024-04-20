@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://7kj8bv6xgw8"]
+[gd_scene load_steps=54 format=3 uid="uid://7kj8bv6xgw8"]
 
 [ext_resource type="PackedScene" uid="uid://n75r3qqo181" path="res://Prefabs/barbarian.tscn" id="1_cbtb2"]
 [ext_resource type="Script" path="res://Scripts/main_game_manager.gd" id="1_mot2g"]
@@ -57,6 +57,15 @@ fog_sky_affect = 0.0
 [sub_resource type="BoxShape3D" id="BoxShape3D_f4prn"]
 size = Vector3(255.609, 24.7324, 257.895)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_20j72"]
+size = Vector3(0.32959, 1, 1.09656)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m11hn"]
+size = Vector3(0.969727, 1, 1.1434)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_727sv"]
+size = Vector3(1, 1.61121, 1)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_vaoms"]
 size = Vector3(1.48654, 1, 1.33582)
 
@@ -65,6 +74,9 @@ size = Vector3(1, 1.43567, 0.752808)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ianba"]
 size = Vector3(0.124756, 0.782715, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vtmwt"]
+size = Vector3(1.19739, 1.59033, 1.55902)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rey0i"]
 size = Vector3(18.3932, 7.95734, 29.4668)
@@ -95,6 +107,19 @@ subdivide_depth = 64
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6238j"]
 size = Vector3(1.48926, 1.52478, 1.38428)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5taoa"]
+size = Vector3(1.52576, 2.1748, 1.17554)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_8lb84"]
+radius = 0.478177
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ms3fn"]
+radius = 0.83835
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ieslr"]
+radius = 0.148389
+height = 1.51666
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_lqjw0"]
 
@@ -194,6 +219,20 @@ transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 1.97106, 0)
 [node name="barracks_gltf" parent="outside_world/WorldObjects" instance=ExtResource("14_dgm6w")]
 transform = Transform3D(4.81476, 0, 5.08115, 0, 7, 0, -5.08115, 0, 4.81476, -30.3706, 1.09079, -1.92284)
 
+[node name="StaticBody3D" type="StaticBody3D" parent="outside_world/WorldObjects/barracks_gltf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/WorldObjects/barracks_gltf/StaticBody3D"]
+transform = Transform3D(0.999999, 0, 0, 0, 0.999967, 0, 0, 0, 0.999999, -0.786962, 1.19209e-07, -0.00334883)
+shape = SubResource("BoxShape3D_20j72")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="outside_world/WorldObjects/barracks_gltf/StaticBody3D"]
+transform = Transform3D(0.837241, 0, -0.546832, 0, 0.999974, 0, 0.546832, 0, 0.837241, 0.570776, 0, -0.108913)
+shape = SubResource("BoxShape3D_m11hn")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="outside_world/WorldObjects/barracks_gltf/StaticBody3D"]
+transform = Transform3D(0.999999, 0, 0, 0, 0.999976, 0, 0, 0, 0.999999, -0.278462, 0.305603, -0.402583)
+shape = SubResource("BoxShape3D_727sv")
+
 [node name="farm_plot_gltf" parent="outside_world/WorldObjects" instance=ExtResource("16_hymtm")]
 transform = Transform3D(-5.24233, 0, -2.91856, 0, 6, 0, 2.91856, 0, -5.24233, 28.5951, 0.954257, 7.65853)
 
@@ -227,8 +266,21 @@ shape = SubResource("BoxShape3D_ianba")
 [node name="detail_hill_gltf" parent="outside_world/WorldObjects" instance=ExtResource("18_d2w1f")]
 transform = Transform3D(-0.586792, 0, 9.98277, 0, 10, 0, -9.98277, 0, -0.586792, -26.8073, 0.95235, -21.8881)
 
+[node name="StaticBody3D2" type="StaticBody3D" parent="outside_world/WorldObjects/detail_hill_gltf"]
+transform = Transform3D(-0.744698, -0.000405418, -0.667403, -0.00150819, 0.999998, 0.00107538, 0.667401, 0.0018074, -0.744697, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/WorldObjects/detail_hill_gltf/StaticBody3D2"]
+transform = Transform3D(1, -2.3836e-08, -2.98023e-08, 7.989e-09, 1, 3.81697e-08, 2.98023e-08, -7.6252e-09, 1, 0.0143554, 0.277112, 0.0598186)
+shape = SubResource("BoxShape3D_vtmwt")
+
 [node name="detail_hill_gltf2" parent="outside_world/WorldObjects" instance=ExtResource("18_d2w1f")]
 transform = Transform3D(7.09949, 0.0182808, -7.04251, -0.0150819, 9.99998, 0.0107538, 7.04252, 0.00298662, 7.09951, 21.4346, 1.2023, -49.2089)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="outside_world/WorldObjects/detail_hill_gltf2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/WorldObjects/detail_hill_gltf2/StaticBody3D"]
+transform = Transform3D(1, -2.34286e-08, -2.98023e-08, 0, 1, 2.68483e-08, 2.98023e-08, -1.33005e-08, 1, 0.117536, 0.277279, 0.00699425)
+shape = SubResource("BoxShape3D_vtmwt")
 
 [node name="forests" type="Node3D" parent="outside_world/WorldObjects"]
 
@@ -285,11 +337,33 @@ shape = SubResource("BoxShape3D_6238j")
 [node name="detail_rocks_gltf" parent="outside_world/WorldObjects" instance=ExtResource("23_unoxo")]
 transform = Transform3D(2.77981, 0, 4.15604, 0, 5, 0, -4.15604, 0, 2.77981, -43.5799, 0, 3.48104)
 
+[node name="StaticBody3D" type="StaticBody3D" parent="outside_world/WorldObjects/detail_rocks_gltf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/WorldObjects/detail_rocks_gltf/StaticBody3D"]
+transform = Transform3D(0.99751, 0, 0.0705227, 0, 1, 0, -0.0705227, 0, 0.99751, -0.119271, 0.506052, -0.127172)
+shape = SubResource("BoxShape3D_5taoa")
+
 [node name="detail_rocks_gltf2" parent="outside_world/WorldObjects" instance=ExtResource("23_unoxo")]
 transform = Transform3D(2.77981, 0, 4.15604, 0, 5, 0, -4.15604, 0, 2.77981, -31.4428, -0.451925, 28.5682)
 
+[node name="StaticBody3D" type="StaticBody3D" parent="outside_world/WorldObjects/detail_rocks_gltf2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/WorldObjects/detail_rocks_gltf2/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.432651, 0.319841, 0.00398779)
+shape = SubResource("SphereShape3D_8lb84")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="outside_world/WorldObjects/detail_rocks_gltf2/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.530691, 0.319842, -0.106989)
+shape = SubResource("SphereShape3D_8lb84")
+
 [node name="detail_rocks_gltf3" parent="outside_world/WorldObjects" instance=ExtResource("23_unoxo")]
 transform = Transform3D(0.514396, 0, -4.97347, 0, 5, 0, 4.97347, 0, 0.514396, 22.8492, -0.451925, 25.8032)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="outside_world/WorldObjects/detail_rocks_gltf3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/WorldObjects/detail_rocks_gltf3/StaticBody3D"]
+transform = Transform3D(1, 0, 1.49012e-08, 0, 1, 0, -1.49012e-08, 0, 1, -0.022397, 0, -0.182429)
+shape = SubResource("SphereShape3D_ms3fn")
 
 [node name="detail_treeC_gltf" parent="outside_world/WorldObjects" instance=ExtResource("24_nykis")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -45.636, -9.53674e-07, 0.895622)
@@ -297,11 +371,28 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -45.636, -9.53674e-07, 0.8
 [node name="detail_treeC_gltf2" parent="outside_world/WorldObjects" instance=ExtResource("24_nykis")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -43.7362, -9.53674e-07, 28.6635)
 
+[node name="StaticBody3D" type="StaticBody3D" parent="outside_world/WorldObjects/detail_treeC_gltf2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/WorldObjects/detail_treeC_gltf2/StaticBody3D"]
+shape = SubResource("CapsuleShape3D_ieslr")
+
 [node name="detail_treeC_gltf3" parent="outside_world/WorldObjects" instance=ExtResource("24_nykis")]
 transform = Transform3D(-7.5663, 0, -6.53843, 0, 10, 0, 6.53843, 0, -7.5663, -13.0767, 9.53674e-07, 21.3363)
 
+[node name="StaticBody3D2" type="StaticBody3D" parent="outside_world/WorldObjects/detail_treeC_gltf3"]
+transform = Transform3D(-0.75663, 0, 0.653843, 0, 1, 0, -0.653843, 0, -0.75663, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/WorldObjects/detail_treeC_gltf3/StaticBody3D2"]
+shape = SubResource("CapsuleShape3D_ieslr")
+
 [node name="detail_treeC_gltf4" parent="outside_world/WorldObjects" instance=ExtResource("24_nykis")]
 transform = Transform3D(-7.5663, 0, -6.53843, 0, 10, 0, 6.53843, 0, -7.5663, 30.752, 2.86102e-06, 21.3199)
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="outside_world/WorldObjects/detail_treeC_gltf4"]
+transform = Transform3D(-0.75663, 0, 0.653843, 0, 1, 0, -0.653843, 0, -0.75663, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/WorldObjects/detail_treeC_gltf4/StaticBody3D2"]
+shape = SubResource("CapsuleShape3D_ieslr")
 
 [node name="mountains" type="Node3D" parent="outside_world/WorldObjects"]
 
