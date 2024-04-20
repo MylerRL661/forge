@@ -10,7 +10,7 @@ var rotation_direction
 @export var rotation_speed = 5
 @onready var model = $Rig/Skeleton3D
 @onready var anim_player = $AnimationPlayer
-@onready var player_spawn_position = $"../PlayerSpawnPosition"
+@onready var player_spawn_position = $"../../PlayerSpawnPosition"
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")

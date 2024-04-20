@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cuvsw5lfyu7bo"]
+
+[ext_resource type="FontFile" uid="uid://otyv2o53br4k" path="res://Assets/kenney_fontpackage/Fonts/Kenney Mini.ttf" id="1_v6pl7"]
+
+[resource]
+default_font = ExtResource("1_v6pl7")
+default_font_size = 30

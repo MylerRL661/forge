@@ -17,12 +17,17 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+SceneManager="*res://addons/awesome_scene_manager/autoloads/SceneManager.tscn"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
-directories/dch_directory={}
+directories/dch_directory={
+"fjord": "res://dialogue timeline/characters/fjord.dch",
+"rogue": "res://dialogue timeline/characters/rogue.dch"
+}
 directories/dtl_directory={
+"talk_to_everyone_first": "res://dialogue timeline/talk_to_everyone_first.dtl",
 "timeline1": "res://dialogue timeline/timeline1.dtl"
 }
 glossary/default_case_sensitive=true
@@ -46,9 +51,14 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
 
+[display]
+
+window/size/resizable=false
+window/size/borderless=true
+
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+enabled=PackedStringArray("res://addons/awesome_scene_manager/plugin.cfg", "res://addons/dialogic/plugin.cfg")
 
 [filesystem]
 

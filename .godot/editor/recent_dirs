@@ -1,14 +1,17 @@
-res://Assets/kenney_fontpackage/Fonts
 res://Scripts
+res://dialogue timeline
+res://dialogue timeline/characters
+res://Assets/face_pics
+res://Assets/Audio/Rogue
+res://Scenes
+res://Prefabs/UI
+res://Assets/kenney_fontpackage/Fonts
 res://Assets/kenney_ui-pack-rpg-expansion/PNG
 res://Prefabs
 res://Prefabs/arrows
 res://Assets/kenney_input-prompts
-res://Scenes
 res://
 res://shader
-res://Assets/Audio/Rogue
-res://dialogue timeline
 res://tilemap
 res://Assets/Textures
 res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barb_anims

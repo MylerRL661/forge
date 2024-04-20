@@ -1,21 +1,21 @@
-res://Scripts/mini_game_manager.gd
-res://Prefabs/mini_game.tscn
+res://dialogue timeline/timeline1.dtl
+res://dialogue timeline/characters/rogue.dch
+res://Prefabs/rogue_npc.tscn
 res://dialogue timeline/dialogic_style.tres
 res://shader/sky_sokpop.gdshader
 res://shader/water.gdshader
 res://Scenes/game.tscn
 res://Prefabs/barbarian.tscn
-res://Prefabs/rogue_npc.tscn
 res://Prefabs/archeryrange_prefab.tscn
 res://Prefabs/knight_npc.tscn
 res://Prefabs/mage_npc.tscn
 res://Scenes/forge_indoor.tscn
 res://Prefabs/indoor_player_barb.tscn
-res://Prefabs/arrows/area_3d_down.tscn
-res://Prefabs/arrows/area_3d_left.tscn
-res://Prefabs/arrows/area_3d_right.tscn
-res://Prefabs/arrows/area_3d_up.tscn
-res://Scripts/arrow_areas.gd
+res://Prefabs/mini_game.tscn
 res://Prefabs/indoor_ui_menu.tscn
-res://dialogue timeline/timeline1.dtl
+res://dialogue timeline/characters/fjord.dch
 res://Scripts/main_game_manager.gd
+res://Scripts/rogue_npc.gd
+res://dialogue timeline/talk_to_everyone_first.dtl
+res://Scripts/indoor_ui_menu.gd
+res://Scripts/indoor_canvas.gd
