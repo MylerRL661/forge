@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="Forge"
-run/main_scene="res://Scenes/game.tscn"
+run/main_scene="res://Scenes/main_menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
+boot_splash/image="res://Assets/Godot-SplashScreens-main/Godot-SplashScreens-main/Screen/Reimagined logo/square-light.png"
 config/icon="res://icon.svg"
 
 [autoload]
@@ -53,9 +54,8 @@ text/autopauses={}
 
 [display]
 
-window/size/mode=3
+window/size/mode=4
 window/size/resizable=false
-window/size/borderless=true
 
 [editor_plugins]
 
