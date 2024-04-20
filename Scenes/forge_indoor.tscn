@@ -1,4 +1,4 @@
-[gd_scene load_steps=119 format=3 uid="uid://cbnoas5c12c05"]
+[gd_scene load_steps=120 format=3 uid="uid://cbnoas5c12c05"]
 
 [ext_resource type="MeshLibrary" uid="uid://bk1tslridl0kv" path="res://meshlib1.meshlib" id="1_fh5b7"]
 [ext_resource type="PackedScene" uid="uid://cucsn4tlaxdcg" path="res://Prefabs/anvil_prefab.tscn" id="2_ptsbv"]
@@ -90,6 +90,7 @@
 [ext_resource type="Texture2D" uid="uid://uw45w1vdelkm" path="res://Assets/kenney_ui-pack-rpg-expansion/PNG/buttonLong_brown_pressed.png" id="87_saxre"]
 [ext_resource type="Theme" uid="uid://cuvsw5lfyu7bo" path="res://Prefabs/UI/font_theme.tres" id="88_8wihn"]
 [ext_resource type="FontFile" uid="uid://otyv2o53br4k" path="res://Assets/kenney_fontpackage/Fonts/Kenney Mini.ttf" id="89_orsej"]
+[ext_resource type="Texture2D" uid="uid://b37maeo3dpstc" path="res://Assets/kenney_input-prompts/Flairs/Default/flair_disabled_cross.png" id="91_m5xtw"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_254u5"]
 albedo_color = Color(0.231373, 0.223529, 0.231373, 1)
@@ -1302,7 +1303,6 @@ texture = ExtResource("85_nokpu")
 
 [node name="arrow_timer" type="Timer" parent="mini-game"]
 process_callback = 0
-wait_time = 2.0
 autostart = true
 
 [node name="Control" type="Control" parent="."]
@@ -1395,6 +1395,15 @@ scroll_active = false
 deselect_on_focus_loss_enabled = false
 drag_and_drop_selection_enabled = false
 
+[node name="crossTex" type="TextureRect" parent="Control/CanvasLayer/Forge Buttons/BowButton"]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 2.5
+offset_right = 180.0
+offset_bottom = 42.5
+texture = ExtResource("91_m5xtw")
+expand_mode = 2
+
 [node name="SwordButton" type="TextureButton" parent="Control/CanvasLayer/Forge Buttons"]
 layout_mode = 1
 anchors_preset = 8
@@ -1435,6 +1444,15 @@ scroll_active = false
 deselect_on_focus_loss_enabled = false
 drag_and_drop_selection_enabled = false
 
+[node name="crossTex2" type="TextureRect" parent="Control/CanvasLayer/Forge Buttons/SwordButton"]
+layout_mode = 0
+offset_left = 143.0
+offset_top = 3.5
+offset_right = 183.0
+offset_bottom = 43.5
+texture = ExtResource("91_m5xtw")
+expand_mode = 2
+
 [node name="StaffButton" type="TextureButton" parent="Control/CanvasLayer/Forge Buttons"]
 layout_mode = 1
 anchors_preset = 8
@@ -1474,6 +1492,15 @@ fit_content = true
 scroll_active = false
 deselect_on_focus_loss_enabled = false
 drag_and_drop_selection_enabled = false
+
+[node name="crossTex3" type="TextureRect" parent="Control/CanvasLayer/Forge Buttons/StaffButton"]
+layout_mode = 0
+offset_left = 143.5
+offset_top = 2.5
+offset_right = 183.5
+offset_bottom = 42.5
+texture = ExtResource("91_m5xtw")
+expand_mode = 2
 
 [connection signal="area_entered" from="mini-game/arrow_target/killbox" to="mini-game" method="_on_killbox_area_entered"]
 [connection signal="area_entered" from="mini-game/Area3D_hitBox" to="mini-game" method="_on_area_3d_hit_box_area_entered"]

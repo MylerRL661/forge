@@ -15,6 +15,9 @@ var left_arrow_scene = preload("res://Prefabs/arrows/area_3d_left.tscn")
 @onready var barb_anims = $"../Barbarian/AnimationPlayer"
 @onready var forge_buttons = $"../Control/CanvasLayer/Forge Buttons"
 @onready var bowButton = $"../Control/CanvasLayer/Forge Buttons/BowButton"
+@onready var swordButton = $"../Control/CanvasLayer/Forge Buttons/SwordButton"
+@onready var staffButton = $"../Control/CanvasLayer/Forge Buttons/StaffButton"
+@onready var exitButton = $"../Control/CanvasLayer/Exit Button2/Exit Button"
 
 var score = 0
 var arrowsNeeded = 0
@@ -42,7 +45,7 @@ var leftInArea : bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	exitButton.visible = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -117,6 +120,21 @@ func _process(delta):
 			bowCompleted = true
 			bowButton.visible = false
 			print('bowComp', bowCompleted)
+	
+	if arrow_spawner.get_child_count() == 0 and arrow_timer.is_stopped() and swordPressed:
+		if score >= 9:
+			swordCompleted = true
+			swordButton.visible = false
+			print('swordComp', swordCompleted)
+	
+	if arrow_spawner.get_child_count() == 0 and arrow_timer.is_stopped() and staffPressed:
+		if score >= 20:
+			staffCompleted = true
+			staffButton.visible = false
+			print('staffComp', staffCompleted)
+	
+	if staffCompleted and swordCompleted and bowCompleted:
+		exitButton.visible = true
 
 func _on_killbox_area_entered(area):
 	if area.is_in_group('arrows'):
@@ -228,11 +246,11 @@ func _on_bow_button_pressed():
 	bowPressed = true
 
 func _on_sword_button_pressed():
-	_round_start(13, 4)
+	_round_start(13, 6)
 	forge_buttons.visible = false
 	swordPressed = true
 
 func _on_staff_button_pressed():
-	_round_start(25, 6)
+	_round_start(25, 9)
 	forge_buttons.visible = false
 	staffPressed = true
