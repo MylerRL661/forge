@@ -24,19 +24,21 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8.60514, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.523926, -0.0292969, -0.00939941)
 shape = SubResource("BoxShape3D_sugjw")
 
-[node name="hitBox" type="Sprite3D" parent="."]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -3, 0, 0)
-texture = ExtResource("9_43dv2")
+[node name="Area3D_hitBox" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
 
-[node name="Area3D_hitBox" type="Area3D" parent="hitBox"]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="hitBox/Area3D_hitBox"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D_hitBox"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00170898, 0.00726318, 0.0206909)
 shape = SubResource("BoxShape3D_eetn5")
+
+[node name="hitBox" type="Sprite3D" parent="Area3D_hitBox"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+texture = ExtResource("9_43dv2")
 
 [node name="arrow_timer" type="Timer" parent="."]
 wait_time = 4.0
 
 [connection signal="area_entered" from="arrow_target/killbox" to="." method="_on_killbox_area_entered"]
+[connection signal="area_entered" from="Area3D_hitBox" to="." method="_on_area_3d_hit_box_area_entered"]
+[connection signal="area_exited" from="Area3D_hitBox" to="." method="_on_area_3d_hit_box_area_exited"]
 [connection signal="timeout" from="arrow_timer" to="." method="_on_arrow_timer_timeout"]

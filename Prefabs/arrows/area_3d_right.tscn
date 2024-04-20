@@ -21,7 +21,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Area3D_right" type="Area3D" groups=["arrows"]]
+[node name="Area3D_right" type="Area3D" groups=["area_right", "arrows"]]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 script = ExtResource("1_taie0")
 
