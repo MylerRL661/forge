@@ -6,12 +6,13 @@ var right_arrow_scene = preload("res://Prefabs/arrows/area_3d_right.tscn")
 var up_arrow_scene = preload("res://Prefabs/arrows/area_3d_up.tscn")
 var left_arrow_scene = preload("res://Prefabs/arrows/area_3d_left.tscn")
 
+#onreadys
 @onready var hitboxGreen = $Area3D_hitBox/hitBox_green
 @onready var hitboxWhite = $Area3D_hitBox/hitBox
 @onready var hitboxRed = $Area3D_hitBox/hitBox_red
-
 @onready var arrow_spawner = $arrow_spawner
 @onready var arrow_timer = $arrow_timer
+@onready var barb_anims = $"../Barbarian/AnimationPlayer"
 
 var score = 0
 var arrowsNeeded = 0
@@ -47,48 +48,56 @@ func _process(delta):
 	#successful hits for each arrow
 	if Input.is_action_just_pressed("backward") and downInArea and roundStarted:
 		score += 1
+		barb_anims.play('1H_Melee_Attack_Chop')
 		print('Score: ', score)
 		currentDownArea.queue_free()
 	
 	if Input.is_action_just_pressed("right") and rightInArea and roundStarted:
 		score += 1
+		barb_anims.play('1H_Melee_Attack_Chop')
 		print('Score: ', score)
 		currentRightArea.queue_free()
 	
 	if Input.is_action_just_pressed("forward") and upInArea and roundStarted:
 		score += 1
+		barb_anims.play('1H_Melee_Attack_Chop')
 		print('Score: ', score)
 		currentUpArea.queue_free()
 	
 	if Input.is_action_just_pressed("left") and leftInArea and roundStarted:
 		score += 1
+		barb_anims.play('1H_Melee_Attack_Chop')
 		print('Score: ', score)
 		currentLeftArea.queue_free()
 	
 	#unsuccesful hits for each arrow
 	if Input.is_action_just_pressed("backward") and not downInArea and roundStarted:
-			score -= 1
-			hitboxRed.visible = true
-			hitboxWhite.visible = false
-			print('Score: ', score)
+		score -= 1
+		barb_anims.play('Hit_B')
+		hitboxRed.visible = true
+		hitboxWhite.visible = false
+		print('Score: ', score)
 	
 	if Input.is_action_just_pressed("right") and not rightInArea and roundStarted:
-			score -= 1
-			hitboxRed.visible = true
-			hitboxWhite.visible = false
-			print('Score: ', score)
+		score -= 1
+		barb_anims.play('Hit_B')
+		hitboxRed.visible = true
+		hitboxWhite.visible = false
+		print('Score: ', score)
 	
 	if Input.is_action_just_pressed("forward") and not upInArea and roundStarted:
-			score -= 1
-			hitboxRed.visible = true
-			hitboxWhite.visible = false
-			print('Score: ', score)
+		score -= 1
+		barb_anims.play('Hit_B')
+		hitboxRed.visible = true
+		hitboxWhite.visible = false
+		print('Score: ', score)
 	
 	if Input.is_action_just_pressed("left") and not leftInArea and roundStarted:
-			score -= 1
-			hitboxRed.visible = true
-			hitboxWhite.visible = false
-			print('Score: ', score)
+		score -= 1
+		barb_anims.play('Hit_B')
+		hitboxRed.visible = true
+		hitboxWhite.visible = false
+		print('Score: ', score)
 	
 	if arrow_spawner.get_child_count() == 0:
 		roundStarted = false
