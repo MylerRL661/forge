@@ -52,11 +52,6 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
 
-[display]
-
-window/size/mode=4
-window/size/resizable=false
-
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/awesome_scene_manager/plugin.cfg", "res://addons/dialogic/plugin.cfg")

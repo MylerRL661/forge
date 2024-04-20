@@ -14,11 +14,19 @@ var left_arrow_scene = preload("res://Prefabs/arrows/area_3d_left.tscn")
 @onready var arrow_timer = $arrow_timer
 @onready var barb_anims = $"../Barbarian/AnimationPlayer"
 @onready var forge_buttons = $"../Control/CanvasLayer/Forge Buttons"
+@onready var bowButton = $"../Control/CanvasLayer/Forge Buttons/BowButton"
 
 var score = 0
 var arrowsNeeded = 0
 var arrowSpawned : int
+var arrowSpeed: int = 0
 var roundStarted : bool = false
+var bowPressed : bool = false
+var bowCompleted : bool = false
+var swordPressed : bool = false
+var swordCompleted : bool = false
+var staffPressed : bool = false
+var staffCompleted : bool = false
 
 #areas currently in hitbox for animating/ deleting 
 var currentDownArea
@@ -100,8 +108,15 @@ func _process(delta):
 		hitboxWhite.visible = false
 		print('Score: ', score)
 	
-	if arrow_spawner.get_child_count() == 0:
+	if arrow_spawner.get_child_count() == 0 and arrow_timer.is_stopped():
 		roundStarted = false
+		forge_buttons.visible = true
+	
+	if arrow_spawner.get_child_count() == 0 and arrow_timer.is_stopped() and bowPressed:
+		if score >= 3:
+			bowCompleted = true
+			bowButton.visible = false
+			print('bowComp', bowCompleted)
 
 func _on_killbox_area_entered(area):
 	if area.is_in_group('arrows'):
@@ -111,24 +126,32 @@ func _instantiate_arrow(arrowInstance: String):
 	if arrowInstance == 'down':
 		var down_arrow_instance = down_arrow_scene.instantiate()
 		arrow_spawner.add_child(down_arrow_instance)
-		down_arrow_instance.speed = 5
+		down_arrow_instance.speed = arrowSpeed
 	
 	if arrowInstance == 'right':
 		var right_arrow_instance = right_arrow_scene.instantiate()
 		arrow_spawner.add_child(right_arrow_instance)
+		right_arrow_instance.speed = arrowSpeed
 	
 	if arrowInstance == 'up':
 		var up_arrow_instance = up_arrow_scene.instantiate()
 		arrow_spawner.add_child(up_arrow_instance)
+		up_arrow_instance.speed = arrowSpeed
 	
 	if arrowInstance == 'left':
 		var left_arrow_instance = left_arrow_scene.instantiate()
 		arrow_spawner.add_child(left_arrow_instance)
+		left_arrow_instance.speed = arrowSpeed
 
-func _round_start(arrows_needed_for_round : int):
+func _round_start(arrows_needed_for_round : int, speed: int):
+	arrowSpawned = 0
+	arrowsNeeded = 0
+	arrowSpeed = 0
+	arrowSpeed = speed
 	score = 0
 	arrowsNeeded = arrows_needed_for_round
 	arrow_timer.start()
+	print('is stopped? ', arrow_timer.is_stopped())
 	print('timer started')
 
 func _on_arrow_timer_timeout():
@@ -200,13 +223,16 @@ func _on_area_3d_hit_box_area_exited(area):
 
 
 func _on_bow_button_pressed():
-	_round_start(5)
+	_round_start(5, 2)
 	forge_buttons.visible = false
+	bowPressed = true
 
 func _on_sword_button_pressed():
-	_round_start(8)
+	_round_start(13, 4)
 	forge_buttons.visible = false
+	swordPressed = true
 
 func _on_staff_button_pressed():
-	_round_start(12)
+	_round_start(25, 6)
 	forge_buttons.visible = false
+	staffPressed = true

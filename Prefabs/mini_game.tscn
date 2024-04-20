@@ -49,7 +49,7 @@ texture = ExtResource("9_43dv2")
 
 [node name="arrow_timer" type="Timer" parent="."]
 process_callback = 0
-wait_time = 2.0
+wait_time = 0.665
 autostart = true
 
 [connection signal="area_entered" from="arrow_target/killbox" to="." method="_on_killbox_area_entered"]
