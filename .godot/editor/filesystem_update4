@@ -16,3 +16,6 @@ res://Prefabs/arrows/area_3d_left.tscn
 res://Prefabs/arrows/area_3d_right.tscn
 res://Prefabs/arrows/area_3d_up.tscn
 res://Scripts/arrow_areas.gd
+res://Prefabs/indoor_ui_menu.tscn
+res://dialogue timeline/timeline1.dtl
+res://Scripts/main_game_manager.gd

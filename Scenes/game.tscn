@@ -1,8 +1,10 @@
-[gd_scene load_steps=44 format=3 uid="uid://7kj8bv6xgw8"]
+[gd_scene load_steps=46 format=3 uid="uid://7kj8bv6xgw8"]
 
 [ext_resource type="PackedScene" uid="uid://n75r3qqo181" path="res://Prefabs/barbarian.tscn" id="1_cbtb2"]
+[ext_resource type="Script" path="res://Scripts/main_game_manager.gd" id="1_mot2g"]
 [ext_resource type="Shader" path="res://shader/sky_sokpop.gdshader" id="2_2r6cy"]
 [ext_resource type="PackedScene" uid="uid://c1py103j5v6c" path="res://Prefabs/rogue_npc.tscn" id="2_kwqtb"]
+[ext_resource type="PackedScene" uid="uid://cbnoas5c12c05" path="res://Scenes/forge_indoor.tscn" id="2_y8qnj"]
 [ext_resource type="PackedScene" uid="uid://bour1qs4dtp3r" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/mountain.gltf.glb" id="3_42vd6"]
 [ext_resource type="PackedScene" uid="uid://cxl2fg7i13iai" path="res://Prefabs/well_prefab.tscn" id="4_0rygr"]
 [ext_resource type="PackedScene" uid="uid://d3seortoscjdt" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/detail_forestB.gltf.glb" id="5_aoo7v"]
@@ -102,218 +104,225 @@ subdivide_depth = 64
 radius = 2.01984
 
 [node name="game" type="Node3D"]
+script = ExtResource("1_mot2g")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="."]
+[node name="PlayerSpawnPosition" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.29481, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+[node name="forge" parent="." instance=ExtResource("2_y8qnj")]
+visible = false
+
+[node name="outside_world" type="Node3D" parent="."]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="outside_world"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.99992, 0, -13.3636)
 shape = SubResource("BoxShape3D_cus1t")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="StaticBody3D"]
+[node name="CSGBox3D" type="CSGBox3D" parent="outside_world/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.32465, 0, -13.6319)
 size = Vector3(75.4622, 1, 77.3462)
 material = SubResource("StandardMaterial3D_rgfic")
 
-[node name="Barbarian" parent="." instance=ExtResource("1_cbtb2")]
+[node name="Barbarian" parent="outside_world" instance=ExtResource("1_cbtb2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.54556, 3.67089)
 collision_mask = 17
 SPEED = 8.0
 
-[node name="Camera3D" type="Camera3D" parent="Barbarian"]
+[node name="Camera3D" type="Camera3D" parent="outside_world/Barbarian"]
 transform = Transform3D(1, 0, 0, 0, 0.80262, 0.596491, 0, -0.596491, 0.80262, 0, 4.05247, 8.27212)
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="outside_world"]
 environment = SubResource("Environment_kqamq")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="outside_world"]
 transform = Transform3D(1, 0, 0, 0, 0.7173, 0.696765, 0, -0.696765, 0.7173, 0, 16.2944, 0)
 light_energy = 2.0
 light_indirect_energy = 6.832
 light_volumetric_fog_energy = 14.607
 light_angular_distance = 34.49
 
-[node name="killbox" type="Area3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -17.0178, 0)
+[node name="killbox" type="Area3D" parent="outside_world"]
+transform = Transform3D(1, -0.000394755, 0.000391157, 0.00039478, 1, -5.5522e-05, -0.000391132, 5.5699e-05, 1, 0, -17.0178, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="killbox"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/killbox"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.4862, -0.961014, -67.3488)
 shape = SubResource("BoxShape3D_f4prn")
 
-[node name="PlayerSpawnPosition" type="Marker3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.29481, 0)
-
-[node name="WorldObjects" type="Node3D" parent="."]
+[node name="WorldObjects" type="Node3D" parent="outside_world"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.51547, 0)
 
-[node name="mountain_gltf" parent="WorldObjects" instance=ExtResource("3_42vd6")]
+[node name="mountain_gltf" parent="outside_world/WorldObjects" instance=ExtResource("3_42vd6")]
 transform = Transform3D(3.43779, 0, 13.5933, 0, 16.3265, 0, -13.3477, 0, 3.50104, -23.6075, 0, -44.953)
 
-[node name="mountain_gltf2" parent="WorldObjects" instance=ExtResource("3_42vd6")]
+[node name="mountain_gltf2" parent="outside_world/WorldObjects" instance=ExtResource("3_42vd6")]
 transform = Transform3D(9.185, 0, 0, 0, 11.945, 0, 0, 0, 8.144, -14.5824, -1.90735e-06, -50.8915)
 
-[node name="mountain_gltf3" parent="WorldObjects" instance=ExtResource("3_42vd6")]
+[node name="mountain_gltf3" parent="outside_world/WorldObjects" instance=ExtResource("3_42vd6")]
 transform = Transform3D(9.185, 0, 0, 0, 11.945, 0, 0, 0, 8.144, -2.68151, 1.90735e-06, -41.8932)
 
-[node name="well_gltf" parent="WorldObjects" instance=ExtResource("4_0rygr")]
+[node name="well_gltf" parent="outside_world/WorldObjects" instance=ExtResource("4_0rygr")]
 transform = Transform3D(5.12, 0, 0, 0, 5.12, 0, 0, 0, 5.12, -2.52972, 0.910086, 10.1316)
 
-[node name="detail_forestB_gltf" parent="WorldObjects/well_gltf" instance=ExtResource("5_aoo7v")]
+[node name="detail_forestB_gltf" parent="outside_world/WorldObjects/well_gltf" instance=ExtResource("5_aoo7v")]
 transform = Transform3D(-0.277689, 0, -1.98063, 0, 2, 0, 1.98063, 0, -0.277689, 2.38334, 0.00579199, -2.23212)
 
-[node name="archeryrange_gltf" parent="WorldObjects" instance=ExtResource("5_jktq2")]
+[node name="archeryrange_gltf" parent="outside_world/WorldObjects" instance=ExtResource("5_jktq2")]
 transform = Transform3D(6.73, 0, 0, 0, 6.73, 0, 0, 0, 6.73, 11.5749, 0.901395, -26.3813)
 
-[node name="bow_teamBlue_gltf" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("6_i1j3o")]
+[node name="bow_teamBlue_gltf" parent="outside_world/WorldObjects/archeryrange_gltf" instance=ExtResource("6_i1j3o")]
 transform = Transform3D(-6.55671e-09, -0.15, 0, 0.15, -6.55671e-09, 0, 0, 0, 0.15, 0.128587, 0.363, -0.566879)
 
-[node name="bow_teamRed_gltf" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("7_0n5rb")]
+[node name="bow_teamRed_gltf" parent="outside_world/WorldObjects/archeryrange_gltf" instance=ExtResource("7_0n5rb")]
 transform = Transform3D(-6.55671e-09, -0.15, 0, 0.15, -6.55671e-09, 0, 0, 0, 0.15, -0.097518, 0.361676, -0.571164)
 
-[node name="bow_teamYellow_gltf" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("8_ra73q")]
+[node name="bow_teamYellow_gltf" parent="outside_world/WorldObjects/archeryrange_gltf" instance=ExtResource("8_ra73q")]
 transform = Transform3D(-0.00117546, -0.149995, 0, 0.149995, -0.00117546, 0, 0, 0, 0.15, -0.318774, 0.363276, -0.566359)
 
-[node name="arrow_teamBlue_gltf" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("9_menow")]
+[node name="arrow_teamBlue_gltf" parent="outside_world/WorldObjects/archeryrange_gltf" instance=ExtResource("9_menow")]
 transform = Transform3D(0.15, 0, 0, 0, 0.0453879, -0.142968, 0, 0.142968, 0.0453879, 0, 0.235076, -0.276263)
 
-[node name="arrow_teamBlue_gltf2" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("9_menow")]
+[node name="arrow_teamBlue_gltf2" parent="outside_world/WorldObjects/archeryrange_gltf" instance=ExtResource("9_menow")]
 transform = Transform3D(0.15, 0, 0, 0, 0.0453879, -0.142968, 0, 0.142968, 0.0453879, -0.103538, 0.235076, -0.284335)
 
-[node name="arrow_teamBlue_gltf3" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("9_menow")]
+[node name="arrow_teamBlue_gltf3" parent="outside_world/WorldObjects/archeryrange_gltf" instance=ExtResource("9_menow")]
 transform = Transform3D(0.15, 0, 0, 0, 0.0453879, -0.142968, 0, 0.142968, 0.0453879, 0.0592341, 0.134047, -0.26531)
 
-[node name="arrow_teamRed_gltf" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("10_3xsyf")]
+[node name="arrow_teamRed_gltf" parent="outside_world/WorldObjects/archeryrange_gltf" instance=ExtResource("10_3xsyf")]
 transform = Transform3D(0.15, 0, 0, 0, 0.0957325, -0.115478, 0, 0.115478, 0.0957325, -0.301258, 0.240415, -0.302289)
 
-[node name="arrow_teamRed_gltf2" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("10_3xsyf")]
+[node name="arrow_teamRed_gltf2" parent="outside_world/WorldObjects/archeryrange_gltf" instance=ExtResource("10_3xsyf")]
 transform = Transform3D(0.15, 0, 0, 0, 0.0957325, -0.115478, 0, 0.115478, 0.0957325, -0.288357, 0.225595, -0.284841)
 
-[node name="arrow_teamRed_gltf3" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("10_3xsyf")]
+[node name="arrow_teamRed_gltf3" parent="outside_world/WorldObjects/archeryrange_gltf" instance=ExtResource("10_3xsyf")]
 transform = Transform3D(0.15, 0, 0, 0, 0.0957325, -0.115478, 0, 0.115478, 0.0957325, -0.316867, 0.224223, -0.290773)
 
-[node name="arrow_teamYellow_gltf" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("11_e4sb4")]
+[node name="arrow_teamYellow_gltf" parent="outside_world/WorldObjects/archeryrange_gltf" instance=ExtResource("11_e4sb4")]
 transform = Transform3D(0.0826245, 0.0947116, 0.0818712, 0.0525876, 0.0627638, -0.125679, -0.113612, 0.0979306, 0.00136784, -0.756298, 0.179233, -0.408653)
 
-[node name="arrow_teamYellow_gltf2" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("11_e4sb4")]
+[node name="arrow_teamYellow_gltf2" parent="outside_world/WorldObjects/archeryrange_gltf" instance=ExtResource("11_e4sb4")]
 transform = Transform3D(0.130171, 0.0734876, 0.012456, 0.0648128, -0.0992192, -0.0919502, -0.0368089, 0.0851769, -0.117856, -0.532296, 0.483527, -0.507236)
 
-[node name="arrow_teamYellow_gltf3" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("11_e4sb4")]
+[node name="arrow_teamYellow_gltf3" parent="outside_world/WorldObjects/archeryrange_gltf" instance=ExtResource("11_e4sb4")]
 transform = Transform3D(0.0622969, -0.108914, -0.0822003, 0.0299337, 0.0990689, -0.108579, 0.133128, 0.0286903, 0.0628792, 0.304143, 0.67199, 0.208868)
 
-[node name="barrel_large_gltf" parent="WorldObjects/archeryrange_gltf" instance=ExtResource("12_kqyi7")]
+[node name="barrel_large_gltf" parent="outside_world/WorldObjects/archeryrange_gltf" instance=ExtResource("12_kqyi7")]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.20393, 0, -0.374853)
 
-[node name="arrow_bundle2" parent="WorldObjects/archeryrange_gltf/barrel_large_gltf" instance=ExtResource("13_qrch3")]
+[node name="arrow_bundle2" parent="outside_world/WorldObjects/archeryrange_gltf/barrel_large_gltf" instance=ExtResource("13_qrch3")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 1.97106, 0)
 
-[node name="barracks_gltf" parent="WorldObjects" instance=ExtResource("14_dgm6w")]
+[node name="barracks_gltf" parent="outside_world/WorldObjects" instance=ExtResource("14_dgm6w")]
 transform = Transform3D(4.81476, 0, 5.08115, 0, 7, 0, -5.08115, 0, 4.81476, -30.3706, 1.09079, -1.92284)
 
-[node name="farm_plot_gltf" parent="WorldObjects" instance=ExtResource("16_hymtm")]
+[node name="farm_plot_gltf" parent="outside_world/WorldObjects" instance=ExtResource("16_hymtm")]
 transform = Transform3D(-5.24233, 0, -2.91856, 0, 6, 0, 2.91856, 0, -5.24233, 28.5951, 0.954257, 7.65853)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="WorldObjects/farm_plot_gltf"]
+[node name="StaticBody3D" type="StaticBody3D" parent="outside_world/WorldObjects/farm_plot_gltf"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldObjects/farm_plot_gltf/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/WorldObjects/farm_plot_gltf/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000747681, 0, -0.00347853)
 shape = SubResource("BoxShape3D_vaoms")
 
-[node name="house_gltf" parent="WorldObjects" instance=ExtResource("17_1vng8")]
+[node name="house_gltf" parent="outside_world/WorldObjects" instance=ExtResource("17_1vng8")]
 transform = Transform3D(2.71311, 0, -5.35154, 0, 6, 0, 5.35154, 0, 2.71311, 23.9543, 1.01958, -1.63521)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="WorldObjects/house_gltf"]
+[node name="StaticBody3D" type="StaticBody3D" parent="outside_world/WorldObjects/house_gltf"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldObjects/house_gltf/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/WorldObjects/house_gltf/StaticBody3D"]
 transform = Transform3D(1, 0, 5.96046e-08, 0, 1, 0, -5.96046e-08, 0, 1, 0, 0.217835, -0.123596)
 shape = SubResource("BoxShape3D_ektgk")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="WorldObjects/house_gltf/StaticBody3D"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="outside_world/WorldObjects/house_gltf/StaticBody3D"]
 transform = Transform3D(1, 0, 5.96046e-08, 0, 1, 0, -5.96046e-08, 0, 1, -0.798936, -0.108643, 0.00285673)
 shape = SubResource("BoxShape3D_ianba")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="WorldObjects/house_gltf/StaticBody3D"]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="outside_world/WorldObjects/house_gltf/StaticBody3D"]
 transform = Transform3D(1, 0, 5.96046e-08, 0, 1, 0, -5.96046e-08, 0, 1, 0.775735, -0.108643, -0.000597477)
 shape = SubResource("BoxShape3D_ianba")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="WorldObjects/house_gltf/StaticBody3D"]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="outside_world/WorldObjects/house_gltf/StaticBody3D"]
 transform = Transform3D(0.491192, 0, 0.871051, 0, 1, 0, -0.871051, 0, 0.491192, 0.429869, -0.108643, -0.659368)
 shape = SubResource("BoxShape3D_ianba")
 
-[node name="detail_hill_gltf" parent="WorldObjects" instance=ExtResource("18_d2w1f")]
+[node name="detail_hill_gltf" parent="outside_world/WorldObjects" instance=ExtResource("18_d2w1f")]
 transform = Transform3D(-0.586792, 0, 9.98277, 0, 10, 0, -9.98277, 0, -0.586792, -26.8073, 0.95235, -21.8881)
 
-[node name="detail_hill_gltf2" parent="WorldObjects" instance=ExtResource("18_d2w1f")]
+[node name="detail_hill_gltf2" parent="outside_world/WorldObjects" instance=ExtResource("18_d2w1f")]
 transform = Transform3D(7.09949, 0.0182808, -7.04251, -0.0150819, 9.99998, 0.0107538, 7.04252, 0.00298662, 7.09951, 21.4346, 1.2023, -49.2089)
 
-[node name="mine_gltf" parent="WorldObjects" instance=ExtResource("19_by1oi")]
+[node name="mine_gltf" parent="outside_world/WorldObjects" instance=ExtResource("19_by1oi")]
 transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -12.6221, 0.972096, -37.1885)
 
-[node name="forests" type="Node3D" parent="WorldObjects"]
+[node name="forests" type="Node3D" parent="outside_world/WorldObjects"]
 
-[node name="forest_gltf" parent="WorldObjects/forests" instance=ExtResource("15_1pohi")]
+[node name="forest_gltf" parent="outside_world/WorldObjects/forests" instance=ExtResource("15_1pohi")]
 transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 24.6058, 0.958944, -11.3973)
 
-[node name="forest_gltf2" parent="WorldObjects/forests" instance=ExtResource("15_1pohi")]
+[node name="forest_gltf2" parent="outside_world/WorldObjects/forests" instance=ExtResource("15_1pohi")]
 transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 34.6099, 0.958944, -0.556803)
 
-[node name="forest_gltf3" parent="WorldObjects/forests" instance=ExtResource("15_1pohi")]
+[node name="forest_gltf3" parent="outside_world/WorldObjects/forests" instance=ExtResource("15_1pohi")]
 transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 34.7325, 0.958944, -10.4126)
 
-[node name="forest_gltf4" parent="WorldObjects/forests" instance=ExtResource("15_1pohi")]
+[node name="forest_gltf4" parent="outside_world/WorldObjects/forests" instance=ExtResource("15_1pohi")]
 transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 31.7592, 0.958942, -19.314)
 
-[node name="forest_gltf5" parent="WorldObjects/forests" instance=ExtResource("15_1pohi")]
+[node name="forest_gltf5" parent="outside_world/WorldObjects/forests" instance=ExtResource("15_1pohi")]
 transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 42.1934, 0.958942, -3.97344)
 
-[node name="forest_gltf6" parent="WorldObjects/forests" instance=ExtResource("15_1pohi")]
+[node name="forest_gltf6" parent="outside_world/WorldObjects/forests" instance=ExtResource("15_1pohi")]
 transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 41.4989, 0.958942, -13.9218)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="WorldObjects/forests"]
+[node name="StaticBody3D" type="StaticBody3D" parent="outside_world/WorldObjects/forests"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldObjects/forests/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/WorldObjects/forests/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.9556, 4.84277, -10.5501)
 shape = SubResource("BoxShape3D_rey0i")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="WorldObjects/forests/StaticBody3D"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="outside_world/WorldObjects/forests/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.8807, 4.74653, -15.2489)
 shape = SubResource("BoxShape3D_asxkb")
 
-[node name="water" type="Node3D" parent="WorldObjects"]
+[node name="water" type="Node3D" parent="outside_world/WorldObjects"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.11967, 0)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="WorldObjects/water"]
+[node name="StaticBody3D" type="StaticBody3D" parent="outside_world/WorldObjects/water"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldObjects/water/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/WorldObjects/water/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.7209, -1.47192, -182.234)
 shape = SubResource("BoxShape3D_36s24")
+disabled = true
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="WorldObjects/water/StaticBody3D"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="outside_world/WorldObjects/water/StaticBody3D"]
 mesh = SubResource("PlaneMesh_70pq1")
 
-[node name="watermill_gltf" parent="WorldObjects" instance=ExtResource("22_2dfmn")]
+[node name="watermill_gltf" parent="outside_world/WorldObjects" instance=ExtResource("22_2dfmn")]
 transform = Transform3D(7.97131, 0, -0.676936, 0, 8, 0, 0.676936, 0, 7.97131, -55.3491, -0.482704, 19.2217)
 
-[node name="detail_rocks_gltf" parent="WorldObjects" instance=ExtResource("23_unoxo")]
+[node name="detail_rocks_gltf" parent="outside_world/WorldObjects" instance=ExtResource("23_unoxo")]
 transform = Transform3D(2.77981, 0, 4.15604, 0, 5, 0, -4.15604, 0, 2.77981, -43.5799, 0, 3.48104)
 
-[node name="detail_rocks_gltf2" parent="WorldObjects" instance=ExtResource("23_unoxo")]
+[node name="detail_rocks_gltf2" parent="outside_world/WorldObjects" instance=ExtResource("23_unoxo")]
 transform = Transform3D(2.77981, 0, 4.15604, 0, 5, 0, -4.15604, 0, 2.77981, -31.4428, -0.451925, 28.5682)
 
-[node name="detail_rocks_gltf3" parent="WorldObjects" instance=ExtResource("23_unoxo")]
+[node name="detail_rocks_gltf3" parent="outside_world/WorldObjects" instance=ExtResource("23_unoxo")]
 transform = Transform3D(0.514396, 0, -4.97347, 0, 5, 0, 4.97347, 0, 0.514396, 22.8492, -0.451925, 25.8032)
 
-[node name="detail_treeC_gltf" parent="WorldObjects" instance=ExtResource("24_nykis")]
+[node name="detail_treeC_gltf" parent="outside_world/WorldObjects" instance=ExtResource("24_nykis")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -45.636, -9.53674e-07, 0.895622)
 
-[node name="detail_treeC_gltf2" parent="WorldObjects" instance=ExtResource("24_nykis")]
+[node name="detail_treeC_gltf2" parent="outside_world/WorldObjects" instance=ExtResource("24_nykis")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -43.7362, -9.53674e-07, 28.6635)
 
-[node name="detail_treeC_gltf3" parent="WorldObjects" instance=ExtResource("24_nykis")]
+[node name="detail_treeC_gltf3" parent="outside_world/WorldObjects" instance=ExtResource("24_nykis")]
 transform = Transform3D(-7.5663, 0, -6.53843, 0, 10, 0, 6.53843, 0, -7.5663, -13.0767, 9.53674e-07, 21.3363)
 
-[node name="detail_treeC_gltf4" parent="WorldObjects" instance=ExtResource("24_nykis")]
+[node name="detail_treeC_gltf4" parent="outside_world/WorldObjects" instance=ExtResource("24_nykis")]
 transform = Transform3D(-7.5663, 0, -6.53843, 0, 10, 0, 6.53843, 0, -7.5663, 30.752, 2.86102e-06, 21.3199)
 
-[node name="GridMap" type="GridMap" parent="."]
+[node name="GridMap" type="GridMap" parent="outside_world"]
 mesh_library = ExtResource("14_piqrh")
 cell_size = Vector3(2, 1, 2)
 data = {
@@ -321,23 +330,23 @@ data = {
 }
 metadata/_editor_floor_ = Vector3(0, 0, 18)
 
-[node name="Rogue" parent="." instance=ExtResource("2_kwqtb")]
+[node name="Rogue" parent="outside_world" instance=ExtResource("2_kwqtb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.79141, 2.53134, -22.9229)
 
-[node name="Area3D2" type="Area3D" parent="Rogue"]
+[node name="Area3D2" type="Area3D" parent="outside_world/Rogue"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Rogue/Area3D2"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/Rogue/Area3D2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03925, 0)
 shape = SubResource("SphereShape3D_gjpbw")
 
-[node name="Knight" parent="." instance=ExtResource("15_c6v60")]
+[node name="Knight" parent="outside_world" instance=ExtResource("15_c6v60")]
 transform = Transform3D(0.61904, 0, 0.653291, 0, 0.9, 0, -0.653291, 0, 0.61904, -26.8268, 2.60626, 1.10355)
 
-[node name="Mage" parent="." instance=ExtResource("23_kj8w4")]
+[node name="Mage" parent="outside_world" instance=ExtResource("23_kj8w4")]
 transform = Transform3D(0.523004, 0, -0.85233, 0, 1, 0, 0.85233, 0, 0.523004, 19.828, 2.54913, -2.35812)
 
-[connection signal="body_entered" from="killbox" to="Barbarian" method="_on_killbox_body_entered"]
-[connection signal="body_entered" from="Rogue/Area3D2" to="Barbarian" method="_on_area_3d_2_body_entered"]
-[connection signal="body_entered" from="Rogue/Area3D2" to="Rogue" method="_on_area_3d_body_entered"]
-[connection signal="body_exited" from="Rogue/Area3D2" to="Barbarian" method="_on_area_3d_2_body_exited"]
-[connection signal="body_exited" from="Rogue/Area3D2" to="Rogue" method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="outside_world/killbox" to="outside_world/Barbarian" method="_on_killbox_body_entered"]
+[connection signal="body_entered" from="outside_world/Rogue/Area3D2" to="outside_world/Barbarian" method="_on_area_3d_2_body_entered"]
+[connection signal="body_entered" from="outside_world/Rogue/Area3D2" to="outside_world/Rogue" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="outside_world/Rogue/Area3D2" to="outside_world/Barbarian" method="_on_area_3d_2_body_exited"]
+[connection signal="body_exited" from="outside_world/Rogue/Area3D2" to="outside_world/Rogue" method="_on_area_3d_body_exited"]
