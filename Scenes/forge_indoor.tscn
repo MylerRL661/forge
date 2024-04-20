@@ -1,4 +1,4 @@
-[gd_scene load_steps=112 format=3 uid="uid://cbnoas5c12c05"]
+[gd_scene load_steps=116 format=3 uid="uid://cbnoas5c12c05"]
 
 [ext_resource type="MeshLibrary" uid="uid://bk1tslridl0kv" path="res://meshlib1.meshlib" id="1_fh5b7"]
 [ext_resource type="PackedScene" uid="uid://cucsn4tlaxdcg" path="res://Prefabs/anvil_prefab.tscn" id="2_ptsbv"]
@@ -84,7 +84,11 @@
 [ext_resource type="Animation" uid="uid://c6e1n0um0y7d3" path="res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barb_anims/Walking_B.res" id="81_1leee"]
 [ext_resource type="Animation" uid="uid://bpan7ipilyvp8" path="res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barb_anims/Walking_Backwards.res" id="82_o2mso"]
 [ext_resource type="Animation" uid="uid://dqepys1hyvqhx" path="res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barb_anims/Walking_C.res" id="83_3bmpa"]
-[ext_resource type="PackedScene" uid="uid://brq6o43se7kl4" path="res://Prefabs/indoor_ui_menu.tscn" id="85_yarm1"]
+[ext_resource type="Script" path="res://Scripts/indoor_ui_menu.gd" id="85_b1q42"]
+[ext_resource type="Texture2D" uid="uid://dfebbxpvgdkq7" path="res://Assets/kenney_ui-pack-rpg-expansion/PNG/buttonLong_brown.png" id="86_viaj3"]
+[ext_resource type="Texture2D" uid="uid://uw45w1vdelkm" path="res://Assets/kenney_ui-pack-rpg-expansion/PNG/buttonLong_brown_pressed.png" id="87_saxre"]
+[ext_resource type="Theme" uid="uid://cuvsw5lfyu7bo" path="res://Prefabs/UI/font_theme.tres" id="88_8wihn"]
+[ext_resource type="FontFile" uid="uid://otyv2o53br4k" path="res://Assets/kenney_fontpackage/Fonts/Kenney Mini.ttf" id="89_orsej"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_254u5"]
 albedo_color = Color(0.231373, 0.223529, 0.231373, 1)
@@ -1253,5 +1257,177 @@ libraries = {
 [node name="mini-game" parent="." instance=ExtResource("8_pn4br")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 4.2553, 2.70749, 4.36424)
 
-[node name="Control" parent="." instance=ExtResource("85_yarm1")]
+[node name="Control" type="Control" parent="."]
 top_level = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("85_b1q42")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Control"]
+
+[node name="Exit Button2" type="Node" parent="Control/CanvasLayer"]
+
+[node name="Exit Button" type="TextureButton" parent="Control/CanvasLayer/Exit Button2"]
+top_level = true
+offset_left = 18.0
+offset_top = 16.0
+offset_right = 208.0
+offset_bottom = 117.0
+texture_normal = ExtResource("86_viaj3")
+texture_pressed = ExtResource("87_saxre")
+stretch_mode = 3
+
+[node name="TextEdit" type="RichTextLabel" parent="Control/CanvasLayer/Exit Button2/Exit Button"]
+layout_direction = 1
+layout_mode = 0
+offset_left = 61.0
+offset_top = 29.0
+offset_right = 123.0
+offset_bottom = 68.0
+theme = ExtResource("88_8wihn")
+theme_override_fonts/normal_font = ExtResource("89_orsej")
+theme_override_font_sizes/normal_font_size = 31
+text = "EXIT"
+fit_content = true
+scroll_active = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+
+[node name="Forge Buttons" type="Control" parent="Control/CanvasLayer"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BowButton" type="TextureButton" parent="Control/CanvasLayer/Forge Buttons"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -176.0
+offset_top = -144.0
+offset_right = 14.0
+offset_bottom = -95.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+texture_normal = ExtResource("86_viaj3")
+texture_pressed = ExtResource("87_saxre")
+
+[node name="TextEdit2" type="RichTextLabel" parent="Control/CanvasLayer/Forge Buttons/BowButton"]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -22.5
+offset_right = 34.0
+offset_bottom = 16.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("88_8wihn")
+theme_override_fonts/normal_font = ExtResource("89_orsej")
+theme_override_font_sizes/normal_font_size = 31
+text = "Bow"
+fit_content = true
+scroll_active = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+
+[node name="SwordButton" type="TextureButton" parent="Control/CanvasLayer/Forge Buttons"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -176.0
+offset_top = -4.0
+offset_right = 14.0
+offset_bottom = 45.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+texture_normal = ExtResource("86_viaj3")
+texture_pressed = ExtResource("87_saxre")
+
+[node name="TextEdit3" type="RichTextLabel" parent="Control/CanvasLayer/Forge Buttons/SwordButton"]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -22.5
+offset_right = 52.0
+offset_bottom = 16.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("88_8wihn")
+theme_override_fonts/normal_font = ExtResource("89_orsej")
+theme_override_font_sizes/normal_font_size = 31
+text = "Sword"
+fit_content = true
+scroll_active = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+
+[node name="StaffButton" type="TextureButton" parent="Control/CanvasLayer/Forge Buttons"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -176.0
+offset_top = 136.0
+offset_right = 14.0
+offset_bottom = 185.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+texture_normal = ExtResource("86_viaj3")
+texture_pressed = ExtResource("87_saxre")
+
+[node name="TextEdit4" type="RichTextLabel" parent="Control/CanvasLayer/Forge Buttons/StaffButton"]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.0
+offset_top = -23.5
+offset_right = 55.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("88_8wihn")
+theme_override_fonts/normal_font = ExtResource("89_orsej")
+theme_override_font_sizes/normal_font_size = 31
+text = "Staff"
+fit_content = true
+scroll_active = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+
+[connection signal="pressed" from="Control/CanvasLayer/Exit Button2/Exit Button" to="Control" method="_on_exit_button_pressed"]
+[connection signal="pressed" from="Control/CanvasLayer/Forge Buttons/BowButton" to="mini-game" method="_on_bow_button_pressed"]
+[connection signal="pressed" from="Control/CanvasLayer/Forge Buttons/SwordButton" to="mini-game" method="_on_sword_button_pressed"]
+[connection signal="pressed" from="Control/CanvasLayer/Forge Buttons/StaffButton" to="mini-game" method="_on_staff_button_pressed"]

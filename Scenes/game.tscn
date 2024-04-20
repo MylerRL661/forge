@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://7kj8bv6xgw8"]
+[gd_scene load_steps=57 format=3 uid="uid://7kj8bv6xgw8"]
 
 [ext_resource type="PackedScene" uid="uid://n75r3qqo181" path="res://Prefabs/barbarian.tscn" id="1_cbtb2"]
 [ext_resource type="Script" path="res://Scripts/main_game_manager.gd" id="1_mot2g"]
@@ -56,6 +56,17 @@ fog_sky_affect = 0.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_f4prn"]
 size = Vector3(255.609, 24.7324, 257.895)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_un4cp"]
+size = Vector3(0.458374, 1, 0.646729)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ixgwm"]
+radius = 0.16174
+height = 1.32103
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_gxynm"]
+radius = 0.399883
+height = 1.41392
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_20j72"]
 size = Vector3(0.32959, 1, 1.09656)
@@ -138,12 +149,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.29481, 0)
 [node name="outside_world" type="Node3D" parent="."]
 
 [node name="Barbarian" parent="outside_world" instance=ExtResource("1_cbtb2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.54556, 3.67089)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.769, 2.78777, -28.3709)
 collision_mask = 17
 SPEED = 8.0
 
 [node name="Camera3D" type="Camera3D" parent="outside_world/Barbarian"]
-transform = Transform3D(1, 0, 0, 0, 0.80262, 0.596491, 0, -0.596491, 0.80262, 0, 4.05247, 8.27212)
+transform = Transform3D(1, 0, 0, 0, 0.982787, 0.18474, 0, -0.18474, 0.982787, 0, 4.05247, 6.468)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="outside_world"]
 environment = SubResource("Environment_kqamq")
@@ -170,6 +181,20 @@ transform = Transform3D(5.12, 0, 0, 0, 5.12, 0, 0, 0, 5.12, -2.52972, 0.910086, 
 
 [node name="detail_forestB_gltf" parent="outside_world/WorldObjects/well_gltf" instance=ExtResource("5_aoo7v")]
 transform = Transform3D(-0.277689, 0, -1.98063, 0, 2, 0, 1.98063, 0, -0.277689, 2.38334, 0.00579199, -2.23212)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="outside_world/WorldObjects/well_gltf/detail_forestB_gltf"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/WorldObjects/well_gltf/detail_forestB_gltf/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48342, 0, 0.398874)
+shape = SubResource("BoxShape3D_un4cp")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="outside_world/WorldObjects/well_gltf/detail_forestB_gltf/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.714694, 0, 0.100941)
+shape = SubResource("CapsuleShape3D_ixgwm")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="outside_world/WorldObjects/well_gltf/detail_forestB_gltf/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.801923, 0, -0.457304)
+shape = SubResource("CapsuleShape3D_gxynm")
 
 [node name="archeryrange_gltf" parent="outside_world/WorldObjects" instance=ExtResource("5_jktq2")]
 transform = Transform3D(6.73, 0, 0, 0, 6.73, 0, 0, 0, 6.73, 11.5749, 0.901395, -26.3813)

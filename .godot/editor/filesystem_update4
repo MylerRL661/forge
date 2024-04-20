@@ -19,3 +19,5 @@ res://Scripts/rogue_npc.gd
 res://dialogue timeline/talk_to_everyone_first.dtl
 res://Scripts/indoor_ui_menu.gd
 res://Scripts/indoor_canvas.gd
+res://Scenes/game2.tscn
+res://Scripts/mini_game_manager.gd

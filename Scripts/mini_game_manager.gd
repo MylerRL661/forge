@@ -13,6 +13,7 @@ var left_arrow_scene = preload("res://Prefabs/arrows/area_3d_left.tscn")
 @onready var arrow_spawner = $arrow_spawner
 @onready var arrow_timer = $arrow_timer
 @onready var barb_anims = $"../Barbarian/AnimationPlayer"
+@onready var forge_buttons = $"../Control/CanvasLayer/Forge Buttons"
 
 var score = 0
 var arrowsNeeded = 0
@@ -194,3 +195,18 @@ func _on_area_3d_hit_box_area_exited(area):
 		hitboxRed.visible = false
 		hitboxWhite.visible = true
 		print('left area outside hitbox')
+
+
+func _on_bow_button_pressed():
+	_round_start(5)
+	forge_buttons.visible = false
+
+
+func _on_sword_button_pressed():
+	_round_start(8)
+	forge_buttons.visible = false
+
+
+func _on_staff_button_pressed():
+	_round_start(12)
+	forge_buttons.visible = false

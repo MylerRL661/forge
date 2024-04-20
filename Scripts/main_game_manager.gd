@@ -11,7 +11,7 @@ var gameStarted : bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	gameStarted = true
-	talkedToVillagers = true
+	#talkedToVillagers = true
 
 func _sceneSetup():
 	pass
