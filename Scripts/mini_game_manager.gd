@@ -1,20 +1,30 @@
 extends Node3D
 
-#arrows
+#arrow scenes for instantiation
 var down_arrow_scene = preload("res://Prefabs/arrows/area_3d_down.tscn")
 var right_arrow_scene = preload("res://Prefabs/arrows/area_3d_right.tscn")
 var up_arrow_scene = preload("res://Prefabs/arrows/area_3d_up.tscn")
 var left_arrow_scene = preload("res://Prefabs/arrows/area_3d_left.tscn")
 
+@onready var hitboxGreen = $Area3D_hitBox/hitBox_green
+@onready var hitboxWhite = $Area3D_hitBox/hitBox
+@onready var hitboxRed = $Area3D_hitBox/hitBox_red
+
 @onready var arrow_spawner = $arrow_spawner
 @onready var arrow_timer = $arrow_timer
 
 var score = 0
+var arrowsNeeded = 0
+var arrowSpawned : int
+var roundStarted : bool = false
+
+#areas currently in hitbox for animating/ deleting 
 var currentDownArea
 var currentRightArea
 var currentUpArea
 var currentLeftArea
 
+#bools to check which icon is currently in area
 var downInArea : bool = false
 var rightInArea : bool = false
 var upInArea : bool = false
@@ -26,48 +36,62 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if arrowSpawned == arrowsNeeded:
+		arrow_timer.stop()
+		#print('timer stopped')
 	
 	if Input.is_action_just_pressed("jump"):
 		#_instantiate_arrow('down')
-		_round_start()
+		_round_start(2)
 	
 	#successful hits for each arrow
-	if Input.is_action_just_pressed("backward") and downInArea:
+	if Input.is_action_just_pressed("backward") and downInArea and roundStarted:
 		score += 1
 		print('Score: ', score)
 		currentDownArea.queue_free()
 	
-	if Input.is_action_just_pressed("right") and rightInArea:
+	if Input.is_action_just_pressed("right") and rightInArea and roundStarted:
 		score += 1
 		print('Score: ', score)
 		currentRightArea.queue_free()
 	
-	if Input.is_action_just_pressed("forward") and upInArea:
+	if Input.is_action_just_pressed("forward") and upInArea and roundStarted:
 		score += 1
 		print('Score: ', score)
 		currentUpArea.queue_free()
 	
-	if Input.is_action_just_pressed("left") and leftInArea:
+	if Input.is_action_just_pressed("left") and leftInArea and roundStarted:
 		score += 1
 		print('Score: ', score)
 		currentLeftArea.queue_free()
 	
 	#unsuccesful hits for each arrow
-	if Input.is_action_just_pressed("backward") and not downInArea:
+	if Input.is_action_just_pressed("backward") and not downInArea and roundStarted:
 			score -= 1
+			hitboxRed.visible = true
+			hitboxWhite.visible = false
 			print('Score: ', score)
 	
-	if Input.is_action_just_pressed("right") and not rightInArea:
+	if Input.is_action_just_pressed("right") and not rightInArea and roundStarted:
 			score -= 1
+			hitboxRed.visible = true
+			hitboxWhite.visible = false
 			print('Score: ', score)
 	
-	if Input.is_action_just_pressed("forward") and not upInArea:
+	if Input.is_action_just_pressed("forward") and not upInArea and roundStarted:
 			score -= 1
+			hitboxRed.visible = true
+			hitboxWhite.visible = false
 			print('Score: ', score)
 	
-	if Input.is_action_just_pressed("left") and not leftInArea:
+	if Input.is_action_just_pressed("left") and not leftInArea and roundStarted:
 			score -= 1
+			hitboxRed.visible = true
+			hitboxWhite.visible = false
 			print('Score: ', score)
+	
+	if arrow_spawner.get_child_count() == 0:
+		roundStarted = false
 
 func _on_killbox_area_entered(area):
 	if area.is_in_group('arrows'):
@@ -90,11 +114,13 @@ func _instantiate_arrow(arrowInstance: String):
 		var left_arrow_instance = left_arrow_scene.instantiate()
 		arrow_spawner.add_child(left_arrow_instance)
 
-func _round_start():
+func _round_start(arrows_needed_for_round : int):
+	arrowsNeeded = arrows_needed_for_round
 	arrow_timer.start()
-	#print('timer started')
+	print('timer started')
 
 func _on_arrow_timer_timeout():
+	roundStarted = true
 	var random = RandomNumberGenerator.new()
 	random.randomize()
 	var randNum = random.randi_range(0, 3)
@@ -102,12 +128,16 @@ func _on_arrow_timer_timeout():
 	
 	if randNum == 0:
 		_instantiate_arrow('down')
+		arrowSpawned += 1
 	if randNum == 1:
 		_instantiate_arrow('right')
+		arrowSpawned += 1
 	if randNum == 2:
 		_instantiate_arrow('up')
+		arrowSpawned += 1
 	if randNum == 3:
 		_instantiate_arrow('left')
+		arrowSpawned += 1
 
 
 func _on_area_3d_hit_box_area_entered(area):
@@ -134,16 +164,24 @@ func _on_area_3d_hit_box_area_entered(area):
 func _on_area_3d_hit_box_area_exited(area):
 	if area.is_in_group('area_down'):
 		downInArea = false
+		hitboxRed.visible = false
+		hitboxWhite.visible = true
 		print('down area outside hitbox')
 	
 	if area.is_in_group('area_right'):
 		rightInArea = false
+		hitboxRed.visible = false
+		hitboxWhite.visible = true
 		print('right area outside hitbox')
 	
 	if area.is_in_group('area_up'):
 		upInArea = false
+		hitboxRed.visible = false
+		hitboxWhite.visible = true
 		print('up area outside hitbox')
 	
 	if area.is_in_group('area_left'):
 		leftInArea = false
+		hitboxRed.visible = false
+		hitboxWhite.visible = true
 		print('left area outside hitbox')

@@ -13,7 +13,7 @@ size = Vector3(0.877441, 0.892456, 0.249634)
 script = ExtResource("1_hrbqn")
 
 [node name="arrow_spawner" type="Marker3D" parent="."]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 14.0326, 0, 0)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8, 0, 0)
 
 [node name="arrow_target" type="Marker3D" parent="."]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8.60514, 0, 0)
@@ -35,8 +35,22 @@ shape = SubResource("BoxShape3D_eetn5")
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 texture = ExtResource("9_43dv2")
 
+[node name="hitBox_red" type="Sprite3D" parent="Area3D_hitBox"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+visible = false
+modulate = Color(0.952941, 0, 0, 1)
+texture = ExtResource("9_43dv2")
+
+[node name="hitBox_green" type="Sprite3D" parent="Area3D_hitBox"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+visible = false
+modulate = Color(0, 1, 0, 1)
+texture = ExtResource("9_43dv2")
+
 [node name="arrow_timer" type="Timer" parent="."]
-wait_time = 4.0
+process_callback = 0
+wait_time = 2.0
+autostart = true
 
 [connection signal="area_entered" from="arrow_target/killbox" to="." method="_on_killbox_area_entered"]
 [connection signal="area_entered" from="Area3D_hitBox" to="." method="_on_area_3d_hit_box_area_entered"]
