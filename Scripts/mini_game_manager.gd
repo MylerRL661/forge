@@ -42,9 +42,9 @@ func _process(delta):
 		arrow_timer.stop()
 		#print('timer stopped')
 	
-	if Input.is_action_just_pressed("jump"):
+	#if Input.is_action_just_pressed("jump"):
 		#_instantiate_arrow('down')
-		_round_start(2)
+		#_round_start(2)
 	
 	#successful hits for each arrow
 	if Input.is_action_just_pressed("backward") and downInArea and roundStarted:
@@ -111,6 +111,7 @@ func _instantiate_arrow(arrowInstance: String):
 	if arrowInstance == 'down':
 		var down_arrow_instance = down_arrow_scene.instantiate()
 		arrow_spawner.add_child(down_arrow_instance)
+		down_arrow_instance.speed = 5
 	
 	if arrowInstance == 'right':
 		var right_arrow_instance = right_arrow_scene.instantiate()
@@ -125,6 +126,7 @@ func _instantiate_arrow(arrowInstance: String):
 		arrow_spawner.add_child(left_arrow_instance)
 
 func _round_start(arrows_needed_for_round : int):
+	score = 0
 	arrowsNeeded = arrows_needed_for_round
 	arrow_timer.start()
 	print('timer started')
@@ -201,11 +203,9 @@ func _on_bow_button_pressed():
 	_round_start(5)
 	forge_buttons.visible = false
 
-
 func _on_sword_button_pressed():
 	_round_start(8)
 	forge_buttons.visible = false
-
 
 func _on_staff_button_pressed():
 	_round_start(12)

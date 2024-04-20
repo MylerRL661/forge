@@ -1,4 +1,4 @@
-[gd_scene load_steps=116 format=3 uid="uid://cbnoas5c12c05"]
+[gd_scene load_steps=119 format=3 uid="uid://cbnoas5c12c05"]
 
 [ext_resource type="MeshLibrary" uid="uid://bk1tslridl0kv" path="res://meshlib1.meshlib" id="1_fh5b7"]
 [ext_resource type="PackedScene" uid="uid://cucsn4tlaxdcg" path="res://Prefabs/anvil_prefab.tscn" id="2_ptsbv"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://bybsolm1mynml" path="res://Assets/KayKit_Adventurers_1.0_FREE/Assets/gltf/axe_2handed.gltf" id="5_3ogq1"]
 [ext_resource type="Texture2D" uid="uid://bbo54eon6xpkd" path="res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barbarian_barbarian_texture.png" id="7_lw5pc"]
 [ext_resource type="Script" path="res://Prefabs/indoor_player_barb.gd" id="7_ohjvw"]
-[ext_resource type="PackedScene" uid="uid://gsd4wh8yas5y" path="res://Prefabs/mini_game.tscn" id="8_pn4br"]
 [ext_resource type="Animation" uid="uid://dh00o8inr5fhd" path="res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barb_anims/1H_Melee_Attack_Chop.res" id="8_wr7kg"]
 [ext_resource type="Animation" uid="uid://dfixa4rkr2m6" path="res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barb_anims/1H_Melee_Attack_Slice_Diagonal.res" id="9_2qy2d"]
 [ext_resource type="Animation" uid="uid://bujtw0squbef2" path="res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barb_anims/1H_Melee_Attack_Slice_Horizontal.res" id="10_wfdf0"]
@@ -84,7 +83,9 @@
 [ext_resource type="Animation" uid="uid://c6e1n0um0y7d3" path="res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barb_anims/Walking_B.res" id="81_1leee"]
 [ext_resource type="Animation" uid="uid://bpan7ipilyvp8" path="res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barb_anims/Walking_Backwards.res" id="82_o2mso"]
 [ext_resource type="Animation" uid="uid://dqepys1hyvqhx" path="res://Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/Barb_anims/Walking_C.res" id="83_3bmpa"]
+[ext_resource type="Script" path="res://Scripts/mini_game_manager.gd" id="84_jrxji"]
 [ext_resource type="Script" path="res://Scripts/indoor_ui_menu.gd" id="85_b1q42"]
+[ext_resource type="Texture2D" uid="uid://bcdb616nofukj" path="res://Assets/kenney_input-prompts/Keyboard & Mouse/Default/keyboard_square_outline.png" id="85_nokpu"]
 [ext_resource type="Texture2D" uid="uid://dfebbxpvgdkq7" path="res://Assets/kenney_ui-pack-rpg-expansion/PNG/buttonLong_brown.png" id="86_viaj3"]
 [ext_resource type="Texture2D" uid="uid://uw45w1vdelkm" path="res://Assets/kenney_ui-pack-rpg-expansion/PNG/buttonLong_brown_pressed.png" id="87_saxre"]
 [ext_resource type="Theme" uid="uid://cuvsw5lfyu7bo" path="res://Prefabs/UI/font_theme.tres" id="88_8wihn"]
@@ -671,6 +672,12 @@ _data = {
 "Walking_C": ExtResource("83_3bmpa")
 }
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_sugjw"]
+size = Vector3(1.71533, 3.60742, 4.4021)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eetn5"]
+size = Vector3(0.437317, 0.892456, 0.249634)
+
 [node name="Node3D" type="Node3D"]
 
 [node name="GridMap" type="GridMap" parent="."]
@@ -1254,8 +1261,49 @@ libraries = {
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Barbarian"]
 
-[node name="mini-game" parent="." instance=ExtResource("8_pn4br")]
+[node name="mini-game" type="Node3D" parent="."]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 4.2553, 2.70749, 4.36424)
+script = ExtResource("84_jrxji")
+
+[node name="arrow_spawner" type="Marker3D" parent="mini-game"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8, 0, 0)
+
+[node name="arrow_target" type="Marker3D" parent="mini-game"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8.60514, 0, 0)
+
+[node name="killbox" type="Area3D" parent="mini-game/arrow_target"]
+
+[node name="killbox_collider" type="CollisionShape3D" parent="mini-game/arrow_target/killbox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.523926, -0.0292969, -0.00939941)
+shape = SubResource("BoxShape3D_sugjw")
+
+[node name="Area3D_hitBox" type="Area3D" parent="mini-game"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="mini-game/Area3D_hitBox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0202942, 0.00726318, 0.0206909)
+shape = SubResource("BoxShape3D_eetn5")
+
+[node name="hitBox" type="Sprite3D" parent="mini-game/Area3D_hitBox"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+texture = ExtResource("85_nokpu")
+
+[node name="hitBox_red" type="Sprite3D" parent="mini-game/Area3D_hitBox"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+visible = false
+modulate = Color(0.952941, 0, 0, 1)
+texture = ExtResource("85_nokpu")
+
+[node name="hitBox_green" type="Sprite3D" parent="mini-game/Area3D_hitBox"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+visible = false
+modulate = Color(0, 1, 0, 1)
+texture = ExtResource("85_nokpu")
+
+[node name="arrow_timer" type="Timer" parent="mini-game"]
+process_callback = 0
+wait_time = 2.0
+autostart = true
 
 [node name="Control" type="Control" parent="."]
 top_level = true
@@ -1427,6 +1475,10 @@ scroll_active = false
 deselect_on_focus_loss_enabled = false
 drag_and_drop_selection_enabled = false
 
+[connection signal="area_entered" from="mini-game/arrow_target/killbox" to="mini-game" method="_on_killbox_area_entered"]
+[connection signal="area_entered" from="mini-game/Area3D_hitBox" to="mini-game" method="_on_area_3d_hit_box_area_entered"]
+[connection signal="area_exited" from="mini-game/Area3D_hitBox" to="mini-game" method="_on_area_3d_hit_box_area_exited"]
+[connection signal="timeout" from="mini-game/arrow_timer" to="mini-game" method="_on_arrow_timer_timeout"]
 [connection signal="pressed" from="Control/CanvasLayer/Exit Button2/Exit Button" to="Control" method="_on_exit_button_pressed"]
 [connection signal="pressed" from="Control/CanvasLayer/Forge Buttons/BowButton" to="mini-game" method="_on_bow_button_pressed"]
 [connection signal="pressed" from="Control/CanvasLayer/Forge Buttons/SwordButton" to="mini-game" method="_on_sword_button_pressed"]

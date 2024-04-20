@@ -21,3 +21,6 @@ res://Scripts/indoor_ui_menu.gd
 res://Scripts/indoor_canvas.gd
 res://Scenes/game2.tscn
 res://Scripts/mini_game_manager.gd
+res://Prefabs/arrows/area_3d_down.tscn
+res://Scripts/down_arrow.gd
+res://Scripts/arrow_areas.gd
