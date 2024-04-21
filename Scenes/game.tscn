@@ -29,7 +29,7 @@
 [ext_resource type="PackedScene" uid="uid://ct7vadih431tl" path="res://Prefabs/mage_npc.tscn" id="23_kj8w4"]
 [ext_resource type="PackedScene" uid="uid://do1fk16xk2qhx" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/detail_rocks.gltf.glb" id="23_unoxo"]
 [ext_resource type="PackedScene" uid="uid://dwhwconx7c0ga" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/detail_treeC.gltf.glb" id="24_nykis"]
-[ext_resource type="Texture2D" uid="uid://c7aqa8cnxnt8k" path="res://Assets/Textures/forge_tex.png" id="26_tmjai"]
+[ext_resource type="Texture2D" uid="uid://dixkxnqt7q53x" path="res://Assets/Textures/forge_tex-removebg-preview.png" id="26_yrknu"]
 [ext_resource type="AudioStream" uid="uid://bu52xkwsrmlfq" path="res://Assets/Audio/One Man Symphony - A New Day's Hurry (Free)/06 Collector (Museum Theme) - Loops.mp3" id="30_bb26g"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_q0lxs"]
@@ -443,7 +443,7 @@ shape = SubResource("SphereShape3D_lqjw0")
 
 [node name="Sprite3D" type="Sprite3D" parent="outside_world/WorldObjects/mountains/mine_gltf"]
 transform = Transform3D(0.266906, 0, 0, 0, 0.237113, 0, 0, 0, 0.351636, -0.0138465, 0.579494, 0.672174)
-texture = ExtResource("26_tmjai")
+texture = ExtResource("26_yrknu")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="outside_world/WorldObjects/mountains"]
 

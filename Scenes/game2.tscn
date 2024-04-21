@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=3 uid="uid://cml2eow132lw"]
+[gd_scene load_steps=63 format=3 uid="uid://cml2eow132lw"]
 
 [ext_resource type="Script" path="res://Scripts/dupes/main_game_manager2.gd" id="1_wtjoq"]
 [ext_resource type="PackedScene" uid="uid://n75r3qqo181" path="res://Prefabs/barbarian.tscn" id="2_ohutd"]
@@ -25,6 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://diqvdxk2iol78" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/watermill.gltf.glb" id="23_lslgu"]
 [ext_resource type="PackedScene" uid="uid://do1fk16xk2qhx" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/detail_rocks.gltf.glb" id="24_e6743"]
 [ext_resource type="PackedScene" uid="uid://dwhwconx7c0ga" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/detail_treeC.gltf.glb" id="25_8ygiy"]
+[ext_resource type="Texture2D" uid="uid://dixkxnqt7q53x" path="res://Assets/Textures/forge_tex-removebg-preview.png" id="26_b4lxc"]
 [ext_resource type="MeshLibrary" uid="uid://bk1tslridl0kv" path="res://meshlib1.meshlib" id="26_uhynd"]
 [ext_resource type="PackedScene" uid="uid://c1py103j5v6c" path="res://Prefabs/rogue_npc.tscn" id="27_ooloe"]
 [ext_resource type="PackedScene" uid="uid://cwxmqmwd5qqdq" path="res://Prefabs/knight_npc.tscn" id="28_fm48r"]
@@ -443,6 +444,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.203171, 0.839972)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/WorldObjects/mountains/mine_gltf/Area3D"]
 shape = SubResource("SphereShape3D_lqjw0")
+
+[node name="Sprite3D" type="Sprite3D" parent="outside_world/WorldObjects/mountains/mine_gltf"]
+transform = Transform3D(0.266906, 0, 0, 0, 0.237113, 0, 0, 0, 0.351636, -0.0138465, 0.579494, 0.672174)
+texture = ExtResource("26_b4lxc")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="outside_world/WorldObjects/mountains"]
 
