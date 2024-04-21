@@ -1,10 +1,10 @@
-TextureRect
 Label
+CanvasLayer
+Control
+TextureRect
 RichTextLabel
 TextureButton
 Button
-CanvasLayer
-Control
 Node3D
 Node
 CollisionShape3D
@@ -12,4 +12,3 @@ StaticBody3D
 AnimationPlayer
 ColorRect
 Area3D
-TextEdit

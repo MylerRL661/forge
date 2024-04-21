@@ -25,11 +25,19 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 directories/dch_directory={
 "fjord": "res://dialogue timeline/characters/fjord.dch",
-"rogue": "res://dialogue timeline/characters/rogue.dch"
+"henry": "res://dialogue timeline/characters/henry.dch",
+"rogue": "res://dialogue timeline/characters/rogue.dch",
+"vi": "res://dialogue timeline/characters/vi.dch"
 }
 directories/dtl_directory={
+"deliver_goods": "res://dialogue timeline/deliver_goods.dtl",
+"henry1": "res://dialogue timeline/henry1.dtl",
+"henry2": "res://dialogue timeline/henry2.dtl",
+"rogue2": "res://dialogue timeline/rogue2.dtl",
 "talk_to_everyone_first": "res://dialogue timeline/talk_to_everyone_first.dtl",
-"timeline1": "res://dialogue timeline/timeline1.dtl"
+"timeline1": "res://dialogue timeline/timeline1.dtl",
+"v2": "res://dialogue timeline/v2.dtl",
+"vi1": "res://dialogue timeline/vi1.dtl"
 }
 glossary/default_case_sensitive=true
 layout/style_list=["res://dialogue timeline/dialogic_style.tres"]

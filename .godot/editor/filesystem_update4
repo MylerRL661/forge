@@ -16,3 +16,14 @@ res://Prefabs/arrows/area_3d_down.tscn
 res://Scenes/main_menu.tscn
 res://Scripts/knight_npc.gd
 res://Scripts/mage_npc.gd
+res://dialogue timeline/characters/rogue.dch
+res://Scenes/game2.tscn
+res://dialogue timeline/rogue2.dtl
+res://Scripts/dupes/rogue_npc.gd
+res://Scripts/dupes/rogue_npc2.gd
+res://dialogue timeline/characters/henry.dch
+res://dialogue timeline/characters/vi.dch
+res://dialogue timeline/characters/fjord.dch
+res://dialogue timeline/deliver_goods.dtl
+res://Scripts/dupes/main_game_manager2.gd
+res://Prefabs/UI/font_theme.tres

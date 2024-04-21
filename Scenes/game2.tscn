@@ -1,6 +1,6 @@
-[gd_scene load_steps=57 format=3 uid="uid://cml2eow132lw"]
+[gd_scene load_steps=61 format=3 uid="uid://cml2eow132lw"]
 
-[ext_resource type="Script" path="res://Scripts/main_game_manager.gd" id="1_expyl"]
+[ext_resource type="Script" path="res://Scripts/dupes/main_game_manager2.gd" id="1_wtjoq"]
 [ext_resource type="PackedScene" uid="uid://n75r3qqo181" path="res://Prefabs/barbarian.tscn" id="2_ohutd"]
 [ext_resource type="Shader" path="res://shader/sky_sokpop.gdshader" id="3_7i6j8"]
 [ext_resource type="PackedScene" uid="uid://bour1qs4dtp3r" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/mountain.gltf.glb" id="4_rt2qp"]
@@ -28,7 +28,11 @@
 [ext_resource type="MeshLibrary" uid="uid://bk1tslridl0kv" path="res://meshlib1.meshlib" id="26_uhynd"]
 [ext_resource type="PackedScene" uid="uid://c1py103j5v6c" path="res://Prefabs/rogue_npc.tscn" id="27_ooloe"]
 [ext_resource type="PackedScene" uid="uid://cwxmqmwd5qqdq" path="res://Prefabs/knight_npc.tscn" id="28_fm48r"]
+[ext_resource type="Script" path="res://Scripts/dupes/rogue_npc2.gd" id="28_lvied"]
 [ext_resource type="PackedScene" uid="uid://ct7vadih431tl" path="res://Prefabs/mage_npc.tscn" id="29_0hkm1"]
+[ext_resource type="Script" path="res://Scripts/dupes/knight_npc2.gd" id="30_h0ktk"]
+[ext_resource type="Script" path="res://Scripts/dupes/mage_npc2.gd" id="32_y0ib5"]
+[ext_resource type="Theme" uid="uid://cuvsw5lfyu7bo" path="res://Prefabs/UI/font_theme.tres" id="33_5tvl7"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_q0lxs"]
 shader = ExtResource("3_7i6j8")
@@ -140,8 +144,8 @@ size = Vector3(40.5777, 19.502, 28.7006)
 [sub_resource type="SphereShape3D" id="SphereShape3D_gjpbw"]
 radius = 2.01984
 
-[node name="game" type="Node3D"]
-script = ExtResource("1_expyl")
+[node name="game2" type="Node3D"]
+script = ExtResource("1_wtjoq")
 
 [node name="PlayerSpawnPosition" type="Marker3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.29481, 0)
@@ -455,6 +459,7 @@ metadata/_editor_floor_ = Vector3(0, 0, 18)
 
 [node name="Rogue" parent="outside_world" instance=ExtResource("27_ooloe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.79141, 2.53134, -22.9229)
+script = ExtResource("28_lvied")
 
 [node name="Area3D2" type="Area3D" parent="outside_world/Rogue"]
 
@@ -464,9 +469,38 @@ shape = SubResource("SphereShape3D_gjpbw")
 
 [node name="Knight" parent="outside_world" instance=ExtResource("28_fm48r")]
 transform = Transform3D(0.61904, 0, 0.653291, 0, 0.9, 0, -0.653291, 0, 0.61904, -26.8268, 2.60626, 1.10355)
+script = ExtResource("30_h0ktk")
 
 [node name="Mage" parent="outside_world" instance=ExtResource("29_0hkm1")]
 transform = Transform3D(0.523004, 0, -0.85233, 0, 1, 0, 0.85233, 0, 0.523004, 19.828, 2.54913, -2.35812)
+script = ExtResource("32_y0ib5")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Control"]
+
+[node name="FIN" type="Label" parent="Control/CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("33_5tvl7")
+theme_override_font_sizes/font_size = 293
+text = "FIN"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
 
 [connection signal="body_entered" from="outside_world/killbox" to="outside_world/Barbarian" method="_on_killbox_body_entered"]
 [connection signal="body_entered" from="outside_world/WorldObjects/mountains/mine_gltf/Area3D" to="." method="_on_area_3d_body_entered"]

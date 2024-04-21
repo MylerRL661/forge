@@ -1,4 +1,4 @@
-[gd_scene load_steps=120 format=3 uid="uid://cbnoas5c12c05"]
+[gd_scene load_steps=119 format=3 uid="uid://cbnoas5c12c05"]
 
 [ext_resource type="MeshLibrary" uid="uid://bk1tslridl0kv" path="res://meshlib1.meshlib" id="1_fh5b7"]
 [ext_resource type="PackedScene" uid="uid://cucsn4tlaxdcg" path="res://Prefabs/anvil_prefab.tscn" id="2_ptsbv"]
@@ -89,7 +89,6 @@
 [ext_resource type="Texture2D" uid="uid://dfebbxpvgdkq7" path="res://Assets/kenney_ui-pack-rpg-expansion/PNG/buttonLong_brown.png" id="86_viaj3"]
 [ext_resource type="Texture2D" uid="uid://uw45w1vdelkm" path="res://Assets/kenney_ui-pack-rpg-expansion/PNG/buttonLong_brown_pressed.png" id="87_saxre"]
 [ext_resource type="Theme" uid="uid://cuvsw5lfyu7bo" path="res://Prefabs/UI/font_theme.tres" id="88_8wihn"]
-[ext_resource type="FontFile" uid="uid://otyv2o53br4k" path="res://Assets/kenney_fontpackage/Fonts/Kenney Mini.ttf" id="89_orsej"]
 [ext_resource type="Texture2D" uid="uid://b37maeo3dpstc" path="res://Assets/kenney_input-prompts/Flairs/Default/flair_disabled_cross.png" id="91_m5xtw"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_254u5"]
@@ -1329,7 +1328,7 @@ texture_normal = ExtResource("86_viaj3")
 texture_pressed = ExtResource("87_saxre")
 stretch_mode = 3
 
-[node name="TextEdit" type="RichTextLabel" parent="Control/CanvasLayer/Exit Button2/Exit Button"]
+[node name="TextEdit" type="Label" parent="Control/CanvasLayer/Exit Button2/Exit Button"]
 layout_direction = 1
 layout_mode = 0
 offset_left = 61.0
@@ -1337,13 +1336,7 @@ offset_top = 29.0
 offset_right = 123.0
 offset_bottom = 68.0
 theme = ExtResource("88_8wihn")
-theme_override_fonts/normal_font = ExtResource("89_orsej")
-theme_override_font_sizes/normal_font_size = 31
 text = "EXIT"
-fit_content = true
-scroll_active = false
-deselect_on_focus_loss_enabled = false
-drag_and_drop_selection_enabled = false
 
 [node name="Forge Buttons" type="Control" parent="Control/CanvasLayer"]
 layout_mode = 3
@@ -1372,7 +1365,7 @@ scale = Vector2(2, 2)
 texture_normal = ExtResource("86_viaj3")
 texture_pressed = ExtResource("87_saxre")
 
-[node name="TextEdit2" type="RichTextLabel" parent="Control/CanvasLayer/Forge Buttons/BowButton"]
+[node name="TextEdit2" type="Label" parent="Control/CanvasLayer/Forge Buttons/BowButton"]
 layout_direction = 1
 layout_mode = 1
 anchors_preset = 8
@@ -1380,20 +1373,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -32.0
-offset_top = -22.5
+offset_left = -39.0
+offset_top = -21.5
 offset_right = 34.0
-offset_bottom = 16.5
+offset_bottom = 17.5
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("88_8wihn")
-theme_override_fonts/normal_font = ExtResource("89_orsej")
-theme_override_font_sizes/normal_font_size = 31
 text = "Bow"
-fit_content = true
-scroll_active = false
-deselect_on_focus_loss_enabled = false
-drag_and_drop_selection_enabled = false
 
 [node name="crossTex" type="TextureRect" parent="Control/CanvasLayer/Forge Buttons/BowButton"]
 layout_mode = 0
@@ -1421,7 +1408,7 @@ scale = Vector2(2, 2)
 texture_normal = ExtResource("86_viaj3")
 texture_pressed = ExtResource("87_saxre")
 
-[node name="TextEdit3" type="RichTextLabel" parent="Control/CanvasLayer/Forge Buttons/SwordButton"]
+[node name="TextEdit3" type="Label" parent="Control/CanvasLayer/Forge Buttons/SwordButton"]
 layout_direction = 1
 layout_mode = 1
 anchors_preset = 8
@@ -1429,20 +1416,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -48.0
-offset_top = -22.5
-offset_right = 52.0
-offset_bottom = 16.5
+offset_left = -62.0
+offset_top = -21.5
+offset_right = 53.0
+offset_bottom = 17.5
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("88_8wihn")
-theme_override_fonts/normal_font = ExtResource("89_orsej")
-theme_override_font_sizes/normal_font_size = 31
 text = "Sword"
-fit_content = true
-scroll_active = false
-deselect_on_focus_loss_enabled = false
-drag_and_drop_selection_enabled = false
 
 [node name="crossTex2" type="TextureRect" parent="Control/CanvasLayer/Forge Buttons/SwordButton"]
 layout_mode = 0
@@ -1470,7 +1451,7 @@ scale = Vector2(2, 2)
 texture_normal = ExtResource("86_viaj3")
 texture_pressed = ExtResource("87_saxre")
 
-[node name="TextEdit4" type="RichTextLabel" parent="Control/CanvasLayer/Forge Buttons/StaffButton"]
+[node name="TextEdit4" type="Label" parent="Control/CanvasLayer/Forge Buttons/StaffButton"]
 layout_direction = 1
 layout_mode = 1
 anchors_preset = 8
@@ -1478,20 +1459,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -45.0
-offset_top = -23.5
-offset_right = 55.0
-offset_bottom = 15.5
+offset_left = -47.5
+offset_top = -22.0
+offset_right = 52.5
+offset_bottom = 17.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("88_8wihn")
-theme_override_fonts/normal_font = ExtResource("89_orsej")
-theme_override_font_sizes/normal_font_size = 31
 text = "Staff"
-fit_content = true
-scroll_active = false
-deselect_on_focus_loss_enabled = false
-drag_and_drop_selection_enabled = false
 
 [node name="crossTex3" type="TextureRect" parent="Control/CanvasLayer/Forge Buttons/StaffButton"]
 layout_mode = 0
