@@ -43,7 +43,7 @@ func _sayHello():
 	if _isPlayerInRange == true and player_character._hasInteracted == true:
 		_camMove()
 		_cheerAnimation()
-		Dialogic.start('vi2')
+		Dialogic.start('v2')
 		talked = true
 		print("hello")
 

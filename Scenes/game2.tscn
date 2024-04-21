@@ -160,13 +160,13 @@ collision_mask = 17
 SPEED = 8.0
 
 [node name="Camera3D" type="Camera3D" parent="outside_world/Barbarian"]
-transform = Transform3D(1, 0, 0, 0, 0.982936, 0.183951, 0, -0.183951, 0.982936, 0, 4.052, 6.468)
+transform = Transform3D(1, 0, 0, 0, 0.982935, 0.183951, 0, -0.183951, 0.982935, 0, 4.052, 6.468)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="outside_world"]
 environment = SubResource("Environment_kqamq")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="outside_world"]
-transform = Transform3D(1, 0, 0, 0, 0.7173, 0.696765, 0, -0.696765, 0.7173, 0, 16.2944, 0)
+transform = Transform3D(1, 0, 0, 0, 0.910099, 0.414392, 0, -0.414392, 0.910099, 0, 16.2944, 0)
 light_energy = 2.0
 light_indirect_energy = 6.832
 light_volumetric_fog_energy = 14.607
