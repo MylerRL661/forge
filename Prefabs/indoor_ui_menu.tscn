@@ -31,6 +31,7 @@ stretch_mode = 3
 
 [node name="TextEdit" type="RichTextLabel" parent="CanvasLayer/Exit Button2/Exit Button"]
 layout_direction = 1
+layout_mode = 0
 offset_left = 61.0
 offset_top = 29.0
 offset_right = 123.0

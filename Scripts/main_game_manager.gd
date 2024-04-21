@@ -1,11 +1,16 @@
 extends Node3D
 
 @onready var outside_scene = $outside_world
-#@onready var inside_scene = $forge
+@onready var rogue = $outside_world/Rogue
+@onready var knight = $outside_world/Knight
+@onready var witch = $outside_world/Mage
 
 var _isPlayerInRange : bool = false
 var gameStarted : bool = false
 @export var talkedToVillagers : bool = false
+@export var talkedToRogue : bool = false
+@export var talkedToKnight: bool = false
+@export var talkedToWitch : bool = false
 
 
 # Called when the node enters the scene tree for the first time.
@@ -13,12 +18,21 @@ func _ready():
 	gameStarted = true
 	#talkedToVillagers = true
 
-func _sceneSetup():
-	pass
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	_enterForge()
+	
+	if rogue.talked == true:
+		talkedToRogue = true
+	
+	if knight.talked == true:
+		talkedToKnight = true
+	
+	if witch.talked == true:
+		talkedToWitch = true
+	
+	if talkedToKnight and talkedToRogue and talkedToWitch:
+		talkedToVillagers = true
 
 #forge entrance
 func _on_area_3d_body_entered(body):

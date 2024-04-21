@@ -10,6 +10,7 @@ const JUMP_VELOCITY = 4.5
 @onready var game_camera = $"../Barbarian/Camera3D"
 @onready var camera_target = $CameraTarget
 @onready var audio_player = $AudioStreamPlayer
+@export var talked : bool = false
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -44,6 +45,7 @@ func _sayHello():
 		_camMove()
 		_cheerAnimation()
 		Dialogic.start('timeline1')
+		talked = true
 		print("hello")
 
 func _on_area_3d_body_exited(body):

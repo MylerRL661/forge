@@ -4,11 +4,13 @@ const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 @export var _isPlayerInRange : bool = false
 @export var _isCheering : bool = false
+@export var talked : bool = false
 @onready var anim_player : AnimationPlayer = $AnimationPlayer
 @onready var player_character = $"../Barbarian"
 @onready var game_camera = $"../Barbarian/Camera3D"
 @onready var camera_target = $CameraTarget
 @onready var audio_player = $AudioStreamPlayer
+
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -42,7 +44,8 @@ func _sayHello():
 	if _isPlayerInRange == true and player_character._hasInteracted == true:
 		_camMove()
 		_cheerAnimation()
-		audio_player.play()
+		#dialogue here
+		talked = true
 		print("hello")
 
 func _on_area_3d_body_exited(body):
