@@ -19,6 +19,7 @@ func _ready():
 	gameStarted = true
 	finLabel.visible = false
 	audio.play()
+	Dialogic.start('deliver_goods')
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

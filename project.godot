@@ -14,7 +14,7 @@ config/name="Forge"
 run/main_scene="res://Scenes/main_menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 boot_splash/image="res://Assets/Godot-SplashScreens-main/Godot-SplashScreens-main/Screen/Reimagined logo/square-light.png"
-config/icon="res://icon.svg"
+config/icon="res://Assets/Screenshot 2024-04-21 131250.png"
 
 [autoload]
 
@@ -59,6 +59,10 @@ choices/reveal_by_input=false
 save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
+
+[display]
+
+mouse_cursor/custom_image="res://Assets/kenney_ui-pack-rpg-expansion/PNG/cursorGauntlet_bronze.png"
 
 [editor_plugins]
 

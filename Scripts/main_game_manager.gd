@@ -18,6 +18,7 @@ var gameStarted : bool = false
 func _ready():
 	gameStarted = true
 	audio.play()
+	Dialogic.start('talk_to_everyone_first')
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

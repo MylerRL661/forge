@@ -1,1 +1,7 @@
-rogue: THIS IS A TEST 
+rogue: Hey again! 
+rogue: Where you able to fix my bow? I'm really behind on my training and need to get back to it
+fjord: No worries, here you are Rogue
+[sound path="res://Assets/kenney_rpg-audio/Audio/handleCoins.ogg" volume="0.0"]
+fjord: Hopefully it lasts longer than the last one
+rogue: Thanks a bunch. Well i should get back to it. See you around! 
+END

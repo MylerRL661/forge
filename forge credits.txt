@@ -1,13 +1,11 @@
 forge credits
 
-kaykit assets - kay lousberg
-myself - audio, code, etc 
-anvil - "Anvil (Low Poly)" (https://skfb.ly/6tuwu) by Punin8r is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-splash screens - kenney.nl
-fonts - kenney.nl
-audio - kenney.nl
-input icons - kenney.nl
-dialogic
+kaykit assets - https://kaylousberg.itch.io/
+anvil model- "Anvil (Low Poly)" (https://skfb.ly/6tuwu) by Punin8r is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+splash screens, fonts, audio, input icons - https://kenney.nl/
+dialogic - https://docs.dialogic.pro/introduction.html 
 water shader - NekotoArts// Adapted from https://www.shadertoy.com/view/3tKBDz
 sokpop sky shader - https://godotshaders.com/shader/sokpop-skybox/ 
 catfiles font - https://www.creativefabrica.com/designer/khurasan/ref/53/
+scene_manager - https://github.com/DaviD4Chirino/Awesome-Scene-Manager 
+Background Music - https://onemansymphony.bandcamp.com/album/a-new-days-hurry-free

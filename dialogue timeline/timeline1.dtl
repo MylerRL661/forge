@@ -1,7 +1,7 @@
-[sound path="res://Assets/Audio/Rogue/rogue_hello.mp3" volume="0.8"]
+[voice path="res://Assets/Audio/Rogue/rogue_hello.mp3" volume="-4.0"]
 rogue: Hey Fjord! What's new with you?
 fjord: Hey Rogue, just around town asking if anyone needs any smithing done today?
 rogue: Wow, you're in a helpful mood. Well now that you mention it, I think my old iron bow is on it's last legs!
 rogue: Perhaps some tempering from your forge could help bring it back to life?
 fjord: I'll make no promises... but I'll see what I can do ;)
-CONVO ENDED
+END
