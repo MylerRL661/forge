@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://cvr8y4ulpbtqh"]
+[gd_scene load_steps=56 format=3 uid="uid://cvr8y4ulpbtqh"]
 
 [ext_resource type="Shader" path="res://shader/sky_sokpop.gdshader" id="1_ho52n"]
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_ya2to"]
@@ -28,6 +28,7 @@
 [ext_resource type="FontFile" uid="uid://cjcgfw6yjkhl" path="res://Assets/catfiles/Catfiles.otf" id="25_ckyer"]
 [ext_resource type="Texture2D" uid="uid://dfebbxpvgdkq7" path="res://Assets/kenney_ui-pack-rpg-expansion/PNG/buttonLong_brown.png" id="26_khmhg"]
 [ext_resource type="Texture2D" uid="uid://uw45w1vdelkm" path="res://Assets/kenney_ui-pack-rpg-expansion/PNG/buttonLong_brown_pressed.png" id="27_t8mms"]
+[ext_resource type="AudioStream" uid="uid://bu52xkwsrmlfq" path="res://Assets/Audio/One Man Symphony - A New Day's Hurry (Free)/06 Collector (Museum Theme) - Loops.mp3" id="29_8gyp3"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_fhjjy"]
 shader = ExtResource("1_ho52n")
@@ -533,6 +534,10 @@ offset_bottom = 39.0
 theme_override_fonts/font = ExtResource("25_ckyer")
 theme_override_font_sizes/font_size = 30
 text = "QUIT"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("29_8gyp3")
+volume_db = -8.0
 
 [connection signal="pressed" from="Control/CanvasLayer/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="Control/CanvasLayer/QuitButton" to="." method="_on_quit_button_pressed"]

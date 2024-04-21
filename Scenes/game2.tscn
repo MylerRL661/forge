@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=3 uid="uid://cml2eow132lw"]
+[gd_scene load_steps=62 format=3 uid="uid://cml2eow132lw"]
 
 [ext_resource type="Script" path="res://Scripts/dupes/main_game_manager2.gd" id="1_wtjoq"]
 [ext_resource type="PackedScene" uid="uid://n75r3qqo181" path="res://Prefabs/barbarian.tscn" id="2_ohutd"]
@@ -33,6 +33,7 @@
 [ext_resource type="Script" path="res://Scripts/dupes/knight_npc2.gd" id="30_h0ktk"]
 [ext_resource type="Script" path="res://Scripts/dupes/mage_npc2.gd" id="32_y0ib5"]
 [ext_resource type="Theme" uid="uid://cuvsw5lfyu7bo" path="res://Prefabs/UI/font_theme.tres" id="33_5tvl7"]
+[ext_resource type="AudioStream" uid="uid://bu52xkwsrmlfq" path="res://Assets/Audio/One Man Symphony - A New Day's Hurry (Free)/06 Collector (Museum Theme) - Loops.mp3" id="34_m8qgq"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_q0lxs"]
 shader = ExtResource("3_7i6j8")
@@ -158,7 +159,7 @@ collision_mask = 17
 SPEED = 8.0
 
 [node name="Camera3D" type="Camera3D" parent="outside_world/Barbarian"]
-transform = Transform3D(1, 0, 0, 0, 0.985432, 0.170072, 0, -0.170072, 0.985432, 0, 4.05247, 8.27212)
+transform = Transform3D(1, 0, 0, 0, 0.982936, 0.183951, 0, -0.183951, 0.982936, 0, 4.052, 6.468)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="outside_world"]
 environment = SubResource("Environment_kqamq")
@@ -501,6 +502,10 @@ text = "FIN"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("34_m8qgq")
+volume_db = -15.0
 
 [connection signal="body_entered" from="outside_world/killbox" to="outside_world/Barbarian" method="_on_killbox_body_entered"]
 [connection signal="body_entered" from="outside_world/WorldObjects/mountains/mine_gltf/Area3D" to="." method="_on_area_3d_body_entered"]

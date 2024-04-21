@@ -1,14 +1,2 @@
 Label
-CanvasLayer
-Control
-TextureRect
-RichTextLabel
-TextureButton
-Button
-Node3D
-Node
-CollisionShape3D
-StaticBody3D
-AnimationPlayer
-ColorRect
-Area3D
+Sprite3D

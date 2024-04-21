@@ -18,6 +18,9 @@ var left_arrow_scene = preload("res://Prefabs/arrows/area_3d_left.tscn")
 @onready var swordButton = $"../Control/CanvasLayer/Forge Buttons/SwordButton"
 @onready var staffButton = $"../Control/CanvasLayer/Forge Buttons/StaffButton"
 @onready var exitButton = $"../Control/CanvasLayer/Exit Button2/Exit Button"
+@onready var bgAudio = $"../AudioStreamPlayer"
+@onready var barbAudio = $"../Barbarian/AudioStreamPlayer"
+@onready var barbAudio2 = $"../Barbarian/AudioStreamPlayer2"
 
 var score = 0
 var arrowsNeeded = 0
@@ -46,6 +49,7 @@ var leftInArea : bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	exitButton.visible = false
+	bgAudio.play()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -61,24 +65,28 @@ func _process(delta):
 	if Input.is_action_just_pressed("backward") and downInArea and roundStarted:
 		score += 1
 		barb_anims.play('1H_Melee_Attack_Chop')
+		barbAudio.play()
 		print('Score: ', score)
 		currentDownArea.queue_free()
 	
 	if Input.is_action_just_pressed("right") and rightInArea and roundStarted:
 		score += 1
 		barb_anims.play('1H_Melee_Attack_Chop')
+		barbAudio.play()
 		print('Score: ', score)
 		currentRightArea.queue_free()
 	
 	if Input.is_action_just_pressed("forward") and upInArea and roundStarted:
 		score += 1
 		barb_anims.play('1H_Melee_Attack_Chop')
+		barbAudio.play()
 		print('Score: ', score)
 		currentUpArea.queue_free()
 	
 	if Input.is_action_just_pressed("left") and leftInArea and roundStarted:
 		score += 1
 		barb_anims.play('1H_Melee_Attack_Chop')
+		barbAudio.play()
 		print('Score: ', score)
 		currentLeftArea.queue_free()
 	
@@ -86,6 +94,7 @@ func _process(delta):
 	if Input.is_action_just_pressed("backward") and not downInArea and roundStarted:
 		score -= 1
 		barb_anims.play('Hit_B')
+		barbAudio2.play()
 		hitboxRed.visible = true
 		hitboxWhite.visible = false
 		print('Score: ', score)
@@ -93,6 +102,7 @@ func _process(delta):
 	if Input.is_action_just_pressed("right") and not rightInArea and roundStarted:
 		score -= 1
 		barb_anims.play('Hit_B')
+		barbAudio2.play()
 		hitboxRed.visible = true
 		hitboxWhite.visible = false
 		print('Score: ', score)
@@ -100,6 +110,7 @@ func _process(delta):
 	if Input.is_action_just_pressed("forward") and not upInArea and roundStarted:
 		score -= 1
 		barb_anims.play('Hit_B')
+		barbAudio2.play()
 		hitboxRed.visible = true
 		hitboxWhite.visible = false
 		print('Score: ', score)
@@ -107,6 +118,7 @@ func _process(delta):
 	if Input.is_action_just_pressed("left") and not leftInArea and roundStarted:
 		score -= 1
 		barb_anims.play('Hit_B')
+		barbAudio2.play()
 		hitboxRed.visible = true
 		hitboxWhite.visible = false
 		print('Score: ', score)

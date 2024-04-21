@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b8ydbqthdqrs5"
+path="res://.godot/imported/04 Undiscovered Parts Of The Town (Discovery Theme).mp3-c31de3ff25e9bf63427e3d96e40d1b96.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/One Man Symphony - A New Day's Hurry (Free)/04 Undiscovered Parts Of The Town (Discovery Theme).mp3"
+dest_files=["res://.godot/imported/04 Undiscovered Parts Of The Town (Discovery Theme).mp3-c31de3ff25e9bf63427e3d96e40d1b96.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

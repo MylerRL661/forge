@@ -4,6 +4,7 @@ extends Node3D
 @onready var rogue = $outside_world/Rogue
 @onready var knight = $outside_world/Knight
 @onready var witch = $outside_world/Mage
+@onready var audio = $AudioStreamPlayer
 
 var _isPlayerInRange : bool = false
 var gameStarted : bool = false
@@ -16,7 +17,7 @@ var gameStarted : bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	gameStarted = true
-	#talkedToVillagers = true
+	audio.play()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

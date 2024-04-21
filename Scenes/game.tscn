@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3 uid="uid://7kj8bv6xgw8"]
+[gd_scene load_steps=59 format=3 uid="uid://7kj8bv6xgw8"]
 
 [ext_resource type="PackedScene" uid="uid://n75r3qqo181" path="res://Prefabs/barbarian.tscn" id="1_cbtb2"]
 [ext_resource type="Script" path="res://Scripts/main_game_manager.gd" id="1_mot2g"]
@@ -29,6 +29,8 @@
 [ext_resource type="PackedScene" uid="uid://ct7vadih431tl" path="res://Prefabs/mage_npc.tscn" id="23_kj8w4"]
 [ext_resource type="PackedScene" uid="uid://do1fk16xk2qhx" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/detail_rocks.gltf.glb" id="23_unoxo"]
 [ext_resource type="PackedScene" uid="uid://dwhwconx7c0ga" path="res://Assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/detail_treeC.gltf.glb" id="24_nykis"]
+[ext_resource type="Texture2D" uid="uid://c7aqa8cnxnt8k" path="res://Assets/Textures/forge_tex.png" id="26_tmjai"]
+[ext_resource type="AudioStream" uid="uid://bu52xkwsrmlfq" path="res://Assets/Audio/One Man Symphony - A New Day's Hurry (Free)/06 Collector (Museum Theme) - Loops.mp3" id="30_bb26g"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_q0lxs"]
 shader = ExtResource("2_2r6cy")
@@ -439,6 +441,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.203171, 0.839972)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/WorldObjects/mountains/mine_gltf/Area3D"]
 shape = SubResource("SphereShape3D_lqjw0")
 
+[node name="Sprite3D" type="Sprite3D" parent="outside_world/WorldObjects/mountains/mine_gltf"]
+transform = Transform3D(0.266906, 0, 0, 0, 0.237113, 0, 0, 0, 0.351636, -0.0138465, 0.579494, 0.672174)
+texture = ExtResource("26_tmjai")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="outside_world/WorldObjects/mountains"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="outside_world/WorldObjects/mountains/StaticBody3D"]
@@ -467,6 +473,10 @@ transform = Transform3D(0.61904, 0, 0.653291, 0, 0.9, 0, -0.653291, 0, 0.61904, 
 
 [node name="Mage" parent="outside_world" instance=ExtResource("23_kj8w4")]
 transform = Transform3D(0.523004, 0, -0.85233, 0, 1, 0, 0.85233, 0, 0.523004, 19.828, 2.54913, -2.35812)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("30_bb26g")
+volume_db = -15.0
 
 [connection signal="body_entered" from="outside_world/killbox" to="outside_world/Barbarian" method="_on_killbox_body_entered"]
 [connection signal="body_entered" from="outside_world/WorldObjects/mountains/mine_gltf/Area3D" to="." method="_on_area_3d_body_entered"]
