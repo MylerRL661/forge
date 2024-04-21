@@ -52,7 +52,7 @@ func _ready():
 	bgAudio.play()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _physics_process(delta):
 	if arrowSpawned == arrowsNeeded:
 		arrow_timer.stop()
 		#print('timer stopped')
@@ -134,13 +134,13 @@ func _process(delta):
 			print('bowComp', bowCompleted)
 	
 	if arrow_spawner.get_child_count() == 0 and arrow_timer.is_stopped() and swordPressed:
-		if score >= 9:
+		if score >= 8:
 			swordCompleted = true
 			swordButton.visible = false
 			print('swordComp', swordCompleted)
 	
 	if arrow_spawner.get_child_count() == 0 and arrow_timer.is_stopped() and staffPressed:
-		if score >= 20:
+		if score >= 17:
 			staffCompleted = true
 			staffButton.visible = false
 			print('staffComp', staffCompleted)
@@ -253,16 +253,16 @@ func _on_area_3d_hit_box_area_exited(area):
 
 
 func _on_bow_button_pressed():
-	_round_start(5, 2)
+	_round_start(5, 1)
 	forge_buttons.visible = false
 	bowPressed = true
 
 func _on_sword_button_pressed():
-	_round_start(13, 6)
+	_round_start(13, 3)
 	forge_buttons.visible = false
 	swordPressed = true
 
 func _on_staff_button_pressed():
-	_round_start(25, 9)
+	_round_start(25, 6)
 	forge_buttons.visible = false
 	staffPressed = true

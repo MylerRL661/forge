@@ -63,7 +63,6 @@ text/autopauses={}
 [display]
 
 window/size/mode=4
-window/size/resizable=false
 mouse_cursor/custom_image="res://Assets/kenney_ui-pack-rpg-expansion/PNG/cursorGauntlet_bronze.png"
 
 [editor_plugins]
@@ -134,3 +133,8 @@ dialogic_default_action={
 [physics]
 
 3d/default_gravity=31.83
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+textures/vram_compression/import_s3tc_bptc=true

@@ -167,10 +167,6 @@ environment = SubResource("Environment_kqamq")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="outside_world"]
 transform = Transform3D(1, 0, 0, 0, 0.910099, 0.414392, 0, -0.414392, 0.910099, 0, 16.2944, 0)
-light_energy = 2.0
-light_indirect_energy = 6.832
-light_volumetric_fog_energy = 14.607
-light_angular_distance = 34.49
 
 [node name="killbox" type="Area3D" parent="outside_world"]
 transform = Transform3D(1, -0.000394755, 0.000391157, 0.00039478, 1, -5.5522e-05, -0.000391132, 5.5699e-05, 1, 0, -17.0178, 0)
